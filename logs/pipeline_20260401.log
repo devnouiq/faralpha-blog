@@ -1,0 +1,1656 @@
+2026-04-01 13:48:05 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 13:50:29 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 13:50:43 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 13:50:43 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 13:50:43 | db                             | INFO    | Schema initialised
+2026-04-01 13:50:43 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 13:50:43 | watchlist                      | INFO    | Watchlist: 50 candidates (down_days >= 3)
+2026-04-01 13:50:44 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 13:50:44 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 13:50:45 | watchlist                      | INFO    | Watchlist with tokens: 50 stocks ready for live monitoring
+2026-04-01 13:50:45 | kite_live                      | INFO    | Restored 2 already-fired signals from DB (prices locked)
+2026-04-01 13:50:45 | kite_live                      | INFO    | Late start detected (13:50) — backfilling first-hour data…
+2026-04-01 13:51:06 | kite_live                      | INFO    | Backfill complete: 50/50 stocks filled, first_hour_done=True
+2026-04-01 13:51:06 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 13:51:06 | dashboard_api                  | INFO    | Auto-start: live ticker started with 50 stocks
+2026-04-01 13:51:06 | kite_orders                    | INFO    | Loaded 2 orders from today
+2026-04-01 13:51:06 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 13:51:06 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 13:51:06 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 13:51:06 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 50 tokens
+2026-04-01 13:51:07 | watchlist                      | INFO    | Watchlist: 50 candidates (down_days >= 3)
+2026-04-01 13:51:07 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 13:56:16 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 13:56:16 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 13:56:16 | db                             | INFO    | Schema initialised
+2026-04-01 13:56:16 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 13:56:16 | watchlist                      | INFO    | Watchlist: 50 candidates (down_days >= 3)
+2026-04-01 13:56:17 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 13:56:17 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 13:56:18 | watchlist                      | INFO    | Watchlist with tokens: 50 stocks ready for live monitoring
+2026-04-01 13:56:18 | kite_live                      | INFO    | Restored 2 already-fired signals from DB (prices locked)
+2026-04-01 13:56:18 | kite_live                      | INFO    | Late start detected (13:56) — backfilling first-hour data…
+2026-04-01 13:56:39 | kite_live                      | INFO    | Backfill complete: 50/50 stocks filled, first_hour_done=True
+2026-04-01 13:56:39 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 13:56:39 | dashboard_api                  | INFO    | Auto-start: live ticker started with 50 stocks
+2026-04-01 13:56:39 | kite_orders                    | INFO    | Loaded 2 orders from today
+2026-04-01 13:56:39 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 13:56:39 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 13:56:39 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 13:56:39 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 50 tokens
+2026-04-01 13:59:38 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 13:59:38 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 13:59:38 | db                             | INFO    | Schema initialised
+2026-04-01 13:59:38 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 13:59:38 | watchlist                      | INFO    | Watchlist: 50 candidates (down_days >= 3)
+2026-04-01 13:59:38 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 13:59:38 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 13:59:39 | watchlist                      | INFO    | Watchlist with tokens: 50 stocks ready for live monitoring
+2026-04-01 13:59:39 | kite_live                      | INFO    | Restored 2 already-fired signals from DB (prices locked)
+2026-04-01 13:59:39 | kite_live                      | INFO    | Late start detected (13:59) — backfilling first-hour data…
+2026-04-01 14:00:01 | kite_live                      | INFO    | Backfill complete: 50/50 stocks filled, first_hour_done=True
+2026-04-01 14:00:01 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 14:00:01 | dashboard_api                  | INFO    | Auto-start: live ticker started with 50 stocks
+2026-04-01 14:00:01 | kite_orders                    | INFO    | Loaded 2 orders from today
+2026-04-01 14:00:01 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 14:00:01 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 14:00:01 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 14:00:01 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 50 tokens
+2026-04-01 14:01:51 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 14:01:51 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 14:01:51 | db                             | INFO    | Schema initialised
+2026-04-01 14:01:51 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 14:01:52 | watchlist                      | INFO    | Watchlist: 50 candidates (down_days >= 3)
+2026-04-01 14:01:52 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 14:01:52 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 14:01:53 | watchlist                      | INFO    | Watchlist with tokens: 50 stocks ready for live monitoring
+2026-04-01 14:01:53 | kite_live                      | INFO    | Restored 2 already-fired signals from DB (prices locked)
+2026-04-01 14:01:53 | kite_live                      | INFO    | Late start detected (14:01) — backfilling first-hour data…
+2026-04-01 14:02:16 | kite_live                      | INFO    | Backfill complete: 50/50 stocks filled, first_hour_done=True
+2026-04-01 14:02:16 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 14:02:16 | dashboard_api                  | INFO    | Auto-start: live ticker started with 50 stocks
+2026-04-01 14:02:16 | kite_orders                    | INFO    | Loaded 2 orders from today
+2026-04-01 14:02:16 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 14:02:16 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 14:02:16 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 14:02:16 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 50 tokens
+2026-04-01 14:02:38 | watchlist                      | INFO    | Watchlist: 50 candidates (down_days >= 3)
+2026-04-01 14:02:38 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 14:03:09 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-01 14:03:09 | watchlist                      | INFO    | Watchlist: 50 candidates (down_days >= 3)
+2026-04-01 14:03:09 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 14:25:43 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 14:25:43 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 14:25:43 | db                             | INFO    | Schema initialised
+2026-04-01 14:25:44 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 14:25:44 | watchlist                      | INFO    | Watchlist: 50 candidates (down_days >= 3)
+2026-04-01 14:25:44 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 14:25:44 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 14:25:45 | watchlist                      | INFO    | Watchlist with tokens: 50 stocks ready for live monitoring
+2026-04-01 14:25:45 | kite_live                      | INFO    | Restored 2 already-fired signals from DB (prices locked)
+2026-04-01 14:25:45 | kite_live                      | INFO    | Late start detected (14:25) — backfilling first-hour data…
+2026-04-01 14:26:06 | kite_live                      | INFO    | Backfill complete: 50/50 stocks filled, first_hour_done=True
+2026-04-01 14:26:06 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 14:26:06 | dashboard_api                  | INFO    | Auto-start: live ticker started with 50 stocks
+2026-04-01 14:26:06 | kite_orders                    | INFO    | Loaded 2 orders from today
+2026-04-01 14:26:06 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 14:26:06 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 14:26:06 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 14:26:07 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 50 tokens
+2026-04-01 14:26:10 | watchlist                      | INFO    | Watchlist: 50 candidates (down_days >= 3)
+2026-04-01 14:26:10 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 14:27:12 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-01 15:20:46 | db                             | INFO    | DuckDB singleton connection closed
+2026-04-01 15:20:46 | dashboard_api                  | INFO    | Dashboard API shut down.
+2026-04-01 15:25:28 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 15:25:28 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 15:25:28 | db                             | INFO    | Schema initialised
+2026-04-01 15:25:28 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 15:25:29 | watchlist                      | INFO    | Watchlist: 50 candidates (down_days >= 3)
+2026-04-01 15:25:29 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 15:25:29 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 15:25:30 | watchlist                      | INFO    | Watchlist with tokens: 50 stocks ready for live monitoring
+2026-04-01 15:25:30 | kite_live                      | INFO    | Restored 2 already-fired signals from DB (prices locked)
+2026-04-01 15:25:30 | kite_live                      | INFO    | Late start detected (15:25) — backfilling first-hour data…
+2026-04-01 15:25:51 | kite_live                      | INFO    | Backfill complete: 50/50 stocks filled, first_hour_done=True
+2026-04-01 15:25:51 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 15:25:51 | dashboard_api                  | INFO    | Auto-start: live ticker started with 50 stocks
+2026-04-01 15:25:51 | kite_orders                    | INFO    | Loaded 2 orders from today
+2026-04-01 15:25:51 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 15:25:51 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 15:25:51 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 15:25:52 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 50 tokens
+2026-04-01 15:25:54 | watchlist                      | INFO    | Watchlist: 50 candidates (down_days >= 3)
+2026-04-01 15:25:54 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 15:25:54 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-01 15:31:23 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-01 15:31:23 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-01 15:38:49 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 15:38:49 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 15:38:49 | db                             | INFO    | Schema initialised
+2026-04-01 15:38:49 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 15:38:49 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 15:38:49 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 15:38:49 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 15:38:50 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 15:38:50 | kite_live                      | INFO    | Restored 2 already-fired signals from DB (prices locked)
+2026-04-01 15:38:50 | kite_live                      | INFO    | Late start detected (15:38) — backfilling first-hour data…
+2026-04-01 15:39:32 | kite_live                      | INFO    | Backfill complete: 100/100 stocks filled, first_hour_done=True
+2026-04-01 15:39:32 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 15:39:32 | dashboard_api                  | INFO    | Auto-start: live ticker started with 100 stocks
+2026-04-01 15:39:32 | kite_orders                    | INFO    | Loaded 2 orders from today
+2026-04-01 15:39:32 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 15:39:32 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 15:39:32 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 15:39:33 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 100 tokens
+2026-04-01 15:39:33 | kite_live                      | INFO    | SIGNAL: SHRIRAMPPS @ 66.18 (VWAP=65.23, RVOL=2.9x, down=3d, depth=-41.3%)
+2026-04-01 15:39:33 | kite_orders                    | INFO    | ORDER SHRIRAMPPS | Qty=117 | Limit=66.55 | SL=64.85 | Invest=7786 | Risk=199 (0.5%)
+2026-04-01 15:39:33 | kite_orders                    | ERROR   | BUY FAILED for SHRIRAMPPS: Markets are closed right now. Post-market session will commence at 3:40PM. [Read more.](https://support.zerodha.com/category/trading-and-markets/trading-faqs/market-sessions/articles/what-are-pre-market-and-post-market-sessions-and-orders)
+2026-04-01 15:39:33 | kite_live                      | INFO    | SIGNAL: EXICOM @ 83.77 (VWAP=82.79, RVOL=2.0x, down=3d, depth=-38.8%)
+2026-04-01 15:39:33 | kite_orders                    | INFO    | ORDER EXICOM | Qty=92 | Limit=84.20 | SL=82.05 | Invest=7746 | Risk=198 (0.5%)
+2026-04-01 15:39:33 | kite_orders                    | ERROR   | BUY FAILED for EXICOM: Markets are closed right now. Post-market session will commence at 3:40PM. [Read more.](https://support.zerodha.com/category/trading-and-markets/trading-faqs/market-sessions/articles/what-are-pre-market-and-post-market-sessions-and-orders)
+2026-04-01 15:39:33 | kite_live                      | INFO    | SIGNAL: PIIND @ 2844.90 (VWAP=2808.97, RVOL=2.0x, down=3d, depth=-38.7%)
+2026-04-01 15:39:33 | kite_orders                    | INFO    | ORDER PIIND | Qty=2 | Limit=2859.15 | SL=2788.00 | Invest=5718 | Risk=142 (0.4%)
+2026-04-01 15:39:33 | kite_orders                    | ERROR   | BUY FAILED for PIIND: Markets are closed right now. Post-market session will commence at 3:40PM. [Read more.](https://support.zerodha.com/category/trading-and-markets/trading-faqs/market-sessions/articles/what-are-pre-market-and-post-market-sessions-and-orders)
+2026-04-01 15:39:33 | kite_live                      | INFO    | SIGNAL: GENUSPOWER @ 235.00 (VWAP=229.39, RVOL=1.9x, down=3d, depth=-50.9%)
+2026-04-01 15:39:33 | kite_orders                    | WARNING | SKIP GENUSPOWER — max positions (5) reached
+2026-04-01 15:39:33 | kite_live                      | INFO    | SIGNAL: VMSTMT @ 37.63 (VWAP=36.32, RVOL=1.9x, down=3d, depth=-21.5%)
+2026-04-01 15:39:33 | kite_orders                    | WARNING | SKIP VMSTMT — max positions (5) reached
+2026-04-01 15:39:33 | kite_live                      | INFO    | SIGNAL: MOREPENLAB @ 37.20 (VWAP=36.06, RVOL=1.7x, down=3d, depth=-23.8%)
+2026-04-01 15:39:33 | kite_orders                    | WARNING | SKIP MOREPENLAB — max positions (5) reached
+2026-04-01 15:48:27 | db                             | INFO    | DuckDB singleton connection closed
+2026-04-01 15:48:27 | dashboard_api                  | INFO    | Dashboard API shut down.
+2026-04-01 15:50:52 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 15:50:52 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 15:50:52 | db                             | INFO    | Schema initialised
+2026-04-01 15:50:53 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 15:50:53 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 15:50:53 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 15:50:53 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 15:50:54 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 15:50:54 | kite_live                      | INFO    | Restored 8 already-fired signals from DB (prices locked)
+2026-04-01 15:50:54 | kite_live                      | INFO    | Late start detected (15:50) — backfilling first-hour data…
+2026-04-01 15:51:37 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 15:51:37 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 15:51:37 | db                             | INFO    | Schema initialised
+2026-04-01 15:51:37 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 15:51:37 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 15:51:37 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 15:51:37 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 15:51:38 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 15:51:38 | kite_live                      | INFO    | Restored 8 already-fired signals from DB (prices locked)
+2026-04-01 15:51:38 | kite_live                      | INFO    | Late start detected (15:51) — backfilling first-hour data…
+2026-04-01 15:52:20 | kite_live                      | INFO    | Backfill complete: 100/100 stocks filled, first_hour_done=True
+2026-04-01 15:52:20 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 15:52:20 | dashboard_api                  | INFO    | Auto-start: live ticker started with 100 stocks
+2026-04-01 15:52:20 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 15:52:20 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 15:52:20 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 15:52:20 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 15:52:20 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 100 tokens
+2026-04-01 15:54:33 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 15:54:33 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 15:54:33 | db                             | INFO    | Schema initialised
+2026-04-01 15:54:33 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 15:54:33 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 15:54:33 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 15:54:33 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 15:54:34 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 15:54:34 | kite_live                      | INFO    | Restored 8 already-fired signals from DB (prices locked)
+2026-04-01 15:54:34 | kite_live                      | INFO    | Late start detected (15:54) — backfilling first-hour data…
+2026-04-01 15:55:16 | kite_live                      | INFO    | Backfill complete: 100/100 stocks filled, first_hour_done=True
+2026-04-01 15:55:16 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 15:55:16 | dashboard_api                  | INFO    | Auto-start: live ticker started with 100 stocks
+2026-04-01 15:55:17 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 15:55:17 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 15:55:17 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 15:55:17 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 15:55:17 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 100 tokens
+2026-04-01 15:55:29 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 15:55:29 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 15:55:29 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-01 15:55:32 | db                             | INFO    | Schema initialised
+2026-04-01 15:55:32 | sync_prices                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 15:55:32 | sync_prices                    | INFO    | Price sync: INDIA
+2026-04-01 15:55:32 | sync_prices                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 15:55:32 | sync_prices                    | WARNING | INDIA market is still open — end-of-day data not yet available. Use force=True to sync anyway (intraday data).
+2026-04-01 15:55:32 | dashboard_api                  | INFO    | Daily sync done: [{'market': 'india', 'tickers': 0, 'synced': 0, 'failed': 0, 'new_rows': 0, 'newly_delisted': [], 'skipped_up_to_date': 0, 'market_open': True, 'message': 'INDIA market still open, skipped'}]
+2026-04-01 15:55:32 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 15:55:32 | s03_features                   | INFO    | Feature engineering: INDIA
+2026-04-01 15:55:32 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 15:55:32 | s03_features                   | INFO    | Loaded 530,293 rows for 1722 tickers
+2026-04-01 15:55:32 | s03_features                   | INFO    | Computing indicators…
+2026-04-01 15:55:55 | s03_features                   | WARNING | Price coherence: 7 tickers have scale-corrupted Yahoo data (>3.0x jump):
+2026-04-01 15:55:55 | s03_features                   | WARNING |   AGARIND: latest=175.00 vs median50=607.88 (ratio=0.3x) — REMOVED
+2026-04-01 15:55:55 | s03_features                   | WARNING |   BECTORFOOD: latest=62.04 vs median50=214.60 (ratio=0.3x) — REMOVED
+2026-04-01 15:55:55 | s03_features                   | WARNING |   EXIDEIND: latest=91.44 vs median50=325.58 (ratio=0.3x) — REMOVED
+2026-04-01 15:55:55 | s03_features                   | WARNING |   FRACTAL: latest=230.47 vs median50=808.65 (ratio=0.3x) — REMOVED
+2026-04-01 15:55:55 | s03_features                   | WARNING |   HOMEFIRST: latest=277.50 vs median50=1,090.10 (ratio=0.3x) — REMOVED
+2026-04-01 15:55:55 | s03_features                   | WARNING |   PTCIL: latest=14,985.00 vs median50=368.58 (ratio=40.7x) — REMOVED
+2026-04-01 15:55:55 | s03_features                   | WARNING |   SAGCEM: latest=60.59 vs median50=191.37 (ratio=0.3x) — REMOVED
+2026-04-01 15:55:55 | s03_features                   | INFO    | Price coherence filter: 530,293 → 526,551 rows (7 tickers removed)
+2026-04-01 15:55:55 | s03_features                   | INFO    | Quality filter: 526,551 → 342,517 rows (184,034 removed) [min_price=$10.0, min_vol=100,000, min_$vol=$2,000,000, max_price_india=₹3,000]
+2026-04-01 15:55:56 | s03_features                   | INFO    | IPO seasoning: removed 29,309 rows (< 60 days)
+2026-04-01 15:55:56 | s03_features                   | INFO    | ✓ INDIA: 1609 tickers, 313,208 rows after filters
+2026-04-01 15:55:56 | s03_features                   | INFO    | Storing 313,208 feature rows…
+2026-04-01 15:55:56 | s03_features                   | INFO    | ✓ Features table: 313,208 rows, 1609 tickers
+2026-04-01 15:55:56 | dashboard_api                  | INFO    | [india] Pipeline step 'features' OK  (24.8s)
+2026-04-01 15:55:56 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 15:55:56 | s04_rs_rank                    | INFO    | Relative strength ranking: INDIA
+2026-04-01 15:55:56 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 15:55:57 | s04_rs_rank                    | INFO    | Computing cross-sectional RS ranks…
+2026-04-01 15:55:57 | s04_rs_rank                    | INFO    |   RS vs benchmark computed
+2026-04-01 15:55:57 | s04_rs_rank                    | INFO    |   Sector momentum computed
+2026-04-01 15:55:57 | s04_rs_rank                    | INFO    | ✓ INDIA: 1609 tickers ranked
+2026-04-01 15:55:57 | s04_rs_rank                    | INFO    | Storing 313,208 ranked rows…
+2026-04-01 15:55:58 | s04_rs_rank                    | INFO    | ✓ Ranked table: 313,208 rows
+2026-04-01 15:55:58 | dashboard_api                  | INFO    | [india] Pipeline step 'rs_rank' OK  (1.1s)
+2026-04-01 15:55:58 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 15:55:58 | s05_patterns                   | INFO    | Pattern detection: INDIA
+2026-04-01 15:55:58 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |   Detecting Trend Template…
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |     Trend Template: 8.7% of rows pass
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |   Detecting Multi-Contraction VCP…
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |     VCP: 66.5% of rows pass
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |   Detecting Darvas Box…
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |     Darvas: 0.1% of rows pass
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |   Detecting Power Play…
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |     Power Play: 0.0% of rows pass
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |   Detecting IPO Base…
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |     IPO Base: 1.8% of rows match
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |   Detecting Breakouts…
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |     Breakout: 2.4% of rows pass
+2026-04-01 15:55:58 | s05_patterns                   | INFO    |     Buy signals: VCP=1,124  Darvas=73  Power=0  IPO=12  Total=1,124
+2026-04-01 15:55:58 | s05_patterns                   | INFO    | ✓ INDIA: 1609 tickers, 1,124 buy signals
+2026-04-01 15:55:58 | s05_patterns                   | INFO    | Storing 313,208 signal rows…
+2026-04-01 15:55:59 | s05_patterns                   | INFO    | ✓ Signals table: 313,208 rows
+2026-04-01 15:55:59 | dashboard_api                  | INFO    | [india] Pipeline step 'patterns' OK  (1.4s)
+2026-04-01 15:55:59 | s06_regime                     | INFO    |   Computing market breadth for INDIA…
+2026-04-01 15:55:59 | s06_regime                     | INFO    | INDIA: 4446 days, 57.6% bull (10.1% recovery), 42.4% bear, 31.4% weak-market days, avg breadth 49.8%
+2026-04-01 15:55:59 | s06_regime                     | INFO    | ✓ Regime table: 4,446 rows
+2026-04-01 15:55:59 | dashboard_api                  | INFO    | [india] Pipeline step 'regime' OK  (0.0s)
+2026-04-01 15:55:59 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 15:55:59 | s07_signals                    | INFO    | Signal engine: INDIA
+2026-04-01 15:55:59 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 15:55:59 | s07_signals                    | INFO    | Loaded 313,208 rows, 1609 tickers
+2026-04-01 15:56:00 | s07_signals                    | INFO    |   Watchlist: 21,770 leader candidates across 414 correction days
+2026-04-01 15:56:00 | s07_signals                    | INFO    | Applying signal filters…
+2026-04-01 15:56:00 | s07_signals                    | INFO    |   After regime filter: 159,662 / 313,208
+2026-04-01 15:56:00 | s07_signals                    | INFO    |   After breadth ≥ 30%: 145,694 (removed 13,968)
+2026-04-01 15:56:00 | s07_signals                    | INFO    |   After Trend Template: 11,081
+2026-04-01 15:56:00 | s07_signals                    | INFO    |   After RS ≥ 0.85: 3,340
+2026-04-01 15:56:00 | s07_signals                    | INFO    |   After excluding ['Utilities', 'Consumer Staples']: 3,340 (removed 0)
+2026-04-01 15:56:00 | s07_signals                    | INFO    |   After breakout: 254
+2026-04-01 15:56:00 | s07_signals                    | INFO    |   After pattern filter: 134
+2026-04-01 15:56:00 | s07_signals                    | INFO    |   Fundamentals filter: DISABLED (market-specific override)
+2026-04-01 15:56:00 | s07_signals                    | INFO    |   Injected 201 watchlist leaders as priority candidates
+2026-04-01 15:56:00 | s07_signals                    | INFO    |   Composite score: avg=0.628
+2026-04-01 15:56:00 | s07_signals                    | INFO    | ✓ INDIA: 335 momentum candidate signals across 128 days  tiers={'watchlist_leader': 201, 'vcp': 134}
+2026-04-01 15:56:00 | s07_signals                    | INFO    | Storing 335 candidate rows…
+2026-04-01 15:56:00 | s07_signals                    | INFO    | ✓ Candidates table: 335 rows
+2026-04-01 15:56:00 | s07_signals                    | INFO    | ✓ Watchlist table: 21,770 leader candidates during corrections
+2026-04-01 15:56:00 | dashboard_api                  | INFO    | [india] Pipeline step 'signals' OK  (0.8s)
+2026-04-01 15:56:00 | dashboard_api                  | INFO    | Pipeline done
+2026-04-01 15:56:00 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 15:56:00 | dashboard_api                  | INFO    | Watchlist: 100 tickers
+2026-04-01 15:56:35 | kite_intraday                  | INFO    | [50/100] 50% — 37,961 candles total (15minute: 24,965, 30minute: 12,996)
+2026-04-01 15:57:10 | kite_intraday                  | INFO    | [100/100] 100% — 75,898 candles total (15minute: 49,918, 30minute: 25,980)
+2026-04-01 15:57:10 | kite_intraday                  | INFO    | Kite 15minute: 49918 candles
+2026-04-01 15:57:10 | kite_intraday                  | INFO    | Kite 30minute: 25980 candles
+2026-04-01 15:57:10 | dashboard_api                  | INFO    | Intraday fetch done: {'15minute': 49918, '30minute': 25980}
+2026-04-01 15:57:10 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:11:53 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 16:11:53 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 16:11:53 | db                             | INFO    | Schema initialised
+2026-04-01 16:11:54 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 16:11:54 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:11:54 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 16:11:54 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 16:11:55 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 16:11:55 | kite_live                      | INFO    | Restored 8 already-fired signals from DB (prices locked)
+2026-04-01 16:11:55 | kite_live                      | INFO    | Late start detected (16:11) — backfilling first-hour data…
+2026-04-01 16:12:37 | kite_live                      | INFO    | Backfill complete: 100/100 stocks filled, first_hour_done=True
+2026-04-01 16:12:37 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 16:12:37 | dashboard_api                  | INFO    | Auto-start: live ticker started with 100 stocks
+2026-04-01 16:12:37 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 16:12:37 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 16:12:37 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 16:12:37 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 16:12:37 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 100 tokens
+2026-04-01 16:12:38 | kite_live                      | INFO    | Market closed — ticker idle (8 signals fired today)
+2026-04-01 16:14:32 | db                             | INFO    | DuckDB singleton connection closed
+2026-04-01 16:14:32 | dashboard_api                  | INFO    | Dashboard API shut down.
+2026-04-01 16:14:34 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 16:14:34 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 16:14:34 | db                             | INFO    | Schema initialised
+2026-04-01 16:14:34 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 16:14:34 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:14:35 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 16:14:35 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 16:14:35 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 16:14:35 | kite_live                      | INFO    | Restored 8 already-fired signals from DB (prices locked)
+2026-04-01 16:14:35 | kite_live                      | INFO    | Late start detected (16:14) — backfilling first-hour data…
+2026-04-01 16:15:19 | kite_live                      | INFO    | Backfill complete: 100/100 stocks filled, first_hour_done=True
+2026-04-01 16:15:19 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 16:15:19 | dashboard_api                  | INFO    | Auto-start: live ticker started with 100 stocks
+2026-04-01 16:15:19 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 16:15:19 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 16:15:19 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 16:15:19 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 16:15:19 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 100 tokens
+2026-04-01 16:15:20 | kite_live                      | INFO    | Market closed — ticker idle (8 signals fired today)
+2026-04-01 16:15:35 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 16:15:35 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 16:15:35 | db                             | INFO    | Schema initialised
+2026-04-01 16:15:35 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 16:15:36 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:15:36 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 16:15:36 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 16:15:37 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 16:15:37 | kite_live                      | INFO    | Restored 8 already-fired signals from DB (prices locked)
+2026-04-01 16:15:37 | kite_live                      | INFO    | Late start detected (16:15) — backfilling first-hour data…
+2026-04-01 16:16:19 | kite_live                      | INFO    | Backfill complete: 100/100 stocks filled, first_hour_done=True
+2026-04-01 16:16:19 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 16:16:19 | dashboard_api                  | INFO    | Auto-start: live ticker started with 100 stocks
+2026-04-01 16:16:19 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 16:16:19 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 16:16:19 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 16:16:19 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 16:16:19 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 100 tokens
+2026-04-01 16:16:20 | kite_live                      | INFO    | Market closed — ticker idle (8 signals fired today)
+2026-04-01 16:16:48 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 16:17:07 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 16:17:07 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 16:17:07 | db                             | INFO    | Schema initialised
+2026-04-01 16:17:07 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 16:17:07 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:17:08 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 16:17:08 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 16:17:09 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 16:17:09 | kite_live                      | INFO    | Restored 8 already-fired signals from DB (prices locked)
+2026-04-01 16:17:09 | kite_live                      | INFO    | After market hours (16:17) — skipping backfill
+2026-04-01 16:17:09 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 16:17:09 | dashboard_api                  | INFO    | Auto-start: live ticker started with 100 stocks
+2026-04-01 16:17:09 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 16:17:09 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 16:17:09 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 16:17:09 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 16:17:09 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 100 tokens
+2026-04-01 16:19:06 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 16:19:06 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 16:19:06 | db                             | INFO    | Schema initialised
+2026-04-01 16:19:06 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 16:19:06 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:19:06 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 16:19:06 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 16:19:07 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 16:19:07 | kite_live                      | INFO    | Restored 8 already-fired signals from DB (prices locked)
+2026-04-01 16:19:07 | kite_live                      | INFO    | After market hours (16:19) — skipping backfill
+2026-04-01 16:19:07 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 16:19:07 | dashboard_api                  | INFO    | Auto-start: live ticker started with 100 stocks
+2026-04-01 16:19:07 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 16:19:07 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 16:19:07 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 16:19:07 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 16:19:08 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 100 tokens
+2026-04-01 16:19:14 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:19:14 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 16:19:14 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-01 16:24:16 | db                             | INFO    | Schema initialised
+2026-04-01 16:24:16 | sync_prices                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:24:16 | sync_prices                    | INFO    | Price sync: INDIA
+2026-04-01 16:24:16 | sync_prices                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:24:16 | sync_prices                    | WARNING | INDIA market is still open — end-of-day data not yet available. Use force=True to sync anyway (intraday data).
+2026-04-01 16:24:16 | dashboard_api                  | INFO    | Daily sync done: [{'market': 'india', 'tickers': 0, 'synced': 0, 'failed': 0, 'new_rows': 0, 'newly_delisted': [], 'skipped_up_to_date': 0, 'market_open': True, 'message': 'INDIA market still open, skipped'}]
+2026-04-01 16:24:16 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:24:16 | s03_features                   | INFO    | Feature engineering: INDIA
+2026-04-01 16:24:16 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:24:16 | s03_features                   | INFO    | Loaded 530,293 rows for 1722 tickers
+2026-04-01 16:24:16 | s03_features                   | INFO    | Computing indicators…
+2026-04-01 16:24:41 | s03_features                   | WARNING | Price coherence: 7 tickers have scale-corrupted Yahoo data (>3.0x jump):
+2026-04-01 16:24:41 | s03_features                   | WARNING |   AGARIND: latest=175.00 vs median50=607.88 (ratio=0.3x) — REMOVED
+2026-04-01 16:24:41 | s03_features                   | WARNING |   BECTORFOOD: latest=62.04 vs median50=214.60 (ratio=0.3x) — REMOVED
+2026-04-01 16:24:41 | s03_features                   | WARNING |   EXIDEIND: latest=91.44 vs median50=325.58 (ratio=0.3x) — REMOVED
+2026-04-01 16:24:41 | s03_features                   | WARNING |   FRACTAL: latest=230.47 vs median50=808.65 (ratio=0.3x) — REMOVED
+2026-04-01 16:24:41 | s03_features                   | WARNING |   HOMEFIRST: latest=277.50 vs median50=1,090.10 (ratio=0.3x) — REMOVED
+2026-04-01 16:24:41 | s03_features                   | WARNING |   PTCIL: latest=14,985.00 vs median50=368.58 (ratio=40.7x) — REMOVED
+2026-04-01 16:24:41 | s03_features                   | WARNING |   SAGCEM: latest=60.59 vs median50=191.37 (ratio=0.3x) — REMOVED
+2026-04-01 16:24:41 | s03_features                   | INFO    | Price coherence filter: 530,293 → 526,551 rows (7 tickers removed)
+2026-04-01 16:24:41 | s03_features                   | INFO    | Quality filter: 526,551 → 342,517 rows (184,034 removed) [min_price=$10.0, min_vol=100,000, min_$vol=$2,000,000, max_price_india=₹3,000]
+2026-04-01 16:24:41 | s03_features                   | INFO    | IPO seasoning: removed 29,309 rows (< 60 days)
+2026-04-01 16:24:41 | s03_features                   | INFO    | ✓ INDIA: 1609 tickers, 313,208 rows after filters
+2026-04-01 16:24:41 | s03_features                   | INFO    | Storing 313,208 feature rows…
+2026-04-01 16:24:42 | s03_features                   | INFO    | ✓ Features table: 313,208 rows, 1609 tickers
+2026-04-01 16:24:42 | dashboard_api                  | INFO    | [india] Pipeline step 'features' OK  (25.8s)
+2026-04-01 16:24:42 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:24:42 | s04_rs_rank                    | INFO    | Relative strength ranking: INDIA
+2026-04-01 16:24:42 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:24:42 | s04_rs_rank                    | INFO    | Computing cross-sectional RS ranks…
+2026-04-01 16:24:42 | s04_rs_rank                    | INFO    |   RS vs benchmark computed
+2026-04-01 16:24:42 | s04_rs_rank                    | INFO    |   Sector momentum computed
+2026-04-01 16:24:42 | s04_rs_rank                    | INFO    | ✓ INDIA: 1609 tickers ranked
+2026-04-01 16:24:42 | s04_rs_rank                    | INFO    | Storing 313,208 ranked rows…
+2026-04-01 16:24:43 | s04_rs_rank                    | INFO    | ✓ Ranked table: 313,208 rows
+2026-04-01 16:24:43 | dashboard_api                  | INFO    | [india] Pipeline step 'rs_rank' OK  (1.2s)
+2026-04-01 16:24:43 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:24:43 | s05_patterns                   | INFO    | Pattern detection: INDIA
+2026-04-01 16:24:43 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |   Detecting Trend Template…
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |     Trend Template: 8.7% of rows pass
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |   Detecting Multi-Contraction VCP…
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |     VCP: 66.5% of rows pass
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |   Detecting Darvas Box…
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |     Darvas: 0.1% of rows pass
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |   Detecting Power Play…
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |     Power Play: 0.0% of rows pass
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |   Detecting IPO Base…
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |     IPO Base: 1.8% of rows match
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |   Detecting Breakouts…
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |     Breakout: 2.4% of rows pass
+2026-04-01 16:24:44 | s05_patterns                   | INFO    |     Buy signals: VCP=1,124  Darvas=73  Power=0  IPO=12  Total=1,124
+2026-04-01 16:24:44 | s05_patterns                   | INFO    | ✓ INDIA: 1609 tickers, 1,124 buy signals
+2026-04-01 16:24:44 | s05_patterns                   | INFO    | Storing 313,208 signal rows…
+2026-04-01 16:24:45 | s05_patterns                   | INFO    | ✓ Signals table: 313,208 rows
+2026-04-01 16:24:45 | dashboard_api                  | INFO    | [india] Pipeline step 'patterns' OK  (1.5s)
+2026-04-01 16:24:45 | s06_regime                     | INFO    |   Computing market breadth for INDIA…
+2026-04-01 16:24:45 | s06_regime                     | INFO    | INDIA: 4446 days, 57.6% bull (10.1% recovery), 42.4% bear, 31.4% weak-market days, avg breadth 49.8%
+2026-04-01 16:24:45 | s06_regime                     | INFO    | ✓ Regime table: 4,446 rows
+2026-04-01 16:24:45 | dashboard_api                  | INFO    | [india] Pipeline step 'regime' OK  (0.0s)
+2026-04-01 16:24:45 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:24:45 | s07_signals                    | INFO    | Signal engine: INDIA
+2026-04-01 16:24:45 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:24:45 | s07_signals                    | INFO    | Loaded 313,208 rows, 1609 tickers
+2026-04-01 16:24:45 | s07_signals                    | INFO    |   Watchlist: 21,770 leader candidates across 414 correction days
+2026-04-01 16:24:45 | s07_signals                    | INFO    | Applying signal filters…
+2026-04-01 16:24:45 | s07_signals                    | INFO    |   After regime filter: 159,662 / 313,208
+2026-04-01 16:24:45 | s07_signals                    | INFO    |   After breadth ≥ 30%: 145,694 (removed 13,968)
+2026-04-01 16:24:45 | s07_signals                    | INFO    |   After Trend Template: 11,081
+2026-04-01 16:24:45 | s07_signals                    | INFO    |   After RS ≥ 0.85: 3,340
+2026-04-01 16:24:45 | s07_signals                    | INFO    |   After excluding ['Utilities', 'Consumer Staples']: 3,340 (removed 0)
+2026-04-01 16:24:45 | s07_signals                    | INFO    |   After breakout: 254
+2026-04-01 16:24:45 | s07_signals                    | INFO    |   After pattern filter: 134
+2026-04-01 16:24:45 | s07_signals                    | INFO    |   Fundamentals filter: DISABLED (market-specific override)
+2026-04-01 16:24:45 | s07_signals                    | INFO    |   Injected 201 watchlist leaders as priority candidates
+2026-04-01 16:24:45 | s07_signals                    | INFO    |   Composite score: avg=0.628
+2026-04-01 16:24:45 | s07_signals                    | INFO    | ✓ INDIA: 335 momentum candidate signals across 128 days  tiers={'watchlist_leader': 201, 'vcp': 134}
+2026-04-01 16:24:45 | s07_signals                    | INFO    | Storing 335 candidate rows…
+2026-04-01 16:24:45 | s07_signals                    | INFO    | ✓ Candidates table: 335 rows
+2026-04-01 16:24:45 | s07_signals                    | INFO    | ✓ Watchlist table: 21,770 leader candidates during corrections
+2026-04-01 16:24:45 | dashboard_api                  | INFO    | [india] Pipeline step 'signals' OK  (0.7s)
+2026-04-01 16:24:45 | dashboard_api                  | INFO    | Pipeline done
+2026-04-01 16:24:46 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:24:46 | dashboard_api                  | INFO    | Watchlist: 100 tickers
+2026-04-01 16:25:00 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-01 16:25:00 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-01 16:25:00 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:25:00 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 16:25:00 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-01 16:25:20 | kite_intraday                  | INFO    | [50/100] 50% — 37,961 candles total (15minute: 24,965, 30minute: 12,996)
+2026-04-01 16:25:56 | kite_intraday                  | INFO    | [100/100] 100% — 75,898 candles total (15minute: 49,918, 30minute: 25,980)
+2026-04-01 16:25:56 | kite_intraday                  | INFO    | Kite 15minute: 49918 candles
+2026-04-01 16:25:56 | kite_intraday                  | INFO    | Kite 30minute: 25980 candles
+2026-04-01 16:25:56 | dashboard_api                  | INFO    | Intraday fetch done: {'15minute': 49918, '30minute': 25980}
+2026-04-01 16:33:07 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 16:33:27 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 16:33:27 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 16:33:27 | db                             | INFO    | Schema initialised
+2026-04-01 16:33:27 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 16:33:27 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:33:28 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 16:33:28 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 16:33:29 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 16:33:29 | kite_live                      | INFO    | Restored 8 already-fired signals from DB (prices locked)
+2026-04-01 16:33:29 | kite_live                      | INFO    | After market hours (16:33) — skipping backfill
+2026-04-01 16:33:29 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 16:33:29 | dashboard_api                  | INFO    | Auto-start: live ticker started with 100 stocks
+2026-04-01 16:33:29 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 16:33:29 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 16:33:29 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 16:33:29 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 16:33:29 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 100 tokens
+2026-04-01 16:37:50 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 16:37:50 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 16:37:50 | db                             | INFO    | Schema initialised
+2026-04-01 16:37:51 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 16:37:51 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:37:51 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 16:37:51 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 16:37:52 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 16:37:52 | kite_live                      | INFO    | Restored 8 already-fired signals from DB (prices locked)
+2026-04-01 16:37:52 | kite_live                      | INFO    | After market hours (16:37) — skipping backfill
+2026-04-01 16:37:52 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 16:37:52 | dashboard_api                  | INFO    | Auto-start: live ticker started with 100 stocks
+2026-04-01 16:37:52 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 16:37:52 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 16:37:52 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 16:37:52 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 16:37:52 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 100 tokens
+2026-04-01 16:38:54 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 16:38:54 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 16:38:54 | db                             | INFO    | Schema initialised
+2026-04-01 16:38:54 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 16:38:55 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:38:55 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 16:38:55 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 16:38:56 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 16:38:56 | kite_live                      | INFO    | Restored 8 already-fired signals from DB (prices locked)
+2026-04-01 16:38:56 | kite_live                      | INFO    | After market hours (16:38) — skipping backfill
+2026-04-01 16:38:56 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 16:38:56 | dashboard_api                  | INFO    | Auto-start: live ticker started with 100 stocks
+2026-04-01 16:38:56 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 16:38:56 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 16:38:56 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 16:38:56 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 16:38:56 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 100 tokens
+2026-04-01 16:39:02 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:39:02 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 16:39:02 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-01 16:39:34 | db                             | INFO    | Schema initialised
+2026-04-01 16:39:34 | sync_prices                    | INFO    | INDIA: 1992 active, 1194 up-to-date, 798 to sync, 0 no token
+2026-04-01 16:39:34 | sync_prices                    | INFO    |   [0/798] synced=0 failed=0 rows=0 (0s)
+2026-04-01 16:39:34 | sync_prices                    | WARNING | 21STCENMGM: split detected (stored=114.75 → new=29.40) — re-downloading
+2026-04-01 16:39:34 | sync_prices                    | WARNING | 21STCENMGM: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:35 | sync_prices                    | WARNING | 360ONE: split detected (stored=123.00 → new=955.00) — re-downloading
+2026-04-01 16:39:35 | sync_prices                    | WARNING | 360ONE: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:36 | sync_prices                    | WARNING | 3IINFOLTD: split detected (stored=58.85 → new=14.33) — re-downloading
+2026-04-01 16:39:36 | sync_prices                    | WARNING | 3IINFOLTD: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:37 | sync_prices                    | WARNING | 3MINDIA: split detected (stored=686.85 → new=29410.00) — re-downloading
+2026-04-01 16:39:37 | sync_prices                    | WARNING | 3MINDIA: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:37 | sync_prices                    | WARNING | 3PLAND: split detected (stored=317.95 → new=30.52) — re-downloading
+2026-04-01 16:39:38 | sync_prices                    | WARNING | 3PLAND: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:39 | sync_prices                    | WARNING | 63MOONS: split detected (stored=249.10 → new=507.00) — re-downloading
+2026-04-01 16:39:39 | sync_prices                    | WARNING | 63MOONS: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:40 | sync_prices                    | WARNING | AAREYDRUGS: split detected (stored=430.45 → new=53.28) — re-downloading
+2026-04-01 16:39:40 | sync_prices                    | WARNING | AAREYDRUGS: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:41 | sync_prices                    | WARNING | AARNAV: split detected (stored=1328.40 → new=23.06) — re-downloading
+2026-04-01 16:39:41 | sync_prices                    | WARNING | AARNAV: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:42 | sync_prices                    | WARNING | AARTECH: split detected (stored=125.92 → new=36.85) — re-downloading
+2026-04-01 16:39:42 | sync_prices                    | WARNING | AARTECH: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:45 | sync_prices                    | WARNING | ABFRL: split detected (stored=139.89 → new=57.50) — re-downloading
+2026-04-01 16:39:45 | sync_prices                    | WARNING | ABFRL: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:46 | sync_prices                    | WARNING | ABINFRA: split detected (stored=291.65 → new=15.81) — re-downloading
+2026-04-01 16:39:46 | sync_prices                    | WARNING | ABINFRA: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:48 | sync_prices                    | WARNING | ACC: split detected (stored=178.35 → new=1329.00) — re-downloading
+2026-04-01 16:39:48 | sync_prices                    | WARNING | ACC: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:50 | sync_prices                    | WARNING | ADANIGREEN: split detected (stored=74.21 → new=854.25) — re-downloading
+2026-04-01 16:39:50 | sync_prices                    | WARNING | ADANIGREEN: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:50 | sync_prices                    | WARNING | ADANIPORTS: split detected (stored=19.30 → new=1386.00) — re-downloading
+2026-04-01 16:39:50 | sync_prices                    | WARNING | ADANIPORTS: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:52 | sync_prices                    | WARNING | ADVANCE: split detected (stored=321.10 → new=93.19) — re-downloading
+2026-04-01 16:39:52 | sync_prices                    | WARNING | ADVANCE: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:52 | sync_prices                    | WARNING | ADVANIHOTR: split detected (stored=243.45 → new=49.99) — re-downloading
+2026-04-01 16:39:52 | sync_prices                    | WARNING | ADVANIHOTR: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:53 | sync_prices                    | WARNING | ADVENTHTL: split detected (stored=321.10 → new=140.00) — re-downloading
+2026-04-01 16:39:53 | sync_prices                    | WARNING | ADVENTHTL: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:54 | sync_prices                    | WARNING | ADVENZYMES: split detected (stored=11422.00 → new=265.50) — re-downloading
+2026-04-01 16:39:54 | sync_prices                    | WARNING | ADVENZYMES: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:55 | sync_prices                    | WARNING | AEGISVOPAK: split detected (stored=78.10 → new=167.35) — re-downloading
+2026-04-01 16:39:55 | sync_prices                    | WARNING | AEGISVOPAK: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:56 | sync_prices                    | WARNING | AEPL: split detected (stored=360.00 → new=15.60) — re-downloading
+2026-04-01 16:39:56 | sync_prices                    | WARNING | AEPL: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:57 | sync_prices                    | WARNING | AEROENTER: split detected (stored=1134.40 → new=69.30) — re-downloading
+2026-04-01 16:39:57 | sync_prices                    | WARNING | AEROENTER: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:39:58 | sync_prices                    | WARNING | AEROFLEX: split detected (stored=1078.00 → new=250.80) — re-downloading
+2026-04-01 16:39:58 | sync_prices                    | WARNING | AEROFLEX: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:00 | sync_prices                    | WARNING | AFCONS: split detected (stored=42.57 → new=282.90) — re-downloading
+2026-04-01 16:40:00 | sync_prices                    | WARNING | AFCONS: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:01 | sync_prices                    | WARNING | AFFORDABLE: split detected (stored=321.10 → new=140.00) — re-downloading
+2026-04-01 16:40:01 | sync_prices                    | WARNING | AFFORDABLE: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:03 | sync_prices                    | WARNING | AHLEAST: split detected (stored=18.17 → new=150.25) — re-downloading
+2026-04-01 16:40:03 | sync_prices                    | WARNING | AHLEAST: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:04 | sync_prices                    | WARNING | AIAENG: split detected (stored=769.25 → new=3635.00) — re-downloading
+2026-04-01 16:40:04 | sync_prices                    | WARNING | AIAENG: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:05 | sync_prices                    | INFO    |   [50/798] synced=50 failed=0 rows=253 (31s)
+2026-04-01 16:40:05 | sync_prices                    | WARNING | AIRAN: split detected (stored=5941.50 → new=14.11) — re-downloading
+2026-04-01 16:40:05 | sync_prices                    | WARNING | AIRAN: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:06 | sync_prices                    | WARNING | AIROLAM: split detected (stored=379.95 → new=84.13) — re-downloading
+2026-04-01 16:40:06 | sync_prices                    | WARNING | AIROLAM: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:07 | sync_prices                    | WARNING | AJANTPHARM: split detected (stored=263.00 → new=2809.50) — re-downloading
+2026-04-01 16:40:07 | sync_prices                    | WARNING | AJANTPHARM: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:10 | sync_prices                    | WARNING | ALKEM: split detected (stored=598.55 → new=5250.50) — re-downloading
+2026-04-01 16:40:10 | sync_prices                    | WARNING | ALKEM: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:11 | sync_prices                    | WARNING | ALLDIGI: split detected (stored=216.43 → new=759.90) — re-downloading
+2026-04-01 16:40:11 | sync_prices                    | WARNING | ALLDIGI: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:13 | sync_prices                    | WARNING | AMBUJACEM: split detected (stored=1494.60 → new=422.00) — re-downloading
+2026-04-01 16:40:13 | sync_prices                    | WARNING | AMBUJACEM: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:16 | sync_prices                    | WARNING | ANANTRAJ: split detected (stored=1044.10 → new=447.00) — re-downloading
+2026-04-01 16:40:16 | sync_prices                    | WARNING | ANANTRAJ: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:19 | sync_prices                    | WARNING | APOLLOPIPE: split detected (stored=99.89 → new=426.00) — re-downloading
+2026-04-01 16:40:19 | sync_prices                    | WARNING | APOLLOPIPE: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:40:20 | sync_prices                    | WARNING | APOLSINHOT: split detected (stored=318.15 → new=995.00) — re-downloading
+2026-04-01 16:40:20 | sync_prices                    | WARNING | APOLSINHOT: split re-download failed: interval exceeds max limit: 2000 days
+2026-04-01 16:45:44 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 16:45:44 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 16:45:44 | db                             | INFO    | Schema initialised
+2026-04-01 16:45:44 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 16:45:45 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:45:45 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 16:45:45 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 16:45:46 | watchlist                      | INFO    | Watchlist with tokens: 100 stocks ready for live monitoring
+2026-04-01 16:45:46 | kite_live                      | INFO    | Restored 8 already-fired signals from DB (prices locked)
+2026-04-01 16:45:46 | kite_live                      | INFO    | After market hours (16:45) — skipping backfill
+2026-04-01 16:45:46 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 16:45:46 | dashboard_api                  | INFO    | Auto-start: live ticker started with 100 stocks
+2026-04-01 16:45:46 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 16:45:46 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 16:45:46 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 16:45:46 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 16:45:46 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 100 tokens
+2026-04-01 16:45:53 | watchlist                      | INFO    | Watchlist: 100 candidates (down_days >= 2)
+2026-04-01 16:45:53 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 16:45:53 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-01 16:45:55 | db                             | INFO    | Schema initialised
+2026-04-01 16:45:55 | sync_prices                    | INFO    | INDIA: 1992 active, 1281 up-to-date, 711 to sync, 0 no token
+2026-04-01 16:45:55 | sync_prices                    | INFO    |   [0/711] synced=0 failed=0 rows=0 (0s)
+2026-04-01 16:45:55 | sync_prices                    | WARNING | ARVIND: price mismatch (stored=1649.00 → new=350.00, ratio=4.71) — re-downloading from Kite
+2026-04-01 16:45:57 | sync_prices                    | INFO    | ARVIND: replaced with 2783 rows of Kite data
+2026-04-01 16:45:58 | sync_prices                    | WARNING | ARVSMART: price mismatch (stored=109.71 → new=527.00, ratio=0.21) — re-downloading from Kite
+2026-04-01 16:45:59 | sync_prices                    | INFO    | ARVSMART: replaced with 2622 rows of Kite data
+2026-04-01 16:45:59 | sync_prices                    | WARNING | ASAHIINDIA: price mismatch (stored=42.18 → new=824.85, ratio=0.05) — re-downloading from Kite
+2026-04-01 16:46:00 | sync_prices                    | INFO    | ASAHIINDIA: replaced with 2783 rows of Kite data
+2026-04-01 16:46:02 | sync_prices                    | WARNING | ASHOKA: price mismatch (stored=16.89 → new=111.05, ratio=0.15) — re-downloading from Kite
+2026-04-01 16:46:03 | sync_prices                    | INFO    | ASHOKA: replaced with 2783 rows of Kite data
+2026-04-01 16:46:06 | sync_prices                    | WARNING | ASPINWALL: price mismatch (stored=843.70 → new=213.90, ratio=3.94) — re-downloading from Kite
+2026-04-01 16:46:07 | sync_prices                    | INFO    | ASPINWALL: replaced with 2425 rows of Kite data
+2026-04-01 16:46:08 | sync_prices                    | WARNING | ASTEC: price mismatch (stored=226.58 → new=559.00, ratio=0.41) — re-downloading from Kite
+2026-04-01 16:46:09 | sync_prices                    | INFO    | ASTEC: replaced with 2783 rows of Kite data
+2026-04-01 16:46:09 | sync_prices                    | WARNING | ASTERDM: price mismatch (stored=99.98 → new=687.95, ratio=0.15) — re-downloading from Kite
+2026-04-01 16:46:10 | sync_prices                    | INFO    | ASTERDM: replaced with 2005 rows of Kite data
+2026-04-01 16:46:12 | sync_prices                    | WARNING | ASTRAZEN: price mismatch (stored=28.51 → new=7852.50, ratio=0.00) — re-downloading from Kite
+2026-04-01 16:46:13 | sync_prices                    | INFO    | ASTRAZEN: replaced with 2783 rows of Kite data
+2026-04-01 16:46:14 | sync_prices                    | WARNING | ATALREAL: price mismatch (stored=47.03 → new=23.10, ratio=2.04) — re-downloading from Kite
+2026-04-01 16:46:14 | sync_prices                    | INFO    | ATALREAL: replaced with 1169 rows of Kite data
+2026-04-01 16:46:15 | sync_prices                    | WARNING | ATAM: price mismatch (stored=377.00 → new=52.55, ratio=7.17) — re-downloading from Kite
+2026-04-01 16:46:16 | sync_prices                    | INFO    | ATAM: replaced with 720 rows of Kite data
+2026-04-01 16:46:17 | sync_prices                    | WARNING | ATGL: price mismatch (stored=21.20 → new=522.10, ratio=0.04) — re-downloading from Kite
+2026-04-01 16:46:18 | sync_prices                    | INFO    | ATGL: replaced with 1835 rows of Kite data
+2026-04-01 16:46:19 | sync_prices                    | WARNING | ATL: price mismatch (stored=456.50 → new=20.98, ratio=21.76) — re-downloading from Kite
+2026-04-01 16:46:20 | sync_prices                    | INFO    | ATL: replaced with 655 rows of Kite data
+2026-04-01 16:46:22 | sync_prices                    | WARNING | BAJAJELEC: price mismatch (stored=2103.80 → new=344.50, ratio=6.11) — re-downloading from Kite
+2026-04-01 16:46:23 | sync_prices                    | INFO    | BAJAJELEC: replaced with 2783 rows of Kite data
+2026-04-01 16:46:24 | sync_prices                    | WARNING | BAJAJHCARE: price mismatch (stored=122.51 → new=309.05, ratio=0.40) — re-downloading from Kite
+2026-04-01 16:46:25 | sync_prices                    | INFO    | BAJAJHCARE: replaced with 1094 rows of Kite data
+2026-04-01 16:46:26 | sync_prices                    | WARNING | BAJAJHFL: price mismatch (stored=226.95 → new=77.31, ratio=2.94) — re-downloading from Kite
+2026-04-01 16:46:27 | sync_prices                    | INFO    | BAJAJHFL: replaced with 383 rows of Kite data
+2026-04-01 16:46:28 | sync_prices                    | WARNING | BAJAJHIND: price mismatch (stored=972.70 → new=17.05, ratio=57.05) — re-downloading from Kite
+2026-04-01 16:46:29 | sync_prices                    | INFO    | BAJAJHIND: replaced with 2783 rows of Kite data
+2026-04-01 16:46:29 | sync_prices                    | WARNING | BAJAJHLDNG: price mismatch (stored=972.70 → new=8850.00, ratio=0.11) — re-downloading from Kite
+2026-04-01 16:46:31 | sync_prices                    | INFO    | BAJAJHLDNG: replaced with 2783 rows of Kite data
+2026-04-01 16:46:32 | sync_prices                    | WARNING | BAJEL: price mismatch (stored=924.80 → new=153.25, ratio=6.03) — re-downloading from Kite
+2026-04-01 16:46:33 | sync_prices                    | INFO    | BAJEL: replaced with 567 rows of Kite data
+2026-04-01 16:46:34 | sync_prices                    | WARNING | BANARBEADS: price mismatch (stored=2190.00 → new=105.95, ratio=20.67) — re-downloading from Kite
+2026-04-01 16:46:35 | sync_prices                    | INFO    | BANARBEADS: replaced with 2768 rows of Kite data
+2026-04-01 16:46:41 | sync_prices                    | WARNING | BHARATCOAL: price mismatch (stored=520.30 → new=31.91, ratio=16.31) — re-downloading from Kite
+2026-04-01 16:46:42 | sync_prices                    | INFO    | BHARATCOAL: replaced with 50 rows of Kite data
+2026-04-01 16:46:43 | sync_prices                    | INFO    |   [50/711] synced=50 failed=0 rows=39147 (48s)
+2026-04-01 16:46:43 | sync_prices                    | WARNING | BHARATFORG: price mismatch (stored=158.28 → new=1670.00, ratio=0.09) — re-downloading from Kite
+2026-04-01 16:46:44 | sync_prices                    | INFO    | BHARATFORG: replaced with 2783 rows of Kite data
+2026-04-01 16:46:45 | sync_prices                    | WARNING | BHARATRAS: price mismatch (stored=29.39 → new=1322.20, ratio=0.02) — re-downloading from Kite
+2026-04-01 16:46:46 | sync_prices                    | INFO    | BHARATRAS: replaced with 2783 rows of Kite data
+2026-04-01 16:46:47 | sync_prices                    | WARNING | BIKAJI: price mismatch (stored=6844.00 → new=620.95, ratio=11.02) — re-downloading from Kite
+2026-04-01 16:46:48 | sync_prices                    | INFO    | BIKAJI: replaced with 838 rows of Kite data
+2026-04-01 16:46:49 | sync_prices                    | WARNING | BIL: price mismatch (stored=240.20 → new=700.00, ratio=0.34) — re-downloading from Kite
+2026-04-01 16:46:50 | sync_prices                    | INFO    | BIL: replaced with 2782 rows of Kite data
+2026-04-01 16:46:52 | sync_prices                    | WARNING | BIRLACORPN: price mismatch (stored=25.55 → new=881.30, ratio=0.03) — re-downloading from Kite
+2026-04-01 16:46:53 | sync_prices                    | INFO    | BIRLACORPN: replaced with 2783 rows of Kite data
+2026-04-01 16:46:54 | sync_prices                    | WARNING | BIRLAMONEY: price mismatch (stored=20.80 → new=109.04, ratio=0.19) — re-downloading from Kite
+2026-04-01 16:46:55 | sync_prices                    | INFO    | BIRLAMONEY: replaced with 2751 rows of Kite data
+2026-04-01 16:47:01 | sync_prices                    | WARNING | BOSCHLTD: price mismatch (stored=30.94 → new=30775.00, ratio=0.00) — re-downloading from Kite
+2026-04-01 16:47:02 | sync_prices                    | INFO    | BOSCHLTD: replaced with 2783 rows of Kite data
+2026-04-01 16:47:05 | sync_prices                    | WARNING | BRNL: price mismatch (stored=226.45 → new=18.23, ratio=12.42) — re-downloading from Kite
+2026-04-01 16:47:06 | sync_prices                    | INFO    | BRNL: replaced with 2114 rows of Kite data
+2026-04-01 16:47:07 | sync_prices                    | WARNING | BROOKS: price mismatch (stored=735.95 → new=44.53, ratio=16.53) — re-downloading from Kite
+2026-04-01 16:47:07 | sync_prices                    | INFO    | BROOKS: replaced with 2783 rows of Kite data
+2026-04-01 16:47:09 | sync_prices                    | WARNING | BSHSL: price mismatch (stored=351.00 → new=72.84, ratio=4.82) — re-downloading from Kite
+2026-04-01 16:47:10 | sync_prices                    | INFO    | BSHSL: replaced with 1346 rows of Kite data
+2026-04-01 16:47:10 | sync_prices                    | WARNING | BSL: price mismatch (stored=19.44 → new=114.00, ratio=0.17) — re-downloading from Kite
+2026-04-01 16:47:11 | sync_prices                    | INFO    | BSL: replaced with 2783 rows of Kite data
+2026-04-01 16:47:13 | sync_prices                    | WARNING | BUILDPRO: price mismatch (stored=194.57 → new=1001.20, ratio=0.19) — re-downloading from Kite
+2026-04-01 16:47:14 | sync_prices                    | INFO    | BUILDPRO: replaced with 55 rows of Kite data
+2026-04-01 16:47:17 | sync_prices                    | WARNING | CHOLAFIN: price mismatch (stored=201.10 → new=1366.00, ratio=0.15) — re-downloading from Kite
+2026-04-01 16:47:18 | sync_prices                    | INFO    | CHOLAFIN: replaced with 2783 rows of Kite data
+2026-04-01 16:47:21 | sync_prices                    | WARNING | CREST: price mismatch (stored=4801.40 → new=330.70, ratio=14.52) — re-downloading from Kite
+2026-04-01 16:47:22 | sync_prices                    | INFO    | CREST: replaced with 2750 rows of Kite data
+2026-04-01 16:47:23 | sync_prices                    | WARNING | CRISIL: price mismatch (stored=525.50 → new=3824.00, ratio=0.14) — re-downloading from Kite
+2026-04-01 16:47:24 | sync_prices                    | INFO    | CRISIL: replaced with 2783 rows of Kite data
+2026-04-01 16:47:25 | sync_prices                    | INFO    |   [100/711] synced=100 failed=0 rows=75045 (90s)
+2026-04-01 16:47:25 | sync_prices                    | WARNING | CRIZAC: price mismatch (stored=1289.40 → new=192.90, ratio=6.68) — re-downloading from Kite
+2026-04-01 16:47:26 | sync_prices                    | INFO    | CRIZAC: replaced with 181 rows of Kite data
+2026-04-01 16:47:26 | sync_prices                    | WARNING | CROMPTON: price mismatch (stored=707.90 → new=231.25, ratio=3.06) — re-downloading from Kite
+2026-04-01 16:47:27 | sync_prices                    | INFO    | CROMPTON: replaced with 2448 rows of Kite data
+2026-04-01 16:47:28 | sync_prices                    | WARNING | CROWN: price mismatch (stored=816.25 → new=116.70, ratio=6.99) — re-downloading from Kite
+2026-04-01 16:47:29 | sync_prices                    | INFO    | CROWN: replaced with 1344 rows of Kite data
+2026-04-01 16:47:30 | sync_prices                    | WARNING | CSLFINANCE: price mismatch (stored=1442.20 → new=245.00, ratio=5.89) — re-downloading from Kite
+2026-04-01 16:47:31 | sync_prices                    | INFO    | CSLFINANCE: replaced with 916 rows of Kite data
+2026-04-01 16:47:34 | sync_prices                    | WARNING | DAMCAPITAL: price mismatch (stored=322.85 → new=135.95, ratio=2.37) — re-downloading from Kite
+2026-04-01 16:47:35 | sync_prices                    | INFO    | DAMCAPITAL: replaced with 313 rows of Kite data
+2026-04-01 16:47:36 | sync_prices                    | WARNING | DAMODARIND: price mismatch (stored=24365.00 → new=21.74, ratio=1120.75) — re-downloading from Kite
+2026-04-01 16:47:37 | sync_prices                    | INFO    | DAMODARIND: replaced with 2410 rows of Kite data
+2026-04-01 16:47:39 | sync_prices                    | WARNING | DCMSHRIRAM: price mismatch (stored=14860.00 → new=1150.20, ratio=12.92) — re-downloading from Kite
+2026-04-01 16:47:40 | sync_prices                    | INFO    | DCMSHRIRAM: replaced with 2783 rows of Kite data
+2026-04-01 16:47:44 | sync_prices                    | WARNING | DENORA: price mismatch (stored=29.80 → new=729.00, ratio=0.04) — re-downloading from Kite
+2026-04-01 16:47:45 | sync_prices                    | INFO    | DENORA: replaced with 2783 rows of Kite data
+2026-04-01 16:47:46 | sync_prices                    | WARNING | DEVIT: price mismatch (stored=249.75 → new=25.98, ratio=9.61) — re-downloading from Kite
+2026-04-01 16:47:47 | sync_prices                    | INFO    | DEVIT: replaced with 1023 rows of Kite data
+2026-04-01 16:47:50 | sync_prices                    | WARNING | DIGITIDE: price mismatch (stored=1547.10 → new=77.25, ratio=20.03) — re-downloading from Kite
+2026-04-01 16:47:51 | sync_prices                    | INFO    | DIGITIDE: replaced with 201 rows of Kite data
+2026-04-01 16:47:52 | sync_prices                    | WARNING | DIVISLAB: price mismatch (stored=110.46 → new=5900.00, ratio=0.02) — re-downloading from Kite
+2026-04-01 16:47:53 | sync_prices                    | INFO    | DIVISLAB: replaced with 2783 rows of Kite data
+2026-04-01 16:47:54 | sync_prices                    | WARNING | DIXON: price mismatch (stored=357.50 → new=10270.00, ratio=0.03) — re-downloading from Kite
+2026-04-01 16:47:55 | sync_prices                    | INFO    | DIXON: replaced with 2114 rows of Kite data
+2026-04-01 16:47:56 | sync_prices                    | WARNING | DLINKINDIA: price mismatch (stored=104.80 → new=397.90, ratio=0.26) — re-downloading from Kite
+2026-04-01 16:47:57 | sync_prices                    | INFO    | DLINKINDIA: replaced with 2783 rows of Kite data
+2026-04-01 16:47:58 | sync_prices                    | WARNING | DMART: price mismatch (stored=1547.10 → new=4263.00, ratio=0.36) — re-downloading from Kite
+2026-04-01 16:47:59 | sync_prices                    | INFO    | DMART: replaced with 2237 rows of Kite data
+2026-04-01 16:48:00 | sync_prices                    | WARNING | DOLATALGO: price mismatch (stored=270.45 → new=70.50, ratio=3.84) — re-downloading from Kite
+2026-04-01 16:48:01 | sync_prices                    | INFO    | DOLATALGO: replaced with 1642 rows of Kite data
+2026-04-01 16:48:04 | sync_prices                    | WARNING | EIDPARRY: price mismatch (stored=18.34 → new=814.35, ratio=0.02) — re-downloading from Kite
+2026-04-01 16:48:05 | sync_prices                    | INFO    | EIDPARRY: replaced with 2783 rows of Kite data
+2026-04-01 16:48:07 | sync_prices                    | WARNING | EIHOTEL: price mismatch (stored=73.72 → new=280.00, ratio=0.26) — re-downloading from Kite
+2026-04-01 16:48:08 | sync_prices                    | INFO    | EIHOTEL: replaced with 2783 rows of Kite data
+2026-04-01 16:48:08 | sync_prices                    | WARNING | EKC: price mismatch (stored=687.05 → new=102.00, ratio=6.74) — re-downloading from Kite
+2026-04-01 16:48:09 | sync_prices                    | INFO    | EKC: replaced with 2783 rows of Kite data
+2026-04-01 16:48:10 | sync_prices                    | INFO    |   [150/711] synced=150 failed=0 rows=110097 (135s)
+2026-04-01 16:48:12 | sync_prices                    | WARNING | FACT: price mismatch (stored=71.08 → new=786.30, ratio=0.09) — re-downloading from Kite
+2026-04-01 16:48:13 | sync_prices                    | INFO    | FACT: replaced with 2783 rows of Kite data
+2026-04-01 16:48:14 | sync_prices                    | WARNING | FCL: price mismatch (stored=216.20 → new=20.90, ratio=10.34) — re-downloading from Kite
+2026-04-01 16:48:15 | sync_prices                    | INFO    | FCL: replaced with 2773 rows of Kite data
+2026-04-01 16:48:16 | sync_prices                    | WARNING | FDC: price mismatch (stored=50.38 → new=327.75, ratio=0.15) — re-downloading from Kite
+2026-04-01 16:48:17 | sync_prices                    | INFO    | FDC: replaced with 2783 rows of Kite data
+2026-04-01 16:48:18 | sync_prices                    | WARNING | FIEMIND: price mismatch (stored=817.20 → new=1980.00, ratio=0.41) — re-downloading from Kite
+2026-04-01 16:48:19 | sync_prices                    | INFO    | FIEMIND: replaced with 2783 rows of Kite data
+2026-04-01 16:48:23 | sync_prices                    | WARNING | GANECOS: price mismatch (stored=206.75 → new=1022.20, ratio=0.20) — re-downloading from Kite
+2026-04-01 16:48:24 | sync_prices                    | INFO    | GANECOS: replaced with 2739 rows of Kite data
+2026-04-01 16:48:26 | sync_prices                    | WARNING | GANESHCP: price mismatch (stored=71.11 → new=173.20, ratio=0.41) — re-downloading from Kite
+2026-04-01 16:48:26 | sync_prices                    | INFO    | GANESHCP: replaced with 125 rows of Kite data
+2026-04-01 16:48:27 | sync_prices                    | WARNING | GANESHHOU: price mismatch (stored=92.32 → new=548.85, ratio=0.17) — re-downloading from Kite
+2026-04-01 16:48:29 | sync_prices                    | INFO    | GANESHHOU: replaced with 2783 rows of Kite data
+2026-04-01 16:48:31 | sync_prices                    | WARNING | GENUSPAPER: price mismatch (stored=71.11 → new=10.50, ratio=6.77) — re-downloading from Kite
+2026-04-01 16:48:32 | sync_prices                    | INFO    | GENUSPAPER: replaced with 2752 rows of Kite data
+2026-04-01 16:48:36 | sync_prices                    | WARNING | GLOTTIS: price mismatch (stored=3594.70 → new=40.75, ratio=88.21) — re-downloading from Kite
+2026-04-01 16:48:37 | sync_prices                    | INFO    | GLOTTIS: replaced with 120 rows of Kite data
+2026-04-01 16:48:38 | sync_prices                    | WARNING | GMDCLTD: price mismatch (stored=6731.00 → new=581.00, ratio=11.59) — re-downloading from Kite
+2026-04-01 16:48:39 | sync_prices                    | INFO    | GMDCLTD: replaced with 2783 rows of Kite data
+2026-04-01 16:48:42 | sync_prices                    | WARNING | GODFRYPHLP: price mismatch (stored=25.66 → new=1934.50, ratio=0.01) — re-downloading from Kite
+2026-04-01 16:48:43 | sync_prices                    | INFO    | GODFRYPHLP: replaced with 2783 rows of Kite data
+2026-04-01 16:48:44 | sync_prices                    | WARNING | GODIGIT: price mismatch (stored=104.50 → new=319.05, ratio=0.33) — re-downloading from Kite
+2026-04-01 16:48:44 | sync_prices                    | INFO    | GODIGIT: replaced with 462 rows of Kite data
+2026-04-01 16:48:45 | sync_prices                    | WARNING | GODREJAGRO: price mismatch (stored=170.01 → new=572.00, ratio=0.30) — re-downloading from Kite
+2026-04-01 16:48:46 | sync_prices                    | INFO    | GODREJAGRO: replaced with 2095 rows of Kite data
+2026-04-01 16:48:47 | sync_prices                    | WARNING | GODREJCP: price mismatch (stored=86.84 → new=995.55, ratio=0.09) — re-downloading from Kite
+2026-04-01 16:48:48 | sync_prices                    | INFO    | GODREJCP: replaced with 2783 rows of Kite data
+2026-04-01 16:48:49 | sync_prices                    | WARNING | GODREJPROP: price mismatch (stored=200.00 → new=1506.00, ratio=0.13) — re-downloading from Kite
+2026-04-01 16:48:50 | sync_prices                    | INFO    | GODREJPROP: replaced with 2783 rows of Kite data
+2026-04-01 16:48:51 | sync_prices                    | INFO    |   [200/711] synced=200 failed=0 rows=144383 (176s)
+2026-04-01 16:48:51 | sync_prices                    | WARNING | GOKUL: price mismatch (stored=10.43 → new=37.90, ratio=0.28) — re-downloading from Kite
+2026-04-01 16:48:52 | sync_prices                    | INFO    | GOKUL: replaced with 2749 rows of Kite data
+2026-04-01 16:48:54 | sync_prices                    | WARNING | GOLDIAM: price mismatch (stored=27.49 → new=294.90, ratio=0.09) — re-downloading from Kite
+2026-04-01 16:48:55 | sync_prices                    | INFO    | GOLDIAM: replaced with 2782 rows of Kite data
+2026-04-01 16:48:56 | sync_prices                    | WARNING | GOLDTECH: price mismatch (stored=344.90 → new=34.74, ratio=9.93) — re-downloading from Kite
+2026-04-01 16:48:57 | sync_prices                    | INFO    | GOLDTECH: replaced with 2662 rows of Kite data
+2026-04-01 16:48:58 | sync_prices                    | WARNING | GRASIM: price mismatch (stored=213.00 → new=2580.00, ratio=0.08) — re-downloading from Kite
+2026-04-01 16:49:00 | sync_prices                    | INFO    | GRASIM: replaced with 2783 rows of Kite data
+2026-04-01 16:49:00 | sync_prices                    | WARNING | GRAVITA: price mismatch (stored=4645.60 → new=1315.00, ratio=3.53) — re-downloading from Kite
+2026-04-01 16:49:01 | sync_prices                    | INFO    | GRAVITA: replaced with 2783 rows of Kite data
+2026-04-01 16:49:02 | sync_prices                    | WARNING | GREENLAM: price mismatch (stored=47.21 → new=219.64, ratio=0.21) — re-downloading from Kite
+2026-04-01 16:49:03 | sync_prices                    | INFO    | GREENLAM: replaced with 2743 rows of Kite data
+2026-04-01 16:49:04 | sync_prices                    | WARNING | GREENPANEL: price mismatch (stored=406.20 → new=179.10, ratio=2.27) — re-downloading from Kite
+2026-04-01 16:49:05 | sync_prices                    | INFO    | GREENPANEL: replaced with 1601 rows of Kite data
+2026-04-01 16:49:06 | sync_prices                    | WARNING | GREENPLY: price mismatch (stored=573.00 → new=189.00, ratio=3.03) — re-downloading from Kite
+2026-04-01 16:49:07 | sync_prices                    | INFO    | GREENPLY: replaced with 2783 rows of Kite data
+2026-04-01 16:49:08 | sync_prices                    | WARNING | GRINDWELL: price mismatch (stored=4645.60 → new=1425.00, ratio=3.26) — re-downloading from Kite
+2026-04-01 16:49:09 | sync_prices                    | INFO    | GRINDWELL: replaced with 2783 rows of Kite data
+2026-04-01 16:49:09 | sync_prices                    | WARNING | GRINFRA: price mismatch (stored=20.10 → new=835.00, ratio=0.02) — re-downloading from Kite
+2026-04-01 16:49:10 | sync_prices                    | INFO    | GRINFRA: replaced with 1167 rows of Kite data
+2026-04-01 16:49:11 | sync_prices                    | WARNING | GSPCROP: price mismatch (stored=3374.20 → new=385.10, ratio=8.76) — re-downloading from Kite
+2026-04-01 16:49:12 | sync_prices                    | INFO    | GSPCROP: replaced with 5 rows of Kite data
+2026-04-01 16:49:13 | sync_prices                    | WARNING | GSPL: price mismatch (stored=40.14 → new=235.00, ratio=0.17) — re-downloading from Kite
+2026-04-01 16:49:14 | sync_prices                    | INFO    | GSPL: replaced with 2783 rows of Kite data
+2026-04-01 16:49:15 | sync_prices                    | WARNING | GTECJAINX: price mismatch (stored=596.85 → new=18.05, ratio=33.07) — re-downloading from Kite
+2026-04-01 16:49:16 | sync_prices                    | INFO    | GTECJAINX: replaced with 1441 rows of Kite data
+2026-04-01 16:49:22 | sync_prices                    | WARNING | HESTERBIO: price mismatch (stored=163.52 → new=1366.00, ratio=0.12) — re-downloading from Kite
+2026-04-01 16:49:23 | sync_prices                    | INFO    | HESTERBIO: replaced with 2735 rows of Kite data
+2026-04-01 16:49:24 | sync_prices                    | WARNING | HFCL: price mismatch (stored=556.60 → new=72.29, ratio=7.70) — re-downloading from Kite
+2026-04-01 16:49:25 | sync_prices                    | INFO    | HFCL: replaced with 2783 rows of Kite data
+2026-04-01 16:49:29 | sync_prices                    | WARNING | HITECH: price mismatch (stored=296.05 → new=76.60, ratio=3.86) — re-downloading from Kite
+2026-04-01 16:49:30 | sync_prices                    | INFO    | HITECH: replaced with 1959 rows of Kite data
+2026-04-01 16:49:34 | sync_prices                    | INFO    |   [250/711] synced=250 failed=0 rows=181882 (219s)
+2026-04-01 16:49:35 | sync_prices                    | WARNING | IKS: price mismatch (stored=28.29 → new=1333.00, ratio=0.02) — re-downloading from Kite
+2026-04-01 16:49:36 | sync_prices                    | INFO    | IKS: replaced with 318 rows of Kite data
+2026-04-01 16:49:40 | sync_prices                    | WARNING | IPL: price mismatch (stored=25.79 → new=134.30, ratio=0.19) — re-downloading from Kite
+2026-04-01 16:49:41 | sync_prices                    | INFO    | IPL: replaced with 1177 rows of Kite data
+2026-04-01 16:49:45 | sync_prices                    | WARNING | JAYBARMARU: price mismatch (stored=1431.00 → new=83.20, ratio=17.20) — re-downloading from Kite
+2026-04-01 16:49:46 | sync_prices                    | INFO    | JAYBARMARU: replaced with 2783 rows of Kite data
+2026-04-01 16:49:46 | sync_prices                    | WARNING | JAYKAY: price mismatch (stored=349.10 → new=135.15, ratio=2.58) — re-downloading from Kite
+2026-04-01 16:49:47 | sync_prices                    | INFO    | JAYKAY: replaced with 81 rows of Kite data
+2026-04-01 16:49:48 | sync_prices                    | WARNING | JAYNECOIND: price mismatch (stored=235.65 → new=74.74, ratio=3.15) — re-downloading from Kite
+2026-04-01 16:49:49 | sync_prices                    | INFO    | JAYNECOIND: replaced with 2739 rows of Kite data
+2026-04-01 16:49:50 | sync_prices                    | WARNING | JAYSREETEA: price mismatch (stored=531.10 → new=75.50, ratio=7.03) — re-downloading from Kite
+2026-04-01 16:49:51 | sync_prices                    | INFO    | JAYSREETEA: replaced with 2783 rows of Kite data
+2026-04-01 16:49:52 | sync_prices                    | WARNING | JBCHEPHARM: price mismatch (stored=377.10 → new=2000.60, ratio=0.19) — re-downloading from Kite
+2026-04-01 16:49:53 | sync_prices                    | INFO    | JBCHEPHARM: replaced with 2783 rows of Kite data
+2026-04-01 16:49:54 | sync_prices                    | WARNING | JETFREIGHT: price mismatch (stored=988.40 → new=17.07, ratio=57.90) — re-downloading from Kite
+2026-04-01 16:49:55 | sync_prices                    | INFO    | JETFREIGHT: replaced with 1062 rows of Kite data
+2026-04-01 16:49:56 | sync_prices                    | WARNING | JGCHEM: price mismatch (stored=51.16 → new=336.00, ratio=0.15) — re-downloading from Kite
+2026-04-01 16:49:57 | sync_prices                    | INFO    | JGCHEM: replaced with 508 rows of Kite data
+2026-04-01 16:49:57 | sync_prices                    | WARNING | JINDALPHOT: price mismatch (stored=39.95 → new=1058.95, ratio=0.04) — re-downloading from Kite
+2026-04-01 16:49:58 | sync_prices                    | INFO    | JINDALPHOT: replaced with 2782 rows of Kite data
+2026-04-01 16:49:59 | sync_prices                    | WARNING | JINDALPOLY: price mismatch (stored=183.47 → new=732.55, ratio=0.25) — re-downloading from Kite
+2026-04-01 16:50:00 | sync_prices                    | INFO    | JINDALPOLY: replaced with 2783 rows of Kite data
+2026-04-01 16:50:02 | sync_prices                    | WARNING | JINDALSTEL: price mismatch (stored=498.45 → new=1135.00, ratio=0.44) — re-downloading from Kite
+2026-04-01 16:50:02 | sync_prices                    | INFO    | JINDALSTEL: replaced with 2783 rows of Kite data
+2026-04-01 16:50:03 | sync_prices                    | WARNING | JINDRILL: price mismatch (stored=175.63 → new=477.45, ratio=0.37) — re-downloading from Kite
+2026-04-01 16:50:04 | sync_prices                    | INFO    | JINDRILL: replaced with 2783 rows of Kite data
+2026-04-01 16:50:12 | sync_prices                    | WARNING | KERNEX: price mismatch (stored=91.60 → new=954.45, ratio=0.10) — re-downloading from Kite
+2026-04-01 16:50:13 | sync_prices                    | INFO    | KERNEX: replaced with 2726 rows of Kite data
+2026-04-01 16:50:14 | sync_prices                    | WARNING | KEYFINSERV: price mismatch (stored=1304.90 → new=228.74, ratio=5.70) — re-downloading from Kite
+2026-04-01 16:50:15 | sync_prices                    | INFO    | KEYFINSERV: replaced with 1979 rows of Kite data
+2026-04-01 16:50:15 | sync_prices                    | INFO    |   [300/711] synced=300 failed=0 rows=212990 (260s)
+2026-04-01 16:50:16 | sync_prices                    | WARNING | KHAITANLTD: price mismatch (stored=597.05 → new=101.70, ratio=5.87) — re-downloading from Kite
+2026-04-01 16:50:17 | sync_prices                    | INFO    | KHAITANLTD: replaced with 1768 rows of Kite data
+2026-04-01 16:50:26 | sync_prices                    | WARNING | KOLTEPATIL: price mismatch (stored=1066.40 → new=299.30, ratio=3.56) — re-downloading from Kite
+2026-04-01 16:50:27 | sync_prices                    | INFO    | KOLTEPATIL: replaced with 2783 rows of Kite data
+2026-04-01 16:50:30 | sync_prices                    | WARNING | LANDMARK: price mismatch (stored=2806.10 → new=420.00, ratio=6.68) — re-downloading from Kite
+2026-04-01 16:50:31 | sync_prices                    | INFO    | LANDMARK: replaced with 811 rows of Kite data
+2026-04-01 16:50:33 | sync_prices                    | WARNING | LAURUSLABS: price mismatch (stored=87.07 → new=1042.00, ratio=0.08) — re-downloading from Kite
+2026-04-01 16:50:34 | sync_prices                    | INFO    | LAURUSLABS: replaced with 2300 rows of Kite data
+2026-04-01 16:50:35 | sync_prices                    | WARNING | LAXMIINDIA: price mismatch (stored=238.50 → new=79.05, ratio=3.02) — re-downloading from Kite
+2026-04-01 16:50:36 | sync_prices                    | INFO    | LAXMIINDIA: replaced with 162 rows of Kite data
+2026-04-01 16:50:37 | sync_prices                    | WARNING | LEMERITE: price mismatch (stored=25.35 → new=445.00, ratio=0.06) — re-downloading from Kite
+2026-04-01 16:50:38 | sync_prices                    | INFO    | LEMERITE: replaced with 956 rows of Kite data
+2026-04-01 16:50:40 | sync_prices                    | WARNING | LMW: price mismatch (stored=74.52 → new=12326.00, ratio=0.01) — re-downloading from Kite
+2026-04-01 16:50:41 | sync_prices                    | INFO    | LMW: replaced with 2783 rows of Kite data
+2026-04-01 16:50:42 | sync_prices                    | WARNING | LORDSCHLO: price mismatch (stored=11.17 → new=118.00, ratio=0.09) — re-downloading from Kite
+2026-04-01 16:50:43 | sync_prices                    | INFO    | LORDSCHLO: replaced with 644 rows of Kite data
+2026-04-01 16:50:44 | sync_prices                    | WARNING | LOTUSDEV: price mismatch (stored=418.80 → new=113.12, ratio=3.70) — re-downloading from Kite
+2026-04-01 16:50:45 | sync_prices                    | INFO    | LOTUSDEV: replaced with 161 rows of Kite data
+2026-04-01 16:50:46 | sync_prices                    | WARNING | LOTUSEYE: price mismatch (stored=477.60 → new=102.60, ratio=4.65) — re-downloading from Kite
+2026-04-01 16:50:47 | sync_prices                    | INFO    | LOTUSEYE: replaced with 2759 rows of Kite data
+2026-04-01 16:50:48 | sync_prices                    | WARNING | LT: price mismatch (stored=98.32 → new=3623.00, ratio=0.03) — re-downloading from Kite
+2026-04-01 16:50:49 | sync_prices                    | INFO    | LT: replaced with 2783 rows of Kite data
+2026-04-01 16:50:51 | sync_prices                    | INFO    |   [350/711] synced=350 failed=0 rows=231387 (296s)
+2026-04-01 16:50:51 | sync_prices                    | WARNING | MAITHANALL: price mismatch (stored=73.82 → new=901.00, ratio=0.08) — re-downloading from Kite
+2026-04-01 16:50:52 | sync_prices                    | INFO    | MAITHANALL: replaced with 2783 rows of Kite data
+2026-04-01 16:50:53 | sync_prices                    | WARNING | MALLCOM: price mismatch (stored=212.36 → new=1026.00, ratio=0.21) — re-downloading from Kite
+2026-04-01 16:50:54 | sync_prices                    | INFO    | MALLCOM: replaced with 1318 rows of Kite data
+2026-04-01 16:50:55 | sync_prices                    | WARNING | MALUPAPER: price mismatch (stored=494.25 → new=30.00, ratio=16.48) — re-downloading from Kite
+2026-04-01 16:50:56 | sync_prices                    | INFO    | MALUPAPER: replaced with 2728 rows of Kite data
+2026-04-01 16:50:57 | sync_prices                    | WARNING | MANAKCOAT: price mismatch (stored=21.89 → new=100.00, ratio=0.22) — re-downloading from Kite
+2026-04-01 16:50:58 | sync_prices                    | INFO    | MANAKCOAT: replaced with 2709 rows of Kite data
+2026-04-01 16:50:59 | sync_prices                    | WARNING | MANAKSTEEL: price mismatch (stored=395.50 → new=48.50, ratio=8.15) — re-downloading from Kite
+2026-04-01 16:51:00 | sync_prices                    | INFO    | MANAKSTEEL: replaced with 2722 rows of Kite data
+2026-04-01 16:51:01 | sync_prices                    | WARNING | MANALIPETC: price mismatch (stored=1014.00 → new=41.85, ratio=24.23) — re-downloading from Kite
+2026-04-01 16:51:02 | sync_prices                    | INFO    | MANALIPETC: replaced with 2783 rows of Kite data
+2026-04-01 16:51:03 | sync_prices                    | WARNING | MANBA: price mismatch (stored=16.95 → new=102.25, ratio=0.17) — re-downloading from Kite
+2026-04-01 16:51:04 | sync_prices                    | INFO    | MANBA: replaced with 373 rows of Kite data
+2026-04-01 16:51:05 | sync_prices                    | WARNING | MANCREDIT: price mismatch (stored=13.89 → new=172.00, ratio=0.08) — re-downloading from Kite
+2026-04-01 16:51:06 | sync_prices                    | INFO    | MANCREDIT: replaced with 404 rows of Kite data
+2026-04-01 16:51:07 | sync_prices                    | WARNING | MANINDS: price mismatch (stored=2083.50 → new=346.25, ratio=6.02) — re-downloading from Kite
+2026-04-01 16:51:08 | sync_prices                    | INFO    | MANINDS: replaced with 2783 rows of Kite data
+2026-04-01 16:51:09 | sync_prices                    | WARNING | MANINFRA: price mismatch (stored=1340.50 → new=84.50, ratio=15.86) — re-downloading from Kite
+2026-04-01 16:51:10 | sync_prices                    | INFO    | MANINFRA: replaced with 2783 rows of Kite data
+2026-04-01 16:51:11 | sync_prices                    | WARNING | MANKIND: price mismatch (stored=464.05 → new=2004.00, ratio=0.23) — re-downloading from Kite
+2026-04-01 16:51:12 | sync_prices                    | INFO    | MANKIND: replaced with 721 rows of Kite data
+2026-04-01 16:51:12 | sync_prices                    | WARNING | MANOMAY: price mismatch (stored=1397.00 → new=233.65, ratio=5.98) — re-downloading from Kite
+2026-04-01 16:51:13 | sync_prices                    | INFO    | MANOMAY: replaced with 786 rows of Kite data
+2026-04-01 16:51:16 | sync_prices                    | WARNING | MGEL: price mismatch (stored=708.00 → new=11.59, ratio=61.09) — re-downloading from Kite
+2026-04-01 16:51:17 | sync_prices                    | INFO    | MGEL: replaced with 1306 rows of Kite data
+2026-04-01 16:51:18 | sync_prices                    | WARNING | MGL: price mismatch (stored=299.90 → new=946.85, ratio=0.32) — re-downloading from Kite
+2026-04-01 16:51:19 | sync_prices                    | INFO    | MGL: replaced with 2413 rows of Kite data
+2026-04-01 16:51:24 | sync_prices                    | WARNING | MOREPENLAB: price mismatch (stored=123.70 → new=37.25, ratio=3.32) — re-downloading from Kite
+2026-04-01 16:51:25 | sync_prices                    | INFO    | MOREPENLAB: replaced with 2783 rows of Kite data
+2026-04-01 16:51:27 | sync_prices                    | WARNING | NAUKRI: price mismatch (stored=205.25 → new=980.85, ratio=0.21) — re-downloading from Kite
+2026-04-01 16:51:28 | sync_prices                    | INFO    | NAUKRI: replaced with 2783 rows of Kite data
+2026-04-01 16:51:30 | sync_prices                    | WARNING | NELCO: price mismatch (stored=205.25 → new=555.00, ratio=0.37) — re-downloading from Kite
+2026-04-01 16:51:31 | sync_prices                    | INFO    | NELCO: replaced with 2783 rows of Kite data
+2026-04-01 16:51:32 | sync_prices                    | WARNING | NEOGEN: price mismatch (stored=205.25 → new=1184.10, ratio=0.17) — re-downloading from Kite
+2026-04-01 16:51:33 | sync_prices                    | INFO    | NEOGEN: replaced with 1713 rows of Kite data
+2026-04-01 16:51:34 | sync_prices                    | WARNING | NEPHROPLUS: price mismatch (stored=39.52 → new=535.00, ratio=0.07) — re-downloading from Kite
+2026-04-01 16:51:35 | sync_prices                    | INFO    | NEPHROPLUS: replaced with 71 rows of Kite data
+2026-04-01 16:51:35 | sync_prices                    | WARNING | NESCO: price mismatch (stored=19560.00 → new=1055.00, ratio=18.54) — re-downloading from Kite
+2026-04-01 16:51:36 | sync_prices                    | INFO    | NESCO: replaced with 2783 rows of Kite data
+2026-04-01 16:51:37 | sync_prices                    | WARNING | NETWEB: price mismatch (stored=264.10 → new=3135.00, ratio=0.08) — re-downloading from Kite
+2026-04-01 16:51:38 | sync_prices                    | INFO    | NETWEB: replaced with 665 rows of Kite data
+2026-04-01 16:51:39 | sync_prices                    | WARNING | NETWORK18: price mismatch (stored=229.77 → new=30.35, ratio=7.57) — re-downloading from Kite
+2026-04-01 16:51:40 | sync_prices                    | INFO    | NETWORK18: replaced with 2783 rows of Kite data
+2026-04-01 16:51:41 | sync_prices                    | WARNING | NIBL: price mismatch (stored=12.17 → new=27.72, ratio=0.44) — re-downloading from Kite
+2026-04-01 16:51:42 | sync_prices                    | INFO    | NIBL: replaced with 2738 rows of Kite data
+2026-04-01 16:51:44 | sync_prices                    | INFO    |   [400/711] synced=400 failed=0 rows=277692 (348s)
+2026-04-01 16:51:44 | sync_prices                    | WARNING | NILASPACES: price mismatch (stored=188.08 → new=13.00, ratio=14.47) — re-downloading from Kite
+2026-04-01 16:51:45 | sync_prices                    | INFO    | NILASPACES: replaced with 1790 rows of Kite data
+2026-04-01 16:51:46 | sync_prices                    | WARNING | NIPPOBATRY: price mismatch (stored=635.25 → new=285.10, ratio=2.23) — re-downloading from Kite
+2026-04-01 16:51:47 | sync_prices                    | INFO    | NIPPOBATRY: replaced with 2783 rows of Kite data
+2026-04-01 16:51:48 | sync_prices                    | WARNING | NOCIL: price mismatch (stored=1543.80 → new=163.20, ratio=9.46) — re-downloading from Kite
+2026-04-01 16:51:49 | sync_prices                    | INFO    | NOCIL: replaced with 2783 rows of Kite data
+2026-04-01 16:51:50 | sync_prices                    | WARNING | NOVAAGRI: price mismatch (stored=716.65 → new=22.10, ratio=32.43) — re-downloading from Kite
+2026-04-01 16:51:51 | sync_prices                    | INFO    | NOVAAGRI: replaced with 538 rows of Kite data
+2026-04-01 16:51:52 | sync_prices                    | WARNING | NPST: price mismatch (stored=66.92 → new=1110.10, ratio=0.06) — re-downloading from Kite
+2026-04-01 16:51:53 | sync_prices                    | INFO    | NPST: replaced with 1021 rows of Kite data
+2026-04-01 16:51:57 | sync_prices                    | WARNING | OLECTRA: price mismatch (stored=15.73 → new=1027.75, ratio=0.02) — re-downloading from Kite
+2026-04-01 16:51:58 | sync_prices                    | INFO    | OLECTRA: replaced with 2782 rows of Kite data
+2026-04-01 16:52:00 | sync_prices                    | WARNING | OMAXE: price mismatch (stored=583.25 → new=70.10, ratio=8.32) — re-downloading from Kite
+2026-04-01 16:52:01 | sync_prices                    | INFO    | OMAXE: replaced with 2783 rows of Kite data
+2026-04-01 16:52:02 | sync_prices                    | WARNING | OMNI: price mismatch (stored=1052.40 → new=271.00, ratio=3.88) — re-downloading from Kite
+2026-04-01 16:52:03 | sync_prices                    | INFO    | OMNI: replaced with 18 rows of Kite data
+2026-04-01 16:52:06 | sync_prices                    | WARNING | PAKKA: price mismatch (stored=202.20 → new=86.95, ratio=2.33) — re-downloading from Kite
+2026-04-01 16:52:07 | sync_prices                    | INFO    | PAKKA: replaced with 677 rows of Kite data
+2026-04-01 16:52:08 | sync_prices                    | WARNING | PALREDTEC: price mismatch (stored=1128.50 → new=28.86, ratio=39.10) — re-downloading from Kite
+2026-04-01 16:52:09 | sync_prices                    | INFO    | PALREDTEC: replaced with 2451 rows of Kite data
+2026-04-01 16:52:10 | sync_prices                    | WARNING | PAR: price mismatch (stored=985.10 → new=82.88, ratio=11.89) — re-downloading from Kite
+2026-04-01 16:52:11 | sync_prices                    | INFO    | PAR: replaced with 1511 rows of Kite data
+2026-04-01 16:52:12 | sync_prices                    | WARNING | PARACABLES: price mismatch (stored=1014.80 → new=32.14, ratio=31.57) — re-downloading from Kite
+2026-04-01 16:52:13 | sync_prices                    | INFO    | PARACABLES: replaced with 2782 rows of Kite data
+2026-04-01 16:52:15 | sync_prices                    | WARNING | PAYTM: price mismatch (stored=111.51 → new=997.40, ratio=0.11) — re-downloading from Kite
+2026-04-01 16:52:16 | sync_prices                    | INFO    | PAYTM: replaced with 1084 rows of Kite data
+2026-04-01 16:52:16 | sync_prices                    | WARNING | PCBL: price mismatch (stored=23.90 → new=256.65, ratio=0.09) — re-downloading from Kite
+2026-04-01 16:52:18 | sync_prices                    | INFO    | PCBL: replaced with 2783 rows of Kite data
+2026-04-01 16:52:19 | sync_prices                    | WARNING | PFS: price mismatch (stored=690.30 → new=26.69, ratio=25.86) — re-downloading from Kite
+2026-04-01 16:52:20 | sync_prices                    | INFO    | PFS: replaced with 2783 rows of Kite data
+2026-04-01 16:52:21 | sync_prices                    | WARNING | PGHH: price mismatch (stored=2188.10 → new=9870.00, ratio=0.22) — re-downloading from Kite
+2026-04-01 16:52:22 | sync_prices                    | INFO    | PGHH: replaced with 2783 rows of Kite data
+2026-04-01 16:52:24 | sync_prices                    | WARNING | PICCADIL: price mismatch (stored=1354.60 → new=541.60, ratio=2.50) — re-downloading from Kite
+2026-04-01 16:52:25 | sync_prices                    | INFO    | PICCADIL: replaced with 186 rows of Kite data
+2026-04-01 16:52:27 | sync_prices                    | WARNING | PNCINFRA: price mismatch (stored=544.55 → new=173.00, ratio=3.15) — re-downloading from Kite
+2026-04-01 16:52:28 | sync_prices                    | INFO    | PNCINFRA: replaced with 2687 rows of Kite data
+2026-04-01 16:52:29 | sync_prices                    | WARNING | PNGSREVA: price mismatch (stored=28.07 → new=341.20, ratio=0.08) — re-downloading from Kite
+2026-04-01 16:52:30 | sync_prices                    | INFO    | PNGSREVA: replaced with 19 rows of Kite data
+2026-04-01 16:52:30 | sync_prices                    | INFO    |   [450/711] synced=450 failed=0 rows=312528 (395s)
+2026-04-01 16:52:32 | sync_prices                    | WARNING | POLICYBZR: price mismatch (stored=47.71 → new=1431.00, ratio=0.03) — re-downloading from Kite
+2026-04-01 16:52:33 | sync_prices                    | INFO    | POLICYBZR: replaced with 1087 rows of Kite data
+2026-04-01 16:52:36 | sync_prices                    | WARNING | PRICOLLTD: price mismatch (stored=217.95 → new=537.00, ratio=0.41) — re-downloading from Kite
+2026-04-01 16:52:37 | sync_prices                    | INFO    | PRICOLLTD: replaced with 2262 rows of Kite data
+2026-04-01 16:52:38 | sync_prices                    | WARNING | PRIMESECU: price mismatch (stored=112.55 → new=277.00, ratio=0.41) — re-downloading from Kite
+2026-04-01 16:52:39 | sync_prices                    | INFO    | PRIMESECU: replaced with 2782 rows of Kite data
+2026-04-01 16:52:40 | sync_prices                    | WARNING | PRINCEPIPE: price mismatch (stored=27.11 → new=223.70, ratio=0.12) — re-downloading from Kite
+2026-04-01 16:52:41 | sync_prices                    | INFO    | PRINCEPIPE: replaced with 1555 rows of Kite data
+2026-04-01 16:52:43 | sync_prices                    | WARNING | PRITIKAUTO: price mismatch (stored=133.93 → new=11.50, ratio=11.65) — re-downloading from Kite
+2026-04-01 16:52:44 | sync_prices                    | INFO    | PRITIKAUTO: replaced with 1152 rows of Kite data
+2026-04-01 16:52:44 | sync_prices                    | WARNING | PRIVISCL: price mismatch (stored=1188.00 → new=2958.00, ratio=0.40) — re-downloading from Kite
+2026-04-01 16:52:45 | sync_prices                    | INFO    | PRIVISCL: replaced with 2699 rows of Kite data
+2026-04-01 16:52:47 | sync_prices                    | WARNING | PRUDMOULI: price mismatch (stored=1188.00 → new=11.82, ratio=100.51) — re-downloading from Kite
+2026-04-01 16:52:48 | sync_prices                    | INFO    | PRUDMOULI: replaced with 562 rows of Kite data
+2026-04-01 16:52:48 | sync_prices                    | WARNING | PSPPROJECT: price mismatch (stored=72.65 → new=630.00, ratio=0.12) — re-downloading from Kite
+2026-04-01 16:52:49 | sync_prices                    | INFO    | PSPPROJECT: replaced with 2191 rows of Kite data
+2026-04-01 16:52:51 | sync_prices                    | WARNING | PTL: price mismatch (stored=78.10 → new=37.68, ratio=2.07) — re-downloading from Kite
+2026-04-01 16:52:52 | sync_prices                    | INFO    | PTL: replaced with 2783 rows of Kite data
+2026-04-01 16:52:54 | sync_prices                    | WARNING | PVP: price mismatch (stored=243.35 → new=24.88, ratio=9.78) — re-downloading from Kite
+2026-04-01 16:52:55 | sync_prices                    | INFO    | PVP: replaced with 2219 rows of Kite data
+2026-04-01 16:52:57 | sync_prices                    | WARNING | RAYMOND: price mismatch (stored=4110.60 → new=351.00, ratio=11.71) — re-downloading from Kite
+2026-04-01 16:52:58 | sync_prices                    | INFO    | RAYMOND: replaced with 2783 rows of Kite data
+2026-04-01 16:52:59 | sync_prices                    | WARNING | RAYMONDREL: price mismatch (stored=104.91 → new=402.00, ratio=0.26) — re-downloading from Kite
+2026-04-01 16:53:00 | sync_prices                    | INFO    | RAYMONDREL: replaced with 187 rows of Kite data
+2026-04-01 16:53:01 | sync_prices                    | WARNING | RBLBANK: price mismatch (stored=1645.40 → new=301.20, ratio=5.46) — re-downloading from Kite
+2026-04-01 16:53:02 | sync_prices                    | INFO    | RBLBANK: replaced with 2372 rows of Kite data
+2026-04-01 16:53:03 | sync_prices                    | WARNING | RCF: price mismatch (stored=579.40 → new=115.45, ratio=5.02) — re-downloading from Kite
+2026-04-01 16:53:04 | sync_prices                    | INFO    | RCF: replaced with 2783 rows of Kite data
+2026-04-01 16:53:05 | sync_prices                    | WARNING | RECLTD: price mismatch (stored=3295.80 → new=323.00, ratio=10.20) — re-downloading from Kite
+2026-04-01 16:53:06 | sync_prices                    | INFO    | RECLTD: replaced with 2783 rows of Kite data
+2026-04-01 16:53:08 | sync_prices                    | WARNING | RELIANCE: price mismatch (stored=4717.50 → new=1369.90, ratio=3.44) — re-downloading from Kite
+2026-04-01 16:53:09 | sync_prices                    | INFO    | RELIANCE: replaced with 2787 rows of Kite data
+2026-04-01 16:53:10 | sync_prices                    | WARNING | RELTD: price mismatch (stored=950.00 → new=130.20, ratio=7.30) — re-downloading from Kite
+2026-04-01 16:53:11 | sync_prices                    | INFO    | RELTD: replaced with 416 rows of Kite data
+2026-04-01 16:53:12 | sync_prices                    | WARNING | RENUKA: price mismatch (stored=553.50 → new=28.12, ratio=19.68) — re-downloading from Kite
+2026-04-01 16:53:13 | sync_prices                    | INFO    | RENUKA: replaced with 2783 rows of Kite data
+2026-04-01 16:53:14 | sync_prices                    | WARNING | REPCOHOME: price mismatch (stored=81.11 → new=362.70, ratio=0.22) — re-downloading from Kite
+2026-04-01 16:53:15 | sync_prices                    | INFO    | REPCOHOME: replaced with 2783 rows of Kite data
+2026-04-01 16:53:17 | sync_prices                    | WARNING | REPRO: price mismatch (stored=822.00 → new=356.50, ratio=2.31) — re-downloading from Kite
+2026-04-01 16:53:18 | sync_prices                    | INFO    | REPRO: replaced with 2783 rows of Kite data
+2026-04-01 16:53:19 | sync_prices                    | WARNING | RETAIL: price mismatch (stored=47.03 → new=18.65, ratio=2.52) — re-downloading from Kite
+2026-04-01 16:53:20 | sync_prices                    | INFO    | RETAIL: replaced with 438 rows of Kite data
+2026-04-01 16:53:21 | sync_prices                    | WARNING | RHETAN: price mismatch (stored=65.96 → new=24.51, ratio=2.69) — re-downloading from Kite
+2026-04-01 16:53:22 | sync_prices                    | INFO    | RHETAN: replaced with 126 rows of Kite data
+2026-04-01 16:53:22 | sync_prices                    | WARNING | RHIM: price mismatch (stored=168.83 → new=364.40, ratio=0.46) — re-downloading from Kite
+2026-04-01 16:53:23 | sync_prices                    | INFO    | RHIM: replaced with 2783 rows of Kite data
+2026-04-01 16:53:25 | sync_prices                    | INFO    |   [500/711] synced=500 failed=0 rows=358054 (449s)
+2026-04-01 16:53:25 | sync_prices                    | WARNING | RICOAUTO: price mismatch (stored=51.50 → new=108.37, ratio=0.48) — re-downloading from Kite
+2026-04-01 16:53:26 | sync_prices                    | INFO    | RICOAUTO: replaced with 2783 rows of Kite data
+2026-04-01 16:53:29 | sync_prices                    | WARNING | RPEL: price mismatch (stored=1358.70 → new=621.30, ratio=2.19) — re-downloading from Kite
+2026-04-01 16:53:30 | sync_prices                    | INFO    | RPEL: replaced with 409 rows of Kite data
+2026-04-01 16:53:31 | sync_prices                    | WARNING | RPOWER: price mismatch (stored=2740.30 → new=22.46, ratio=122.01) — re-downloading from Kite
+2026-04-01 16:53:32 | sync_prices                    | INFO    | RPOWER: replaced with 2783 rows of Kite data
+2026-04-01 16:53:33 | sync_prices                    | WARNING | RPPINFRA: price mismatch (stored=283.60 → new=63.20, ratio=4.49) — re-downloading from Kite
+2026-04-01 16:53:34 | sync_prices                    | INFO    | RPPINFRA: replaced with 2783 rows of Kite data
+2026-04-01 16:53:35 | sync_prices                    | WARNING | RPSGVENT: price mismatch (stored=2740.30 → new=939.80, ratio=2.92) — re-downloading from Kite
+2026-04-01 16:53:36 | sync_prices                    | INFO    | RPSGVENT: replaced with 1770 rows of Kite data
+2026-04-01 16:53:37 | sync_prices                    | WARNING | RPTECH: price mismatch (stored=2565.50 → new=358.45, ratio=7.16) — re-downloading from Kite
+2026-04-01 16:53:37 | sync_prices                    | INFO    | RPTECH: replaced with 528 rows of Kite data
+2026-04-01 16:53:39 | sync_prices                    | WARNING | RUDRA: price mismatch (stored=650.80 → new=15.77, ratio=41.27) — re-downloading from Kite
+2026-04-01 16:53:41 | sync_prices                    | INFO    | RUDRA: replaced with 69 rows of Kite data
+2026-04-01 16:53:43 | sync_prices                    | WARNING | RVHL: price mismatch (stored=164.98 → new=34.45, ratio=4.79) — re-downloading from Kite
+2026-04-01 16:53:44 | sync_prices                    | INFO    | RVHL: replaced with 1310 rows of Kite data
+2026-04-01 16:53:44 | sync_prices                    | WARNING | RVNL: price mismatch (stored=28.37 → new=264.95, ratio=0.11) — re-downloading from Kite
+2026-04-01 16:53:45 | sync_prices                    | INFO    | RVNL: replaced with 1728 rows of Kite data
+2026-04-01 16:53:47 | sync_prices                    | WARNING | SAGCEM: price mismatch (stored=60.59 → new=165.00, ratio=0.37) — re-downloading from Kite
+2026-04-01 16:53:48 | sync_prices                    | INFO    | SAGCEM: replaced with 2783 rows of Kite data
+2026-04-01 16:53:49 | sync_prices                    | WARNING | SAGILITY: price mismatch (stored=19.86 → new=41.70, ratio=0.48) — re-downloading from Kite
+2026-04-01 16:53:50 | sync_prices                    | INFO    | SAGILITY: replaced with 343 rows of Kite data
+2026-04-01 16:53:51 | sync_prices                    | WARNING | SAHYADRI: price mismatch (stored=66.50 → new=214.00, ratio=0.31) — re-downloading from Kite
+2026-04-01 16:53:52 | sync_prices                    | INFO    | SAHYADRI: replaced with 741 rows of Kite data
+2026-04-01 16:53:53 | sync_prices                    | WARNING | SAIL: price mismatch (stored=18.40 → new=155.39, ratio=0.12) — re-downloading from Kite
+2026-04-01 16:53:54 | sync_prices                    | INFO    | SAIL: replaced with 2783 rows of Kite data
+2026-04-01 16:53:57 | sync_prices                    | WARNING | SAMBHV: price mismatch (stored=824.85 → new=101.16, ratio=8.15) — re-downloading from Kite
+2026-04-01 16:53:58 | sync_prices                    | INFO    | SAMBHV: replaced with 186 rows of Kite data
+2026-04-01 16:54:01 | sync_prices                    | WARNING | SANDESH: price mismatch (stored=18.00 → new=865.00, ratio=0.02) — re-downloading from Kite
+2026-04-01 16:54:02 | sync_prices                    | INFO    | SANDESH: replaced with 2783 rows of Kite data
+2026-04-01 16:54:06 | sync_prices                    | INFO    |   [550/711] synced=550 failed=0 rows=382318 (491s)
+2026-04-01 16:54:06 | sync_prices                    | WARNING | SBILIFE: price mismatch (stored=108.32 → new=1793.00, ratio=0.06) — re-downloading from Kite
+2026-04-01 16:54:07 | sync_prices                    | INFO    | SBILIFE: replaced with 2104 rows of Kite data
+2026-04-01 16:54:08 | sync_prices                    | WARNING | SCHAEFFLER: price mismatch (stored=69.62 → new=3860.00, ratio=0.02) — re-downloading from Kite
+2026-04-01 16:54:09 | sync_prices                    | INFO    | SCHAEFFLER: replaced with 2783 rows of Kite data
+2026-04-01 16:54:11 | sync_prices                    | WARNING | SCILAL: price mismatch (stored=1184.10 → new=39.50, ratio=29.98) — re-downloading from Kite
+2026-04-01 16:54:12 | sync_prices                    | INFO    | SCILAL: replaced with 504 rows of Kite data
+2026-04-01 16:54:13 | sync_prices                    | WARNING | SEMAC: price mismatch (stored=59.54 → new=231.20, ratio=0.26) — re-downloading from Kite
+2026-04-01 16:54:14 | sync_prices                    | INFO    | SEMAC: replaced with 2763 rows of Kite data
+2026-04-01 16:54:15 | sync_prices                    | WARNING | SENORES: price mismatch (stored=181.17 → new=774.50, ratio=0.23) — re-downloading from Kite
+2026-04-01 16:54:16 | sync_prices                    | INFO    | SENORES: replaced with 312 rows of Kite data
+2026-04-01 16:54:22 | sync_prices                    | WARNING | SMARTWORKS: price mismatch (stored=61.00 → new=385.00, ratio=0.16) — re-downloading from Kite
+2026-04-01 16:54:23 | sync_prices                    | INFO    | SMARTWORKS: replaced with 175 rows of Kite data
+2026-04-01 16:54:24 | sync_prices                    | WARNING | SMCGLOBAL: price mismatch (stored=21.09 → new=59.40, ratio=0.36) — re-downloading from Kite
+2026-04-01 16:54:25 | sync_prices                    | INFO    | SMCGLOBAL: replaced with 1263 rows of Kite data
+2026-04-01 16:54:25 | sync_prices                    | WARNING | SMLMAH: price mismatch (stored=14850.00 → new=3969.70, ratio=3.74) — re-downloading from Kite
+2026-04-01 16:54:27 | sync_prices                    | INFO    | SMLMAH: replaced with 2783 rows of Kite data
+2026-04-01 16:54:28 | sync_prices                    | WARNING | SOBHA: price mismatch (stored=87.58 → new=1196.00, ratio=0.07) — re-downloading from Kite
+2026-04-01 16:54:29 | sync_prices                    | INFO    | SOBHA: replaced with 2783 rows of Kite data
+2026-04-01 16:54:30 | sync_prices                    | WARNING | SOFTTECH: price mismatch (stored=88.33 → new=226.02, ratio=0.39) — re-downloading from Kite
+2026-04-01 16:54:31 | sync_prices                    | INFO    | SOFTTECH: replaced with 1613 rows of Kite data
+2026-04-01 16:54:32 | sync_prices                    | WARNING | SOLARA: price mismatch (stored=51.85 → new=460.50, ratio=0.11) — re-downloading from Kite
+2026-04-01 16:54:33 | sync_prices                    | INFO    | SOLARA: replaced with 1922 rows of Kite data
+2026-04-01 16:54:39 | sync_prices                    | WARNING | SUKHJITS: price mismatch (stored=77.07 → new=158.50, ratio=0.49) — re-downloading from Kite
+2026-04-01 16:54:40 | sync_prices                    | INFO    | SUKHJITS: replaced with 844 rows of Kite data
+2026-04-01 16:54:42 | sync_prices                    | WARNING | SUMIT: price mismatch (stored=20.88 → new=45.89, ratio=0.46) — re-downloading from Kite
+2026-04-01 16:54:43 | sync_prices                    | INFO    | SUMIT: replaced with 1760 rows of Kite data
+2026-04-01 16:54:45 | sync_prices                    | WARNING | SUNTECK: price mismatch (stored=988.60 → new=293.10, ratio=3.37) — re-downloading from Kite
+2026-04-01 16:54:46 | sync_prices                    | INFO    | SUNTECK: replaced with 2783 rows of Kite data
+2026-04-01 16:54:46 | sync_prices                    | INFO    |   [600/711] synced=600 failed=0 rows=407796 (531s)
+2026-04-01 16:54:47 | sync_prices                    | WARNING | SUPREME: price mismatch (stored=23275.00 → new=53.00, ratio=439.15) — re-downloading from Kite
+2026-04-01 16:54:48 | sync_prices                    | INFO    | SUPREME: replaced with 286 rows of Kite data
+2026-04-01 16:54:51 | sync_prices                    | WARNING | TAJGVK: price mismatch (stored=1231.60 → new=317.50, ratio=3.88) — re-downloading from Kite
+2026-04-01 16:54:52 | sync_prices                    | INFO    | TAJGVK: replaced with 2783 rows of Kite data
+2026-04-01 16:54:58 | sync_prices                    | WARNING | TIL: price mismatch (stored=2844.70 → new=171.01, ratio=16.63) — re-downloading from Kite
+2026-04-01 16:54:59 | sync_prices                    | INFO    | TIL: replaced with 2797 rows of Kite data
+2026-04-01 16:55:00 | sync_prices                    | WARNING | TIMKEN: price mismatch (stored=9.10 → new=3326.00, ratio=0.00) — re-downloading from Kite
+2026-04-01 16:55:01 | sync_prices                    | INFO    | TIMKEN: replaced with 2783 rows of Kite data
+2026-04-01 16:55:05 | sync_prices                    | WARNING | TRANSRAILL: price mismatch (stored=1096.60 → new=484.90, ratio=2.26) — re-downloading from Kite
+2026-04-01 16:55:06 | sync_prices                    | INFO    | TRANSRAILL: replaced with 313 rows of Kite data
+2026-04-01 16:55:07 | sync_prices                    | WARNING | TRAVELFOOD: price mismatch (stored=29.95 → new=1278.00, ratio=0.02) — re-downloading from Kite
+2026-04-01 16:55:08 | sync_prices                    | INFO    | TRAVELFOOD: replaced with 178 rows of Kite data
+2026-04-01 16:55:09 | sync_prices                    | WARNING | TREJHARA: price mismatch (stored=1189.30 → new=148.00, ratio=8.04) — re-downloading from Kite
+2026-04-01 16:55:10 | sync_prices                    | INFO    | TREJHARA: replaced with 1789 rows of Kite data
+2026-04-01 16:55:10 | sync_prices                    | WARNING | TREL: price mismatch (stored=141.35 → new=25.04, ratio=5.64) — re-downloading from Kite
+2026-04-01 16:55:11 | sync_prices                    | INFO    | TREL: replaced with 655 rows of Kite data
+2026-04-01 16:55:12 | sync_prices                    | WARNING | TRENT: price mismatch (stored=224.95 → new=3520.00, ratio=0.06) — re-downloading from Kite
+2026-04-01 16:55:13 | sync_prices                    | INFO    | TRENT: replaced with 2783 rows of Kite data
+2026-04-01 16:55:14 | sync_prices                    | WARNING | TRF: price mismatch (stored=3371.00 → new=231.25, ratio=14.58) — re-downloading from Kite
+2026-04-01 16:55:15 | sync_prices                    | INFO    | TRF: replaced with 2745 rows of Kite data
+2026-04-01 16:55:16 | sync_prices                    | WARNING | UCOBANK: price mismatch (stored=72.64 → new=23.73, ratio=3.06) — re-downloading from Kite
+2026-04-01 16:55:18 | sync_prices                    | INFO    | UCOBANK: replaced with 2783 rows of Kite data
+2026-04-01 16:55:19 | sync_prices                    | WARNING | UEL: price mismatch (stored=405.75 → new=138.48, ratio=2.93) — re-downloading from Kite
+2026-04-01 16:55:20 | sync_prices                    | INFO    | UEL: replaced with 194 rows of Kite data
+2026-04-01 16:55:21 | sync_prices                    | WARNING | UFO: price mismatch (stored=380.80 → new=61.90, ratio=6.15) — re-downloading from Kite
+2026-04-01 16:55:22 | sync_prices                    | INFO    | UFO: replaced with 2695 rows of Kite data
+2026-04-01 16:55:23 | sync_prices                    | WARNING | UGARSUGAR: price mismatch (stored=437.00 → new=39.05, ratio=11.19) — re-downloading from Kite
+2026-04-01 16:55:24 | sync_prices                    | INFO    | UGARSUGAR: replaced with 2755 rows of Kite data
+2026-04-01 16:55:25 | sync_prices                    | WARNING | UJJIVANSFB: price mismatch (stored=571.60 → new=53.50, ratio=10.68) — re-downloading from Kite
+2026-04-01 16:55:26 | sync_prices                    | INFO    | UJJIVANSFB: replaced with 1566 rows of Kite data
+2026-04-01 16:55:27 | sync_prices                    | WARNING | ULTRACEMCO: price mismatch (stored=72.64 → new=10725.00, ratio=0.01) — re-downloading from Kite
+2026-04-01 16:55:28 | sync_prices                    | INFO    | ULTRACEMCO: replaced with 2783 rows of Kite data
+2026-04-01 16:55:29 | sync_prices                    | INFO    |   [650/711] synced=650 failed=0 rows=438601 (574s)
+2026-04-01 16:55:29 | sync_prices                    | WARNING | UNIINFO: price mismatch (stored=1551.40 → new=11.20, ratio=138.52) — re-downloading from Kite
+2026-04-01 16:55:30 | sync_prices                    | INFO    | UNIINFO: replaced with 1674 rows of Kite data
+2026-04-01 16:55:32 | sync_prices                    | WARNING | UNITDSPR: price mismatch (stored=72.64 → new=1250.00, ratio=0.06) — re-downloading from Kite
+2026-04-01 16:55:33 | sync_prices                    | INFO    | UNITDSPR: replaced with 2782 rows of Kite data
+2026-04-01 16:55:35 | sync_prices                    | WARNING | URBANCO: price mismatch (stored=1041.20 → new=123.65, ratio=8.42) — re-downloading from Kite
+2026-04-01 16:55:36 | sync_prices                    | INFO    | URBANCO: replaced with 133 rows of Kite data
+2026-04-01 16:55:37 | sync_prices                    | WARNING | UTIAMC: price mismatch (stored=187.50 → new=950.00, ratio=0.20) — re-downloading from Kite
+2026-04-01 16:55:38 | sync_prices                    | INFO    | UTIAMC: replaced with 1358 rows of Kite data
+2026-04-01 16:55:39 | sync_prices                    | WARNING | UTLSOLAR: price mismatch (stored=4119.80 → new=203.30, ratio=20.26) — re-downloading from Kite
+2026-04-01 16:55:40 | sync_prices                    | INFO    | UTLSOLAR: replaced with 90 rows of Kite data
+2026-04-01 16:55:41 | sync_prices                    | WARNING | UTTAMSUGAR: price mismatch (stored=11.82 → new=243.98, ratio=0.05) — re-downloading from Kite
+2026-04-01 16:55:42 | sync_prices                    | INFO    | UTTAMSUGAR: replaced with 2783 rows of Kite data
+2026-04-01 16:55:42 | sync_prices                    | WARNING | UYFINCORP: price mismatch (stored=641.35 → new=12.98, ratio=49.41) — re-downloading from Kite
+2026-04-01 16:55:43 | sync_prices                    | INFO    | UYFINCORP: replaced with 371 rows of Kite data
+2026-04-01 16:55:46 | sync_prices                    | WARNING | VIDHIING: price mismatch (stored=90.35 → new=294.00, ratio=0.31) — re-downloading from Kite
+2026-04-01 16:55:47 | sync_prices                    | INFO    | VIDHIING: replaced with 2494 rows of Kite data
+2026-04-01 16:55:49 | sync_prices                    | WARNING | VIKRAMSOLR: price mismatch (stored=650.75 → new=183.05, ratio=3.56) — re-downloading from Kite
+2026-04-01 16:55:50 | sync_prices                    | INFO    | VIKRAMSOLR: replaced with 148 rows of Kite data
+2026-04-01 16:55:50 | sync_prices                    | WARNING | VIKRAN: price mismatch (stored=658.65 → new=55.79, ratio=11.81) — re-downloading from Kite
+2026-04-01 16:55:51 | sync_prices                    | INFO    | VIKRAN: replaced with 143 rows of Kite data
+2026-04-01 16:55:55 | sync_prices                    | WARNING | VLSFINANCE: price mismatch (stored=31.08 → new=215.43, ratio=0.14) — re-downloading from Kite
+2026-04-01 16:55:56 | sync_prices                    | INFO    | VLSFINANCE: replaced with 2783 rows of Kite data
+2026-04-01 16:55:58 | sync_prices                    | WARNING | VOLTAMP: price mismatch (stored=209.05 → new=9040.00, ratio=0.02) — re-downloading from Kite
+2026-04-01 16:55:59 | sync_prices                    | INFO    | VOLTAMP: replaced with 2783 rows of Kite data
+2026-04-01 16:56:01 | sync_prices                    | WARNING | VTL: price mismatch (stored=4744.00 → new=530.00, ratio=8.95) — re-downloading from Kite
+2026-04-01 16:56:02 | sync_prices                    | INFO    | VTL: replaced with 2783 rows of Kite data
+2026-04-01 16:56:04 | sync_prices                    | WARNING | WCIL: price mismatch (stored=3213.40 → new=81.22, ratio=39.56) — re-downloading from Kite
+2026-04-01 16:56:05 | sync_prices                    | INFO    | WCIL: replaced with 377 rows of Kite data
+2026-04-01 16:56:06 | sync_prices                    | WARNING | WEL: price mismatch (stored=625.80 → new=80.00, ratio=7.82) — re-downloading from Kite
+2026-04-01 16:56:07 | sync_prices                    | INFO    | WEL: replaced with 1041 rows of Kite data
+2026-04-01 16:56:08 | sync_prices                    | WARNING | WELINV: price mismatch (stored=60.70 → new=1261.00, ratio=0.05) — re-downloading from Kite
+2026-04-01 16:56:09 | sync_prices                    | INFO    | WELINV: replaced with 2742 rows of Kite data
+2026-04-01 16:56:10 | sync_prices                    | WARNING | WEWORK: price mismatch (stored=217.25 → new=456.00, ratio=0.48) — re-downloading from Kite
+2026-04-01 16:56:11 | sync_prices                    | INFO    | WEWORK: replaced with 117 rows of Kite data
+2026-04-01 16:56:14 | sync_prices                    | WARNING | WIPL: price mismatch (stored=823.50 → new=150.00, ratio=5.49) — re-downloading from Kite
+2026-04-01 16:56:15 | sync_prices                    | INFO    | WIPL: replaced with 1951 rows of Kite data
+2026-04-01 16:56:16 | sync_prices                    | INFO    |   [700/711] synced=700 failed=0 rows=465594 (621s)
+2026-04-01 16:56:19 | sync_prices                    | WARNING | ZODIACLOTH: price mismatch (stored=150.17 → new=67.50, ratio=2.22) — re-downloading from Kite
+2026-04-01 16:56:20 | sync_prices                    | INFO    | ZODIACLOTH: replaced with 2770 rows of Kite data
+2026-04-01 16:56:22 | sync_prices                    | WARNING | ZUARIIND: price mismatch (stored=65.96 → new=230.00, ratio=0.29) — re-downloading from Kite
+2026-04-01 16:56:23 | sync_prices                    | INFO    | ZUARIIND: replaced with 2783 rows of Kite data
+2026-04-01 16:56:24 | s02_prices                     | INFO    | Downloading benchmark ^CRSLDX
+2026-04-01 16:56:27 | s02_prices                     | INFO    |   Benchmark ^CRSLDX: 4484 rows upserted (4484 total)
+2026-04-01 16:56:27 | sync_prices                    | INFO    | ✓ INDIA: 711 synced, 0 failed, 471277 new rows (Kite, 632s)
+2026-04-01 16:56:27 | dashboard_api                  | INFO    | Daily sync done: [{'market': 'india', 'tickers': 1992, 'synced': 711, 'failed': 0, 'new_rows': 471277, 'newly_delisted': [], 'skipped_up_to_date': 1281, 'market_open': False, 'message': '711 synced, 0 failed, 471277 new rows (Kite, 632s)', 'source': 'kite'}]
+2026-04-01 16:56:27 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:56:27 | s03_features                   | INFO    | Feature engineering: INDIA
+2026-04-01 16:56:27 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:56:28 | s03_features                   | INFO    | Loaded 620,471 rows for 1992 tickers
+2026-04-01 16:56:28 | s03_features                   | INFO    | Computing indicators…
+2026-04-01 16:56:53 | s03_features                   | WARNING | Price coherence: 9 tickers have scale-corrupted Yahoo data (>3.0x jump):
+2026-04-01 16:56:53 | s03_features                   | WARNING |   3IINFOLTD: latest=14.33 vs median50=63.66 (ratio=0.2x) — REMOVED
+2026-04-01 16:56:53 | s03_features                   | WARNING |   AGARIND: latest=175.00 vs median50=607.88 (ratio=0.3x) — REMOVED
+2026-04-01 16:56:53 | s03_features                   | WARNING |   ALLDIGI: latest=759.90 vs median50=225.62 (ratio=3.4x) — REMOVED
+2026-04-01 16:56:53 | s03_features                   | WARNING |   AQYLON: latest=48.17 vs median50=150.79 (ratio=0.3x) — REMOVED
+2026-04-01 16:56:53 | s03_features                   | WARNING |   BECTORFOOD: latest=62.04 vs median50=214.60 (ratio=0.3x) — REMOVED
+2026-04-01 16:56:53 | s03_features                   | WARNING |   EXIDEIND: latest=91.44 vs median50=325.58 (ratio=0.3x) — REMOVED
+2026-04-01 16:56:53 | s03_features                   | WARNING |   FRACTAL: latest=230.47 vs median50=808.65 (ratio=0.3x) — REMOVED
+2026-04-01 16:56:53 | s03_features                   | WARNING |   HOMEFIRST: latest=277.50 vs median50=1,090.10 (ratio=0.3x) — REMOVED
+2026-04-01 16:56:53 | s03_features                   | WARNING |   PTCIL: latest=14,990.00 vs median50=368.58 (ratio=40.7x) — REMOVED
+2026-04-01 16:56:54 | s03_features                   | INFO    | Price coherence filter: 620,471 → 616,688 rows (9 tickers removed)
+2026-04-01 16:56:54 | s03_features                   | INFO    | Quality filter: 616,688 → 398,908 rows (217,780 removed) [min_price=$10.0, min_vol=100,000, min_$vol=$2,000,000, max_price_india=₹3,000]
+2026-04-01 16:56:54 | s03_features                   | INFO    | IPO seasoning: removed 24,792 rows (< 60 days)
+2026-04-01 16:56:54 | s03_features                   | INFO    | ✓ INDIA: 1862 tickers, 374,116 rows after filters
+2026-04-01 16:56:54 | s03_features                   | INFO    | Storing 374,116 feature rows…
+2026-04-01 16:56:54 | s03_features                   | INFO    | ✓ Features table: 374,116 rows, 1862 tickers
+2026-04-01 16:56:55 | dashboard_api                  | INFO    | [india] Pipeline step 'features' OK  (27.4s)
+2026-04-01 16:56:55 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:56:55 | s04_rs_rank                    | INFO    | Relative strength ranking: INDIA
+2026-04-01 16:56:55 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:56:55 | s04_rs_rank                    | INFO    | Computing cross-sectional RS ranks…
+2026-04-01 16:56:55 | s04_rs_rank                    | INFO    |   RS vs benchmark computed
+2026-04-01 16:56:55 | s04_rs_rank                    | INFO    |   Sector momentum computed
+2026-04-01 16:56:55 | s04_rs_rank                    | INFO    | ✓ INDIA: 1862 tickers ranked
+2026-04-01 16:56:55 | s04_rs_rank                    | INFO    | Storing 374,116 ranked rows…
+2026-04-01 16:56:56 | s04_rs_rank                    | INFO    | ✓ Ranked table: 374,116 rows
+2026-04-01 16:56:56 | dashboard_api                  | INFO    | [india] Pipeline step 'rs_rank' OK  (1.2s)
+2026-04-01 16:56:56 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:56:56 | s05_patterns                   | INFO    | Pattern detection: INDIA
+2026-04-01 16:56:56 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |   Detecting Trend Template…
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |     Trend Template: 8.6% of rows pass
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |   Detecting Multi-Contraction VCP…
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |     VCP: 65.1% of rows pass
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |   Detecting Darvas Box…
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |     Darvas: 0.1% of rows pass
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |   Detecting Power Play…
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |     Power Play: 0.0% of rows pass
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |   Detecting IPO Base…
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |     IPO Base: 1.6% of rows match
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |   Detecting Breakouts…
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |     Breakout: 2.4% of rows pass
+2026-04-01 16:56:56 | s05_patterns                   | INFO    |     Buy signals: VCP=1,296  Darvas=79  Power=0  IPO=10  Total=1,296
+2026-04-01 16:56:56 | s05_patterns                   | INFO    | ✓ INDIA: 1862 tickers, 1,296 buy signals
+2026-04-01 16:56:56 | s05_patterns                   | INFO    | Storing 374,116 signal rows…
+2026-04-01 16:56:57 | s05_patterns                   | INFO    | ✓ Signals table: 374,116 rows
+2026-04-01 16:56:57 | dashboard_api                  | INFO    | [india] Pipeline step 'patterns' OK  (1.7s)
+2026-04-01 16:56:57 | s06_regime                     | INFO    |   Computing market breadth for INDIA…
+2026-04-01 16:56:57 | s06_regime                     | INFO    | INDIA: 4435 days, 66.8% bull (7.9% recovery), 33.2% bear, 14.6% weak-market days, avg breadth 49.8%
+2026-04-01 16:56:57 | s06_regime                     | INFO    | ✓ Regime table: 4,435 rows
+2026-04-01 16:56:57 | dashboard_api                  | INFO    | [india] Pipeline step 'regime' OK  (0.0s)
+2026-04-01 16:56:57 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:56:57 | s07_signals                    | INFO    | Signal engine: INDIA
+2026-04-01 16:56:57 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 16:56:58 | s07_signals                    | INFO    | Loaded 374,116 rows, 1862 tickers
+2026-04-01 16:56:58 | s07_signals                    | INFO    |   Watchlist: 24,623 leader candidates across 469 correction days
+2026-04-01 16:56:58 | s07_signals                    | INFO    | Applying signal filters…
+2026-04-01 16:56:58 | s07_signals                    | INFO    |   After regime filter: 292,460 / 374,116
+2026-04-01 16:56:58 | s07_signals                    | INFO    |   After breadth ≥ 30%: 259,311 (removed 33,149)
+2026-04-01 16:56:58 | s07_signals                    | INFO    |   After Trend Template: 24,005
+2026-04-01 16:56:58 | s07_signals                    | INFO    |   After RS ≥ 0.85: 8,081
+2026-04-01 16:56:58 | s07_signals                    | INFO    |   After excluding ['Utilities', 'Consumer Staples']: 8,081 (removed 0)
+2026-04-01 16:56:58 | s07_signals                    | INFO    |   After breakout: 577
+2026-04-01 16:56:58 | s07_signals                    | INFO    |   After pattern filter: 311
+2026-04-01 16:56:58 | s07_signals                    | INFO    |   Fundamentals filter: DISABLED (market-specific override)
+2026-04-01 16:56:58 | s07_signals                    | INFO    |   Injected 513 watchlist leaders as priority candidates
+2026-04-01 16:56:58 | s07_signals                    | INFO    |   Composite score: avg=0.636
+2026-04-01 16:56:58 | s07_signals                    | INFO    | ✓ INDIA: 824 momentum candidate signals across 247 days  tiers={'watchlist_leader': 513, 'vcp': 311}
+2026-04-01 16:56:58 | s07_signals                    | INFO    | Storing 824 candidate rows…
+2026-04-01 16:56:58 | s07_signals                    | INFO    | ✓ Candidates table: 824 rows
+2026-04-01 16:56:58 | s07_signals                    | INFO    | ✓ Watchlist table: 24,623 leader candidates during corrections
+2026-04-01 16:56:58 | dashboard_api                  | INFO    | [india] Pipeline step 'signals' OK  (0.9s)
+2026-04-01 16:56:58 | dashboard_api                  | INFO    | Pipeline done
+2026-04-01 16:56:59 | watchlist                      | INFO    | Watchlist: 89 candidates (down_days >= 2)
+2026-04-01 16:56:59 | dashboard_api                  | INFO    | Watchlist: 89 tickers
+2026-04-01 16:57:08 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-01 16:57:08 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-01 16:57:09 | watchlist                      | INFO    | Watchlist: 89 candidates (down_days >= 2)
+2026-04-01 16:57:09 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 16:57:09 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-01 16:57:33 | kite_intraday                  | INFO    | [50/89] 56% — 37,991 candles total (15minute: 24,991, 30minute: 13,000)
+2026-04-01 16:58:01 | kite_intraday                  | INFO    | [89/89] 100% — 67,629 candles total (15minute: 44,489, 30minute: 23,140)
+2026-04-01 16:58:01 | kite_intraday                  | INFO    | Kite 15minute: 44489 candles
+2026-04-01 16:58:01 | kite_intraday                  | INFO    | Kite 30minute: 23140 candles
+2026-04-01 16:58:01 | dashboard_api                  | INFO    | Intraday fetch done: {'15minute': 44489, '30minute': 23140}
+2026-04-01 17:02:33 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-01 17:02:33 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-01 17:02:33 | db                             | INFO    | DuckDB singleton connection closed
+2026-04-01 17:02:33 | dashboard_api                  | INFO    | Dashboard API shut down.
+2026-04-01 17:11:05 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 17:11:05 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 17:11:05 | db                             | INFO    | Schema initialised
+2026-04-01 17:45:01 | s02_prices                     | INFO    | Downloading benchmark ^CRSLDX
+2026-04-01 17:45:02 | s02_prices                     | INFO    |   Benchmark ^CRSLDX: 4484 rows upserted (4484 total)
+2026-04-01 18:38:45 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 18:38:45 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 18:38:45 | db                             | INFO    | Schema initialised
+2026-04-01 18:38:45 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 18:38:45 | watchlist                      | INFO    | Watchlist: 63 candidates (down_days >= 2)
+2026-04-01 18:38:46 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 18:38:46 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 18:38:47 | watchlist                      | INFO    | Watchlist with tokens: 63 stocks ready for live monitoring
+2026-04-01 18:38:47 | kite_live                      | INFO    | After market hours (18:38) — skipping backfill
+2026-04-01 18:38:47 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 18:38:47 | dashboard_api                  | INFO    | Auto-start: live ticker started with 63 stocks
+2026-04-01 18:38:47 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 18:38:47 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 18:38:47 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 18:38:47 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 18:38:47 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 63 tokens
+2026-04-01 18:38:53 | watchlist                      | INFO    | Watchlist: 63 candidates (down_days >= 2)
+2026-04-01 18:38:53 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 18:38:54 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-01 18:38:57 | db                             | INFO    | Schema initialised
+2026-04-01 18:38:57 | sync_prices                    | INFO    | INDIA: 1992 active, 1991 up-to-date, 1 to sync, 0 no token
+2026-04-01 18:38:57 | sync_prices                    | INFO    |   [0/1] synced=0 failed=0 rows=0 (0s)
+2026-04-01 18:38:58 | s02_prices                     | INFO    | Downloading benchmark ^CRSLDX
+2026-04-01 18:38:59 | s02_prices                     | INFO    |   Benchmark ^CRSLDX: 4484 rows upserted (4484 total)
+2026-04-01 18:38:59 | sync_prices                    | INFO    | ✓ INDIA: 0 synced, 0 failed, 0 new rows (Kite, 2s)
+2026-04-01 18:38:59 | dashboard_api                  | INFO    | Daily sync done: [{'market': 'india', 'tickers': 1992, 'synced': 0, 'failed': 0, 'new_rows': 0, 'newly_delisted': [], 'skipped_up_to_date': 1991, 'market_open': False, 'message': '0 synced, 0 failed, 0 new rows (Kite, 2s)', 'source': 'kite'}]
+2026-04-01 18:38:59 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 18:38:59 | s03_features                   | INFO    | Feature engineering: INDIA
+2026-04-01 18:38:59 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 18:39:00 | s03_features                   | INFO    | Loaded 1,151,662 rows for 1992 tickers
+2026-04-01 18:39:00 | s03_features                   | INFO    | Computing indicators…
+2026-04-01 18:39:31 | s03_features                   | WARNING | Price coherence: 1 tickers have scale-corrupted Yahoo data (>3.0x jump):
+2026-04-01 18:39:31 | s03_features                   | WARNING |   AQYLON: latest=48.17 vs median50=150.80 (ratio=0.3x) — REMOVED
+2026-04-01 18:39:33 | s03_features                   | INFO    | Price coherence filter: 1,151,662 → 1,151,167 rows (1 tickers removed)
+2026-04-01 18:39:33 | s03_features                   | INFO    | Quality filter: 1,151,167 → 726,985 rows (424,182 removed) [min_price=$10.0, min_vol=100,000, min_$vol=$2,000,000, max_price_india=₹3,000]
+2026-04-01 18:39:33 | s03_features                   | INFO    | IPO seasoning: removed 16,454 rows (< 60 days)
+2026-04-01 18:39:33 | s03_features                   | INFO    | ✓ INDIA: 1858 tickers, 710,531 rows after filters
+2026-04-01 18:39:33 | s03_features                   | INFO    | Storing 710,531 feature rows…
+2026-04-01 18:39:34 | s03_features                   | INFO    | ✓ Features table: 710,531 rows, 1858 tickers
+2026-04-01 18:39:35 | dashboard_api                  | INFO    | [india] Pipeline step 'features' OK  (35.3s)
+2026-04-01 18:39:35 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 18:39:35 | s04_rs_rank                    | INFO    | Relative strength ranking: INDIA
+2026-04-01 18:39:35 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 18:39:35 | s04_rs_rank                    | INFO    | Computing cross-sectional RS ranks…
+2026-04-01 18:39:36 | s04_rs_rank                    | INFO    |   RS vs benchmark computed
+2026-04-01 18:39:36 | s04_rs_rank                    | INFO    |   Sector momentum computed
+2026-04-01 18:39:36 | s04_rs_rank                    | INFO    | ✓ INDIA: 1858 tickers ranked
+2026-04-01 18:39:36 | s04_rs_rank                    | INFO    | Storing 710,531 ranked rows…
+2026-04-01 18:39:37 | s04_rs_rank                    | INFO    | ✓ Ranked table: 710,531 rows
+2026-04-01 18:39:37 | dashboard_api                  | INFO    | [india] Pipeline step 'rs_rank' OK  (2.6s)
+2026-04-01 18:39:37 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 18:39:37 | s05_patterns                   | INFO    | Pattern detection: INDIA
+2026-04-01 18:39:37 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |   Detecting Trend Template…
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |     Trend Template: 9.2% of rows pass
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |   Detecting Multi-Contraction VCP…
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |     VCP: 67.7% of rows pass
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |   Detecting Darvas Box…
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |     Darvas: 0.1% of rows pass
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |   Detecting Power Play…
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |     Power Play: 0.0% of rows pass
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |   Detecting IPO Base…
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |     IPO Base: 1.7% of rows match
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |   Detecting Breakouts…
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |     Breakout: 2.5% of rows pass
+2026-04-01 18:39:38 | s05_patterns                   | INFO    |     Buy signals: VCP=2,692  Darvas=172  Power=0  IPO=14  Total=2,698
+2026-04-01 18:39:38 | s05_patterns                   | INFO    | ✓ INDIA: 1858 tickers, 2,698 buy signals
+2026-04-01 18:39:38 | s05_patterns                   | INFO    | Storing 710,531 signal rows…
+2026-04-01 18:39:40 | s05_patterns                   | INFO    | ✓ Signals table: 710,531 rows
+2026-04-01 18:39:40 | dashboard_api                  | INFO    | [india] Pipeline step 'patterns' OK  (2.8s)
+2026-04-01 18:39:40 | s06_regime                     | INFO    |   Computing market breadth for INDIA…
+2026-04-01 18:39:40 | s06_regime                     | INFO    | INDIA: 4435 days, 66.8% bull (7.9% recovery), 33.2% bear, 14.6% weak-market days, avg breadth 49.8%
+2026-04-01 18:39:40 | s06_regime                     | INFO    | ✓ Regime table: 4,435 rows
+2026-04-01 18:39:40 | dashboard_api                  | INFO    | [india] Pipeline step 'regime' OK  (0.0s)
+2026-04-01 18:39:40 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 18:39:40 | s07_signals                    | INFO    | Signal engine: INDIA
+2026-04-01 18:39:40 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 18:39:41 | s07_signals                    | INFO    | Loaded 710,531 rows, 1858 tickers
+2026-04-01 18:39:42 | s07_signals                    | INFO    |   Watchlist: 49,643 leader candidates across 496 correction days
+2026-04-01 18:39:42 | s07_signals                    | INFO    | Applying signal filters…
+2026-04-01 18:39:42 | s07_signals                    | INFO    |   After regime filter: 571,018 / 710,531
+2026-04-01 18:39:42 | s07_signals                    | INFO    |   After breadth ≥ 30%: 512,147 (removed 58,871)
+2026-04-01 18:39:42 | s07_signals                    | INFO    |   After Trend Template: 49,606
+2026-04-01 18:39:42 | s07_signals                    | INFO    |   After RS ≥ 0.85: 16,640
+2026-04-01 18:39:42 | s07_signals                    | INFO    |   After excluding ['Utilities', 'Consumer Staples']: 16,640 (removed 0)
+2026-04-01 18:39:42 | s07_signals                    | INFO    |   After breakout: 1,171
+2026-04-01 18:39:42 | s07_signals                    | INFO    |   After pattern filter: 623
+2026-04-01 18:39:42 | s07_signals                    | INFO    |   Fundamentals filter: DISABLED (market-specific override)
+2026-04-01 18:39:42 | s07_signals                    | INFO    |   Injected 1,081 watchlist leaders as priority candidates
+2026-04-01 18:39:42 | s07_signals                    | INFO    |   Composite score: avg=0.633
+2026-04-01 18:39:42 | s07_signals                    | INFO    | ✓ INDIA: 1,704 momentum candidate signals across 272 days  tiers={'watchlist_leader': 1081, 'vcp': 622, 'ipo_base': 1}
+2026-04-01 18:39:42 | s07_signals                    | INFO    | Storing 1,704 candidate rows…
+2026-04-01 18:39:42 | s07_signals                    | INFO    | ✓ Candidates table: 1,704 rows
+2026-04-01 18:39:42 | s07_signals                    | INFO    | ✓ Watchlist table: 49,643 leader candidates during corrections
+2026-04-01 18:39:42 | dashboard_api                  | INFO    | [india] Pipeline step 'signals' OK  (1.7s)
+2026-04-01 18:39:42 | dashboard_api                  | INFO    | Pipeline done
+2026-04-01 18:39:42 | watchlist                      | INFO    | Watchlist: 63 candidates (down_days >= 2)
+2026-04-01 18:39:42 | dashboard_api                  | INFO    | Watchlist: 63 tickers
+2026-04-01 18:40:17 | kite_intraday                  | INFO    | [50/63] 79% — 37,999 candles total (15minute: 24,999, 30minute: 13,000)
+2026-04-01 18:40:26 | kite_intraday                  | INFO    | [63/63] 100% — 47,879 candles total (15minute: 31,499, 30minute: 16,380)
+2026-04-01 18:40:26 | kite_intraday                  | INFO    | Kite 15minute: 31499 candles
+2026-04-01 18:40:26 | kite_intraday                  | INFO    | Kite 30minute: 16380 candles
+2026-04-01 18:40:26 | dashboard_api                  | INFO    | Intraday fetch done: {'15minute': 31499, '30minute': 16380}
+2026-04-01 18:40:26 | watchlist                      | INFO    | Watchlist: 63 candidates (down_days >= 2)
+2026-04-01 18:44:33 | watchlist                      | INFO    | Watchlist: 63 candidates (down_days >= 2)
+2026-04-01 18:44:54 | watchlist                      | INFO    | Watchlist: 63 candidates (down_days >= 2)
+2026-04-01 18:45:18 | watchlist                      | INFO    | Watchlist: 63 candidates (down_days >= 2)
+2026-04-01 18:45:45 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 18:46:55 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 18:47:20 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 18:47:43 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 18:48:36 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 19:17:45 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-01 19:17:45 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-01 21:36:14 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 21:36:14 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 21:36:14 | db                             | INFO    | Schema initialised
+2026-04-01 21:36:14 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 21:36:15 | watchlist                      | INFO    | Watchlist: 55 candidates (down_days >= 2)
+2026-04-01 21:36:15 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 21:36:15 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 21:36:16 | watchlist                      | INFO    | Watchlist with tokens: 55 stocks ready for live monitoring
+2026-04-01 21:36:16 | kite_live                      | INFO    | After market hours (21:36) — skipping backfill
+2026-04-01 21:36:16 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 21:36:16 | dashboard_api                  | INFO    | Auto-start: live ticker started with 55 stocks
+2026-04-01 21:36:16 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 21:36:16 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 21:36:16 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 21:36:16 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 21:36:16 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 55 tokens
+2026-04-01 21:36:25 | watchlist                      | INFO    | Watchlist: 55 candidates (down_days >= 2)
+2026-04-01 21:36:25 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 21:36:25 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-01 21:36:30 | dashboard_api                  | INFO    | POST /api/scan  market=india  force=True
+2026-04-01 21:36:30 | dashboard_api                  | INFO    | ══ Full scan started: market=india  force=True ══
+2026-04-01 21:36:30 | db                             | INFO    | Schema initialised
+2026-04-01 21:36:30 | sync_prices                    | INFO    | INDIA: 1992 active, 1991 up-to-date, 1 to sync, 0 no token
+2026-04-01 21:36:30 | sync_prices                    | INFO    |   [0/1] synced=0 failed=0 rows=0 (0s)
+2026-04-01 21:36:31 | s02_prices                     | INFO    | Downloading benchmark ^CRSLDX
+2026-04-01 21:36:32 | s02_prices                     | INFO    |   Benchmark ^CRSLDX: 4484 rows upserted (4484 total)
+2026-04-01 21:36:32 | sync_prices                    | INFO    | ✓ INDIA: 0 synced, 0 failed, 0 new rows (Kite, 2s)
+2026-04-01 21:36:32 | dashboard_api                  | INFO    | [india] Sync complete in 2.1s
+2026-04-01 21:36:32 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:36:32 | s03_features                   | INFO    | Feature engineering: INDIA
+2026-04-01 21:36:32 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:36:32 | s03_features                   | INFO    | Loaded 1,151,662 rows for 1992 tickers
+2026-04-01 21:36:32 | s03_features                   | INFO    | Computing indicators…
+2026-04-01 21:37:03 | s03_features                   | WARNING | Price coherence: 1 tickers have scale-corrupted Yahoo data (>3.0x jump):
+2026-04-01 21:37:03 | s03_features                   | WARNING |   AQYLON: latest=48.17 vs median50=150.80 (ratio=0.3x) — REMOVED
+2026-04-01 21:37:04 | s03_features                   | INFO    | Price coherence filter: 1,151,662 → 1,151,167 rows (1 tickers removed)
+2026-04-01 21:37:04 | s03_features                   | INFO    | Quality filter: 1,151,167 → 726,985 rows (424,182 removed) [min_price=$10.0, min_vol=100,000, min_$vol=$2,000,000, max_price_india=₹3,000]
+2026-04-01 21:37:04 | s03_features                   | INFO    | IPO seasoning: removed 16,454 rows (< 60 days)
+2026-04-01 21:37:04 | s03_features                   | INFO    | ✓ INDIA: 1858 tickers, 710,531 rows after filters
+2026-04-01 21:37:04 | s03_features                   | INFO    | Storing 710,531 feature rows…
+2026-04-01 21:37:06 | s03_features                   | INFO    | ✓ Features table: 710,531 rows, 1858 tickers
+2026-04-01 21:37:06 | dashboard_api                  | INFO    | [india] Pipeline step 'features' OK  (34.2s)
+2026-04-01 21:37:06 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:37:06 | s04_rs_rank                    | INFO    | Relative strength ranking: INDIA
+2026-04-01 21:37:06 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:37:07 | s04_rs_rank                    | INFO    | Computing cross-sectional RS ranks…
+2026-04-01 21:37:07 | s04_rs_rank                    | INFO    |   RS vs benchmark computed
+2026-04-01 21:37:07 | s04_rs_rank                    | INFO    |   Sector momentum computed
+2026-04-01 21:37:07 | s04_rs_rank                    | INFO    | ✓ INDIA: 1858 tickers ranked
+2026-04-01 21:37:07 | s04_rs_rank                    | INFO    | Storing 710,531 ranked rows…
+2026-04-01 21:37:09 | s04_rs_rank                    | INFO    | ✓ Ranked table: 710,531 rows
+2026-04-01 21:37:09 | dashboard_api                  | INFO    | [india] Pipeline step 'rs_rank' OK  (2.7s)
+2026-04-01 21:37:09 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:37:09 | s05_patterns                   | INFO    | Pattern detection: INDIA
+2026-04-01 21:37:09 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |   Detecting Trend Template…
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |     Trend Template: 9.2% of rows pass
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |   Detecting Multi-Contraction VCP…
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |     VCP: 67.7% of rows pass
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |   Detecting Darvas Box…
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |     Darvas: 0.1% of rows pass
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |   Detecting Power Play…
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |     Power Play: 0.0% of rows pass
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |   Detecting IPO Base…
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |     IPO Base: 1.7% of rows match
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |   Detecting Breakouts…
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |     Breakout: 2.5% of rows pass
+2026-04-01 21:37:10 | s05_patterns                   | INFO    |     Buy signals: VCP=2,692  Darvas=172  Power=0  IPO=14  Total=2,698
+2026-04-01 21:37:10 | s05_patterns                   | INFO    | ✓ INDIA: 1858 tickers, 2,698 buy signals
+2026-04-01 21:37:10 | s05_patterns                   | INFO    | Storing 710,531 signal rows…
+2026-04-01 21:37:13 | s05_patterns                   | INFO    | ✓ Signals table: 710,531 rows
+2026-04-01 21:37:13 | dashboard_api                  | INFO    | [india] Pipeline step 'patterns' OK  (3.9s)
+2026-04-01 21:37:13 | s06_regime                     | INFO    |   Computing market breadth for INDIA…
+2026-04-01 21:37:13 | s06_regime                     | INFO    | INDIA: 4435 days, 66.8% bull (7.9% recovery), 33.2% bear, 14.6% weak-market days, avg breadth 49.8%
+2026-04-01 21:37:13 | s06_regime                     | INFO    | ✓ Regime table: 4,435 rows
+2026-04-01 21:37:13 | dashboard_api                  | INFO    | [india] Pipeline step 'regime' OK  (0.1s)
+2026-04-01 21:37:13 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:37:13 | s07_signals                    | INFO    | Signal engine: INDIA
+2026-04-01 21:37:13 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:37:14 | s07_signals                    | INFO    | Loaded 710,531 rows, 1858 tickers
+2026-04-01 21:37:15 | s07_signals                    | INFO    |   Watchlist: 49,643 leader candidates across 496 correction days
+2026-04-01 21:37:15 | s07_signals                    | INFO    | Applying signal filters…
+2026-04-01 21:37:15 | s07_signals                    | INFO    |   After regime filter: 571,018 / 710,531
+2026-04-01 21:37:15 | s07_signals                    | INFO    |   After breadth ≥ 30%: 512,147 (removed 58,871)
+2026-04-01 21:37:15 | s07_signals                    | INFO    |   After Trend Template: 49,606
+2026-04-01 21:37:15 | s07_signals                    | INFO    |   After RS ≥ 0.85: 16,640
+2026-04-01 21:37:15 | s07_signals                    | INFO    |   After excluding ['Utilities', 'Consumer Staples']: 16,640 (removed 0)
+2026-04-01 21:37:15 | s07_signals                    | INFO    |   After breakout: 1,171
+2026-04-01 21:37:15 | s07_signals                    | INFO    |   After pattern filter: 623
+2026-04-01 21:37:15 | s07_signals                    | INFO    |   Fundamentals filter: DISABLED (market-specific override)
+2026-04-01 21:37:16 | s07_signals                    | INFO    |   Injected 1,081 watchlist leaders as priority candidates
+2026-04-01 21:37:16 | s07_signals                    | INFO    |   Composite score: avg=0.633
+2026-04-01 21:37:16 | s07_signals                    | INFO    | ✓ INDIA: 1,704 momentum candidate signals across 272 days  tiers={'watchlist_leader': 1081, 'vcp': 622, 'ipo_base': 1}
+2026-04-01 21:37:16 | s07_signals                    | INFO    | Storing 1,704 candidate rows…
+2026-04-01 21:37:16 | s07_signals                    | INFO    | ✓ Candidates table: 1,704 rows
+2026-04-01 21:37:16 | s07_signals                    | INFO    | ✓ Watchlist table: 49,643 leader candidates during corrections
+2026-04-01 21:37:16 | dashboard_api                  | INFO    | [india] Pipeline step 'signals' OK  (2.7s)
+2026-04-01 21:37:16 | dashboard_api                  | INFO    | [india] Pipeline complete in 43.6s
+2026-04-01 21:37:16 | dashboard_api                  | INFO    | [india] Signals collected in 0.0s — 4 candidates
+2026-04-01 21:37:16 | dashboard_api                  | INFO    | ══ Full scan finished: market=india  45.7s  signals=4  errors=0 ══
+2026-04-01 21:37:16 | dashboard_api                  | INFO    | POST /api/scan complete — signals=4  stop_alerts=0  errors=0
+2026-04-01 21:37:41 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-01 21:37:41 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-01 21:37:42 | watchlist                      | INFO    | Watchlist: 55 candidates (down_days >= 2)
+2026-04-01 21:37:42 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 21:37:42 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-01 21:38:19 | db                             | INFO    | Schema initialised
+2026-04-01 21:38:19 | sync_prices                    | INFO    | INDIA: 1992 active, 1991 up-to-date, 1 to sync, 0 no token
+2026-04-01 21:38:19 | sync_prices                    | INFO    |   [0/1] synced=0 failed=0 rows=0 (0s)
+2026-04-01 21:38:20 | s02_prices                     | INFO    | Downloading benchmark ^CRSLDX
+2026-04-01 21:38:20 | s02_prices                     | INFO    |   Benchmark ^CRSLDX: 4484 rows upserted (4484 total)
+2026-04-01 21:38:20 | sync_prices                    | INFO    | ✓ INDIA: 0 synced, 0 failed, 0 new rows (Kite, 1s)
+2026-04-01 21:38:20 | dashboard_api                  | INFO    | Daily sync done: [{'market': 'india', 'tickers': 1992, 'synced': 0, 'failed': 0, 'new_rows': 0, 'newly_delisted': [], 'skipped_up_to_date': 1991, 'market_open': False, 'message': '0 synced, 0 failed, 0 new rows (Kite, 1s)', 'source': 'kite'}]
+2026-04-01 21:38:20 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:38:20 | s03_features                   | INFO    | Feature engineering: INDIA
+2026-04-01 21:38:20 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:38:21 | s03_features                   | INFO    | Loaded 1,151,662 rows for 1992 tickers
+2026-04-01 21:38:21 | s03_features                   | INFO    | Computing indicators…
+2026-04-01 21:38:57 | s03_features                   | WARNING | Price coherence: 1 tickers have scale-corrupted Yahoo data (>3.0x jump):
+2026-04-01 21:38:57 | s03_features                   | WARNING |   AQYLON: latest=48.17 vs median50=150.80 (ratio=0.3x) — REMOVED
+2026-04-01 21:38:58 | s03_features                   | INFO    | Price coherence filter: 1,151,662 → 1,151,167 rows (1 tickers removed)
+2026-04-01 21:38:58 | s03_features                   | INFO    | Quality filter: 1,151,167 → 726,985 rows (424,182 removed) [min_price=$10.0, min_vol=100,000, min_$vol=$2,000,000, max_price_india=₹3,000]
+2026-04-01 21:38:58 | s03_features                   | INFO    | IPO seasoning: removed 16,454 rows (< 60 days)
+2026-04-01 21:38:58 | s03_features                   | INFO    | ✓ INDIA: 1858 tickers, 710,531 rows after filters
+2026-04-01 21:38:58 | s03_features                   | INFO    | Storing 710,531 feature rows…
+2026-04-01 21:39:00 | s03_features                   | INFO    | ✓ Features table: 710,531 rows, 1858 tickers
+2026-04-01 21:39:01 | dashboard_api                  | INFO    | [india] Pipeline step 'features' OK  (40.1s)
+2026-04-01 21:39:01 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:39:01 | s04_rs_rank                    | INFO    | Relative strength ranking: INDIA
+2026-04-01 21:39:01 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:39:01 | s04_rs_rank                    | INFO    | Computing cross-sectional RS ranks…
+2026-04-01 21:39:02 | s04_rs_rank                    | INFO    |   RS vs benchmark computed
+2026-04-01 21:39:02 | s04_rs_rank                    | INFO    |   Sector momentum computed
+2026-04-01 21:39:02 | s04_rs_rank                    | INFO    | ✓ INDIA: 1858 tickers ranked
+2026-04-01 21:39:02 | s04_rs_rank                    | INFO    | Storing 710,531 ranked rows…
+2026-04-01 21:39:02 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 21:39:04 | s04_rs_rank                    | INFO    | ✓ Ranked table: 710,531 rows
+2026-04-01 21:39:04 | dashboard_api                  | INFO    | [india] Pipeline step 'rs_rank' OK  (3.7s)
+2026-04-01 21:39:04 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:39:04 | s05_patterns                   | INFO    | Pattern detection: INDIA
+2026-04-01 21:39:04 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |   Detecting Trend Template…
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |     Trend Template: 9.2% of rows pass
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |   Detecting Multi-Contraction VCP…
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |     VCP: 67.7% of rows pass
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |   Detecting Darvas Box…
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |     Darvas: 0.1% of rows pass
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |   Detecting Power Play…
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |     Power Play: 0.0% of rows pass
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |   Detecting IPO Base…
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |     IPO Base: 1.7% of rows match
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |   Detecting Breakouts…
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |     Breakout: 2.5% of rows pass
+2026-04-01 21:39:05 | s05_patterns                   | INFO    |     Buy signals: VCP=2,692  Darvas=172  Power=0  IPO=14  Total=2,698
+2026-04-01 21:39:05 | s05_patterns                   | INFO    | ✓ INDIA: 1858 tickers, 2,698 buy signals
+2026-04-01 21:39:05 | s05_patterns                   | INFO    | Storing 710,531 signal rows…
+2026-04-01 21:39:07 | s05_patterns                   | INFO    | ✓ Signals table: 710,531 rows
+2026-04-01 21:39:07 | dashboard_api                  | INFO    | [india] Pipeline step 'patterns' OK  (3.0s)
+2026-04-01 21:39:07 | s06_regime                     | INFO    |   Computing market breadth for INDIA…
+2026-04-01 21:39:07 | s06_regime                     | INFO    | INDIA: 4435 days, 66.8% bull (7.9% recovery), 33.2% bear, 14.6% weak-market days, avg breadth 49.8%
+2026-04-01 21:39:07 | s06_regime                     | INFO    | ✓ Regime table: 4,435 rows
+2026-04-01 21:39:07 | dashboard_api                  | INFO    | [india] Pipeline step 'regime' OK  (0.0s)
+2026-04-01 21:39:07 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:39:07 | s07_signals                    | INFO    | Signal engine: INDIA
+2026-04-01 21:39:07 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 21:39:08 | s07_signals                    | INFO    | Loaded 710,531 rows, 1858 tickers
+2026-04-01 21:39:09 | s07_signals                    | INFO    |   Watchlist: 49,643 leader candidates across 496 correction days
+2026-04-01 21:39:09 | s07_signals                    | INFO    | Applying signal filters…
+2026-04-01 21:39:09 | s07_signals                    | INFO    |   After regime filter: 571,018 / 710,531
+2026-04-01 21:39:09 | s07_signals                    | INFO    |   After breadth ≥ 30%: 512,147 (removed 58,871)
+2026-04-01 21:39:09 | s07_signals                    | INFO    |   After Trend Template: 49,606
+2026-04-01 21:39:09 | s07_signals                    | INFO    |   After RS ≥ 0.85: 16,640
+2026-04-01 21:39:09 | s07_signals                    | INFO    |   After excluding ['Utilities', 'Consumer Staples']: 16,640 (removed 0)
+2026-04-01 21:39:09 | s07_signals                    | INFO    |   After breakout: 1,171
+2026-04-01 21:39:09 | s07_signals                    | INFO    |   After pattern filter: 623
+2026-04-01 21:39:09 | s07_signals                    | INFO    |   Fundamentals filter: DISABLED (market-specific override)
+2026-04-01 21:39:09 | s07_signals                    | INFO    |   Injected 1,081 watchlist leaders as priority candidates
+2026-04-01 21:39:09 | s07_signals                    | INFO    |   Composite score: avg=0.633
+2026-04-01 21:39:09 | s07_signals                    | INFO    | ✓ INDIA: 1,704 momentum candidate signals across 272 days  tiers={'watchlist_leader': 1081, 'vcp': 622, 'ipo_base': 1}
+2026-04-01 21:39:09 | s07_signals                    | INFO    | Storing 1,704 candidate rows…
+2026-04-01 21:39:09 | s07_signals                    | INFO    | ✓ Candidates table: 1,704 rows
+2026-04-01 21:39:09 | s07_signals                    | INFO    | ✓ Watchlist table: 49,643 leader candidates during corrections
+2026-04-01 21:39:09 | dashboard_api                  | INFO    | [india] Pipeline step 'signals' OK  (2.2s)
+2026-04-01 21:39:09 | dashboard_api                  | INFO    | Pipeline done
+2026-04-01 21:39:10 | watchlist                      | INFO    | Watchlist: 55 candidates (down_days >= 2)
+2026-04-01 21:39:10 | dashboard_api                  | INFO    | Watchlist: 55 tickers
+2026-04-01 21:39:45 | kite_intraday                  | INFO    | [50/55] 91% — 38,000 candles total (15minute: 25,000, 30minute: 13,000)
+2026-04-01 21:39:48 | kite_intraday                  | INFO    | [55/55] 100% — 41,800 candles total (15minute: 27,500, 30minute: 14,300)
+2026-04-01 21:39:48 | kite_intraday                  | INFO    | Kite 15minute: 27500 candles
+2026-04-01 21:39:48 | kite_intraday                  | INFO    | Kite 30minute: 14300 candles
+2026-04-01 21:39:48 | dashboard_api                  | INFO    | Intraday fetch done: {'15minute': 27500, '30minute': 14300}
+2026-04-01 21:39:48 | watchlist                      | INFO    | Watchlist: 55 candidates (down_days >= 2)
+2026-04-01 21:58:19 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 22:48:24 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-01 22:48:24 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-01 22:48:24 | db                             | INFO    | Schema initialised
+2026-04-01 22:48:24 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-01 22:48:25 | watchlist                      | INFO    | Watchlist: 49 candidates (down_days >= 2)
+2026-04-01 22:48:25 | kite_intraday                  | INFO    | Loaded 9554 NSE instrument tokens
+2026-04-01 22:48:25 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-01 22:48:26 | watchlist                      | INFO    | Watchlist with tokens: 49 stocks ready for live monitoring
+2026-04-01 22:48:26 | kite_live                      | INFO    | After market hours (22:48) — skipping backfill
+2026-04-01 22:48:26 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-01 22:48:26 | dashboard_api                  | INFO    | Auto-start: live ticker started with 49 stocks
+2026-04-01 22:48:26 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-01 22:48:26 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-01 22:48:26 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-01 22:48:26 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-01 22:48:27 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 49 tokens
+2026-04-01 22:48:29 | watchlist                      | INFO    | Watchlist: 49 candidates (down_days >= 2)
+2026-04-01 22:48:29 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-01 22:48:29 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-01 22:48:59 | db                             | INFO    | Schema initialised
+2026-04-01 22:48:59 | sync_prices                    | INFO    | INDIA: 1992 active, 1991 up-to-date, 1 to sync, 0 no token
+2026-04-01 22:48:59 | sync_prices                    | INFO    |   [0/1] synced=0 failed=0 rows=0 (0s)
+2026-04-01 22:49:00 | s02_prices                     | INFO    | Downloading benchmark ^CRSLDX
+2026-04-01 22:49:02 | s02_prices                     | INFO    |   Benchmark ^CRSLDX: 4484 rows upserted (4484 total)
+2026-04-01 22:49:02 | sync_prices                    | INFO    | ✓ INDIA: 0 synced, 0 failed, 0 new rows (Kite, 3s)
+2026-04-01 22:49:06 | sync_prices                    | INFO    | Patched 1992/1992 tickers with closing auction prices
+2026-04-01 22:49:06 | dashboard_api                  | INFO    | Daily sync done: [{'market': 'india', 'tickers': 1992, 'synced': 0, 'failed': 0, 'new_rows': 0, 'newly_delisted': [], 'skipped_up_to_date': 1991, 'market_open': False, 'message': '0 synced, 0 failed, 0 new rows (Kite, 3s)', 'source': 'kite'}]
+2026-04-01 22:49:06 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 22:49:06 | s03_features                   | INFO    | Feature engineering: INDIA
+2026-04-01 22:49:06 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 22:49:07 | s03_features                   | INFO    | Loaded 1,151,662 rows for 1992 tickers
+2026-04-01 22:49:07 | s03_features                   | INFO    | Computing indicators…
+2026-04-01 22:49:41 | s03_features                   | WARNING | Price coherence: 1 tickers have scale-corrupted Yahoo data (>3.0x jump):
+2026-04-01 22:49:41 | s03_features                   | WARNING |   AQYLON: latest=48.17 vs median50=150.80 (ratio=0.3x) — REMOVED
+2026-04-01 22:49:42 | s03_features                   | INFO    | Price coherence filter: 1,151,662 → 1,151,167 rows (1 tickers removed)
+2026-04-01 22:49:42 | s03_features                   | INFO    | Quality filter: 1,151,167 → 726,985 rows (424,182 removed) [min_price=$10.0, min_vol=100,000, min_$vol=$2,000,000, max_price_india=₹3,000]
+2026-04-01 22:49:42 | s03_features                   | INFO    | IPO seasoning: removed 16,454 rows (< 60 days)
+2026-04-01 22:49:42 | s03_features                   | INFO    | ✓ INDIA: 1858 tickers, 710,531 rows after filters
+2026-04-01 22:49:42 | s03_features                   | INFO    | Storing 710,531 feature rows…
+2026-04-01 22:49:44 | s03_features                   | INFO    | ✓ Features table: 710,531 rows, 1858 tickers
+2026-04-01 22:49:44 | dashboard_api                  | INFO    | [india] Pipeline step 'features' OK  (37.7s)
+2026-04-01 22:49:44 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 22:49:44 | s04_rs_rank                    | INFO    | Relative strength ranking: INDIA
+2026-04-01 22:49:44 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 22:49:45 | s04_rs_rank                    | INFO    | Computing cross-sectional RS ranks…
+2026-04-01 22:49:45 | s04_rs_rank                    | INFO    |   RS vs benchmark computed
+2026-04-01 22:49:45 | s04_rs_rank                    | INFO    |   Sector momentum computed
+2026-04-01 22:49:45 | s04_rs_rank                    | INFO    | ✓ INDIA: 1858 tickers ranked
+2026-04-01 22:49:45 | s04_rs_rank                    | INFO    | Storing 710,531 ranked rows…
+2026-04-01 22:49:47 | s04_rs_rank                    | INFO    | ✓ Ranked table: 710,531 rows
+2026-04-01 22:49:47 | dashboard_api                  | INFO    | [india] Pipeline step 'rs_rank' OK  (2.6s)
+2026-04-01 22:49:47 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 22:49:47 | s05_patterns                   | INFO    | Pattern detection: INDIA
+2026-04-01 22:49:47 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-01 22:49:47 | s05_patterns                   | INFO    |   Detecting Trend Template…
+2026-04-01 22:49:47 | s05_patterns                   | INFO    |     Trend Template: 9.2% of rows pass
+2026-04-01 22:49:47 | s05_patterns                   | INFO    |   Detecting Multi-Contraction VCP…
+2026-04-01 22:49:47 | s05_patterns                   | INFO    |     VCP: 67.7% of rows pass
+2026-04-01 22:49:47 | s05_patterns                   | INFO    |   Detecting Darvas Box…
+2026-04-01 22:49:47 | s05_patterns                   | INFO    |     Darvas: 0.1% of rows pass
+2026-04-01 22:49:47 | s05_patterns                   | INFO    |   Detecting Power Play…
+2026-04-01 22:49:47 | s05_patterns                   | INFO    |     Power Play: 0.0% of rows pass
+2026-04-01 22:49:47 | s05_patterns                   | INFO    |   Detecting IPO Base…
+2026-04-01 22:49:47 | s05_patterns                   | INFO    |     IPO Base: 1.7% of rows match
+2026-04-01 22:49:47 | s05_patterns                   | INFO    |   Detecting Breakouts…
+2026-04-01 22:49:48 | s05_patterns                   | INFO    |     Breakout: 2.5% of rows pass
+2026-04-01 22:49:48 | s05_patterns                   | INFO    |     Buy signals: VCP=2,692  Darvas=172  Power=0  IPO=14  Total=2,698
+2026-04-01 22:49:48 | s05_patterns                   | INFO    | ✓ INDIA: 1858 tickers, 2,698 buy signals
+2026-04-01 22:49:48 | s05_patterns                   | INFO    | Storing 710,531 signal rows…
+2026-04-01 22:49:50 | s05_patterns                   | INFO    | ✓ Signals table: 710,531 rows
+2026-04-01 22:49:50 | dashboard_api                  | INFO    | [india] Pipeline step 'patterns' OK  (3.0s)
+2026-04-01 22:49:50 | s06_regime                     | INFO    |   Computing market breadth for INDIA…
+2026-04-01 22:49:50 | s06_regime                     | INFO    | INDIA: 4435 days, 66.8% bull (7.9% recovery), 33.2% bear, 14.6% weak-market days, avg breadth 49.8%
+2026-04-01 22:49:50 | s06_regime                     | INFO    | ✓ Regime table: 4,435 rows
+2026-04-01 22:49:50 | dashboard_api                  | INFO    | [india] Pipeline step 'regime' OK  (0.0s)
+2026-04-01 22:49:50 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 22:49:50 | s07_signals                    | INFO    | Signal engine: INDIA
+2026-04-01 22:49:50 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-01 22:49:50 | s07_signals                    | INFO    | Loaded 710,531 rows, 1858 tickers
+2026-04-01 22:49:51 | s07_signals                    | INFO    |   Watchlist: 49,645 leader candidates across 496 correction days
+2026-04-01 22:49:51 | s07_signals                    | INFO    | Applying signal filters…
+2026-04-01 22:49:51 | s07_signals                    | INFO    |   After regime filter: 571,018 / 710,531
+2026-04-01 22:49:52 | s07_signals                    | INFO    |   After breadth ≥ 30%: 512,147 (removed 58,871)
+2026-04-01 22:49:52 | s07_signals                    | INFO    |   After Trend Template: 49,606
+2026-04-01 22:49:52 | s07_signals                    | INFO    |   After RS ≥ 0.85: 16,640
+2026-04-01 22:49:52 | s07_signals                    | INFO    |   After excluding ['Utilities', 'Consumer Staples']: 16,640 (removed 0)
+2026-04-01 22:49:52 | s07_signals                    | INFO    |   After breakout: 1,171
+2026-04-01 22:49:52 | s07_signals                    | INFO    |   After pattern filter: 623
+2026-04-01 22:49:52 | s07_signals                    | INFO    |   Fundamentals filter: DISABLED (market-specific override)
+2026-04-01 22:49:52 | s07_signals                    | INFO    |   Injected 1,081 watchlist leaders as priority candidates
+2026-04-01 22:49:52 | s07_signals                    | INFO    |   Composite score: avg=0.633
+2026-04-01 22:49:52 | s07_signals                    | INFO    | ✓ INDIA: 1,704 momentum candidate signals across 272 days  tiers={'watchlist_leader': 1081, 'vcp': 622, 'ipo_base': 1}
+2026-04-01 22:49:52 | s07_signals                    | INFO    | Storing 1,704 candidate rows…
+2026-04-01 22:49:52 | s07_signals                    | INFO    | ✓ Candidates table: 1,704 rows
+2026-04-01 22:49:52 | s07_signals                    | INFO    | ✓ Watchlist table: 49,645 leader candidates during corrections
+2026-04-01 22:49:52 | dashboard_api                  | INFO    | [india] Pipeline step 'signals' OK  (2.1s)
+2026-04-01 22:49:52 | dashboard_api                  | INFO    | Pipeline done
+2026-04-01 22:49:52 | watchlist                      | INFO    | Watchlist: 49 candidates (down_days >= 2)
+2026-04-01 22:49:52 | dashboard_api                  | INFO    | Watchlist: 49 tickers
+2026-04-01 22:49:53 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-01 22:49:53 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-01 22:50:26 | kite_intraday                  | INFO    | [49/49] 100% — 37,239 candles total (15minute: 24,499, 30minute: 12,740)
+2026-04-01 22:50:26 | kite_intraday                  | INFO    | Kite 15minute: 24499 candles
+2026-04-01 22:50:26 | kite_intraday                  | INFO    | Kite 30minute: 12740 candles
+2026-04-01 22:50:26 | dashboard_api                  | INFO    | Intraday fetch done: {'15minute': 24499, '30minute': 12740}
+2026-04-02 00:50:24 | kite_live                      | ERROR   | Kite Ticker error: 1006 connection was closed uncleanly (peer dropped the TCP connection without previous WebSocket closing handshake)
+2026-04-02 00:50:24 | kite_live                      | WARNING | Kite Ticker closed: 1006 connection was closed uncleanly (peer dropped the TCP connection without previous WebSocket closing handshake)
+2026-04-02 00:50:27 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 49 tokens

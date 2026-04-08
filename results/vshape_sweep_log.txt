@@ -1,0 +1,82 @@
+2026-04-07 15:01:54,891 | vshape_sweep                   | INFO    | Loaded 3824210 daily rows, 8960 bench rows
+2026-04-07 15:01:56,394 | vshape_sweep                   | INFO    | Intraday features: 3549154 rows
+2026-04-07 15:02:06,284 | vshape_sweep                   | INFO    | Daily features: 3807924 rows
+2026-04-07 15:02:14,255 | vshape_sweep                   | INFO    | Merged: 4352899 rows
+2026-04-07 15:02:15,821 | vshape_sweep                   | INFO    | Sweep grid: 756 configs
+2026-04-07 15:02:15,822 | vshape_sweep                   | INFO    |   adaptive_trail: 72 configs
+2026-04-07 15:02:15,822 | vshape_sweep                   | INFO    |   baseline: 36 configs
+2026-04-07 15:02:15,822 | vshape_sweep                   | INFO    |   bounce: 144 configs
+2026-04-07 15:02:15,822 | vshape_sweep                   | INFO    |   combo_bg: 144 configs
+2026-04-07 15:02:15,822 | vshape_sweep                   | INFO    |   gap_filter: 108 configs
+2026-04-07 15:02:15,822 | vshape_sweep                   | INFO    |   green_day: 36 configs
+2026-04-07 15:02:15,822 | vshape_sweep                   | INFO    |   momentum: 72 configs
+2026-04-07 15:02:15,822 | vshape_sweep                   | INFO    |   t1_entry: 36 configs
+2026-04-07 15:02:15,822 | vshape_sweep                   | INFO    |   vol_follow: 108 configs
+2026-04-07 15:02:16,406 | vshape_sweep                   | INFO    | WF 0: test 2020-01-01→2021-12-31 (830883 rows)
+2026-04-07 15:02:38,446 | vshape_sweep                   | INFO    | WF 1: test 2022-01-01→2023-12-31 (993478 rows)
+2026-04-07 15:03:17,388 | vshape_sweep                   | INFO    | WF 2: test 2024-01-01→2025-12-31 (1188341 rows)
+2026-04-07 15:03:56,935 | vshape_sweep                   | INFO    | Stable configs: 636 / 756
+2026-04-07 15:04:02,767 | vshape_sweep                   | INFO    | Holdout: 2023-01-01→2025-12-31 (1701059 rows)
+
+==============================================================================================================
+V-SHAPE ACCURACY SWEEP RESULTS — VWAP Reclaim Reversal Strategy
+==============================================================================================================
+Total configs: 756 | Stable: 636 | Holdout survivors: 636
+
+┌───────────────────┬──────────┬────────┬─────────┬─────────┬─────────┬────────┐
+│ Experiment        │ # Stable │  XIRR  │ Max DD  │ Sharpe  │ WinRate │ Trades │
+├───────────────────┼──────────┼────────┼─────────┼─────────┼─────────┼────────┤
+│ baseline          │     36   │2839.7% │ -10.4% │   6.99 │  54.3% │  2758 │
+│ bounce            │    135   │ 754.1% │ -10.3% │   5.21 │  52.9% │  1937 │
+│ gap_filter        │    108   │2782.5% │ -10.6% │   7.05 │  54.3% │  2724 │
+│ vol_follow        │    108   │1597.8% │  -9.7% │   6.08 │  53.6% │  2280 │
+│ momentum          │     14   │ 122.4% │ -17.4% │   2.23 │  47.4% │   548 │
+│ green_day         │      –   │     –  │      –  │      –  │      –  │     –  │
+│ t1_entry          │     36   │1939.1% │ -12.2% │   6.24 │  51.3% │  2758 │
+│ combo_bg          │    127   │ 352.5% │ -11.1% │   3.97 │  52.4% │  1161 │
+│ adaptive_trail    │     72   │ 897.3% │ -27.0% │   4.12 │  48.3% │  2587 │
+└───────────────────┴──────────┴────────┴─────────┴─────────┴─────────┴────────┘
+
+── Baseline reference (avg across stable): WR=54.3%  XIRR=1237.7%  DD=-12.6%  Sharpe=5.10 ──
+
+Experiment            Avg WR    Δ WR   Avg XIRR   Δ XIRR   Avg DD   Avg Sharpe
+────────────────────────────────────────────────────────────────────────────────
+baseline               54.3%  +  0.0%    1237.7%  +  0.0%   -12.6%        5.10
+bounce                 53.4%   -0.9%     125.5%  -1112.2%   -11.3%        2.27
+gap_filter             55.2%  +  0.9%     939.0%  -298.7%   -12.2%        4.92
+vol_follow             54.0%   -0.2%     769.6%  -468.1%   -12.5%        4.42
+momentum               48.1%   -6.2%      47.9%  -1189.8%   -12.2%        1.49
+t1_entry               51.2%   -3.1%     881.3%  -356.4%   -14.2%        4.60
+combo_bg               52.1%   -2.1%      75.3%  -1162.4%   -11.6%        1.93
+adaptive_trail         49.9%   -4.4%     225.0%  -1012.8%   -37.7%        2.43
+
+── Top 15 configs (sorted by Sharpe) ──
+  [gap_filter     ] gap_0.05                   D3 R1.0 T0.02 H10  XIRR=2782.5%  DD=-10.6%  Sharpe= 7.05  WR= 54.3%  Trades=2724
+  [baseline       ] none                       D3 R1.0 T0.02 H7  XIRR=2839.7%  DD=-10.4%  Sharpe= 6.99  WR= 54.3%  Trades=2758
+  [gap_filter     ] gap_0.03                   D3 R1.0 T0.02 H10  XIRR=2184.6%  DD= -8.5%  Sharpe= 6.99  WR= 55.1%  Trades=2653
+  [gap_filter     ] gap_0.05                   D3 R1.0 T0.02 H7  XIRR=2503.6%  DD=-10.7%  Sharpe= 6.98  WR= 54.3%  Trades=2724
+  [baseline       ] none                       D3 R1.0 T0.02 H10  XIRR=3200.4%  DD=-10.4%  Sharpe= 6.95  WR= 54.2%  Trades=2758
+  [gap_filter     ] gap_0.02                   D3 R1.0 T0.02 H10  XIRR=2014.2%  DD= -7.8%  Sharpe= 6.94  WR= 55.4%  Trades=2588
+  [gap_filter     ] gap_0.03                   D3 R1.0 T0.02 H7  XIRR=1943.5%  DD= -8.3%  Sharpe= 6.92  WR= 55.1%  Trades=2653
+  [gap_filter     ] gap_0.02                   D3 R1.0 T0.02 H7  XIRR=1777.6%  DD= -7.3%  Sharpe= 6.86  WR= 55.4%  Trades=2588
+  [gap_filter     ] gap_0.05                   D3 R1.5 T0.02 H10  XIRR=1900.5%  DD=-10.6%  Sharpe= 6.68  WR= 55.0%  Trades=2222
+  [gap_filter     ] gap_0.05                   D3 R1.5 T0.02 H7  XIRR=1724.1%  DD=-10.6%  Sharpe= 6.67  WR= 55.0%  Trades=2222
+  [baseline       ] none                       D3 R1.5 T0.02 H7  XIRR=1957.0%  DD=-10.4%  Sharpe= 6.65  WR= 54.8%  Trades=2282
+  [baseline       ] none                       D3 R1.5 T0.02 H10  XIRR=2189.2%  DD=-10.4%  Sharpe= 6.55  WR= 54.7%  Trades=2282
+  [gap_filter     ] gap_0.03                   D3 R1.5 T0.02 H7  XIRR=1367.8%  DD= -9.6%  Sharpe= 6.47  WR= 55.6%  Trades=2092
+  [gap_filter     ] gap_0.03                   D3 R1.5 T0.02 H10  XIRR=1512.9%  DD= -9.6%  Sharpe= 6.47  WR= 55.6%  Trades=2092
+  [gap_filter     ] gap_0.03                   D4 R1.0 T0.02 H10  XIRR=1599.9%  DD=-10.2%  Sharpe= 6.42  WR= 56.6%  Trades=1916
+
+── Top 10 by Win Rate (XIRR >= 990% floor) ──
+  [gap_filter     ] gap_0.02                   WR= 58.7%  XIRR=1001.6%  DD= -9.1%  Sharpe= 4.53
+  [vol_follow     ] volr_1.0                   WR= 57.7%  XIRR=1021.5%  DD= -6.2%  Sharpe= 4.42
+  [gap_filter     ] gap_0.03                   WR= 57.6%  XIRR=1028.9%  DD= -9.2%  Sharpe= 4.56
+  [gap_filter     ] gap_0.05                   WR= 57.6%  XIRR= 998.9%  DD= -8.5%  Sharpe= 5.88
+  [gap_filter     ] gap_0.05                   WR= 57.6%  XIRR=1099.0%  DD= -8.5%  Sharpe= 5.91
+  [gap_filter     ] gap_0.05                   WR= 57.2%  XIRR=1275.9%  DD= -9.2%  Sharpe= 4.71
+  [baseline       ] none                       WR= 57.2%  XIRR=1074.9%  DD= -8.5%  Sharpe= 5.89
+  [baseline       ] none                       WR= 57.2%  XIRR=1183.3%  DD= -8.5%  Sharpe= 5.81
+  [gap_filter     ] gap_0.02                   WR= 57.1%  XIRR=1306.3%  DD= -9.4%  Sharpe= 6.30
+  [gap_filter     ] gap_0.02                   WR= 57.1%  XIRR=1407.5%  DD= -9.4%  Sharpe= 6.33
+
+Full results saved to results/vshape_accuracy_sweep.csv (636 rows)

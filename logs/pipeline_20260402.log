@@ -1,0 +1,691 @@
+2026-04-02 08:51:24 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 08:51:24 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 08:51:24 | db                             | INFO    | Schema initialised
+2026-04-02 08:51:25 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 08:51:25 | watchlist                      | INFO    | Watchlist: 49 candidates (down_days >= 2)
+2026-04-02 08:51:25 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 08:51:25 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 08:51:26 | watchlist                      | INFO    | Watchlist with tokens: 49 stocks ready for live monitoring
+2026-04-02 08:51:26 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 08:51:26 | dashboard_api                  | INFO    | Auto-start: live ticker started with 49 stocks
+2026-04-02 08:51:26 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 08:51:26 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 08:51:26 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 08:51:26 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 49 tokens
+2026-04-02 08:51:28 | watchlist                      | INFO    | Watchlist: 49 candidates (down_days >= 2)
+2026-04-02 08:51:28 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 08:51:29 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 09:10:40 | db                             | INFO    | Schema initialised
+2026-04-02 09:10:40 | sync_prices                    | WARNING | INDIA market still open — skipping sync
+2026-04-02 09:10:40 | dashboard_api                  | INFO    | Daily sync done: [{'market': 'india', 'tickers': 0, 'synced': 0, 'failed': 0, 'new_rows': 0, 'newly_delisted': [], 'skipped_up_to_date': 0, 'market_open': True, 'message': 'INDIA market still open'}]
+2026-04-02 09:10:40 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-02 09:10:40 | s03_features                   | INFO    | Feature engineering: INDIA
+2026-04-02 09:10:40 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-02 09:10:40 | s03_features                   | INFO    | Loaded 1,150,050 rows for 1992 tickers
+2026-04-02 09:10:40 | s03_features                   | INFO    | Computing indicators…
+2026-04-02 09:11:12 | s03_features                   | WARNING | Price coherence: 1 tickers have scale-corrupted Yahoo data (>3.0x jump):
+2026-04-02 09:11:12 | s03_features                   | WARNING |   AQYLON: latest=48.17 vs median50=150.80 (ratio=0.3x) — REMOVED
+2026-04-02 09:11:13 | s03_features                   | INFO    | Price coherence filter: 1,150,050 → 1,149,555 rows (1 tickers removed)
+2026-04-02 09:11:13 | s03_features                   | INFO    | Quality filter: 1,149,555 → 725,926 rows (423,629 removed) [min_price=$10.0, min_vol=100,000, min_$vol=$2,000,000, max_price_india=₹3,000]
+2026-04-02 09:11:13 | s03_features                   | INFO    | IPO seasoning: removed 16,431 rows (< 60 days)
+2026-04-02 09:11:13 | s03_features                   | INFO    | ✓ INDIA: 1858 tickers, 709,495 rows after filters
+2026-04-02 09:11:13 | s03_features                   | INFO    | Storing 709,495 feature rows…
+2026-04-02 09:11:15 | s03_features                   | INFO    | ✓ Features table: 709,495 rows, 1858 tickers
+2026-04-02 09:11:15 | dashboard_api                  | INFO    | [india] Pipeline step 'features' OK  (35.1s)
+2026-04-02 09:11:15 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-02 09:11:15 | s04_rs_rank                    | INFO    | Relative strength ranking: INDIA
+2026-04-02 09:11:15 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-02 09:11:16 | s04_rs_rank                    | INFO    | Computing cross-sectional RS ranks…
+2026-04-02 09:11:16 | s04_rs_rank                    | INFO    |   RS vs benchmark computed
+2026-04-02 09:11:16 | s04_rs_rank                    | INFO    |   Sector momentum computed
+2026-04-02 09:11:16 | s04_rs_rank                    | INFO    | ✓ INDIA: 1858 tickers ranked
+2026-04-02 09:11:16 | s04_rs_rank                    | INFO    | Storing 709,495 ranked rows…
+2026-04-02 09:11:18 | s04_rs_rank                    | INFO    | ✓ Ranked table: 709,495 rows
+2026-04-02 09:11:18 | dashboard_api                  | INFO    | [india] Pipeline step 'rs_rank' OK  (2.7s)
+2026-04-02 09:11:18 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-02 09:11:18 | s05_patterns                   | INFO    | Pattern detection: INDIA
+2026-04-02 09:11:18 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |   Detecting Trend Template…
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |     Trend Template: 9.1% of rows pass
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |   Detecting Multi-Contraction VCP…
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |     VCP: 67.7% of rows pass
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |   Detecting Darvas Box…
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |     Darvas: 0.1% of rows pass
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |   Detecting Power Play…
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |     Power Play: 0.0% of rows pass
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |   Detecting IPO Base…
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |     IPO Base: 1.7% of rows match
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |   Detecting Breakouts…
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |     Breakout: 2.5% of rows pass
+2026-04-02 09:11:19 | s05_patterns                   | INFO    |     Buy signals: VCP=2,657  Darvas=172  Power=0  IPO=14  Total=2,663
+2026-04-02 09:11:19 | s05_patterns                   | INFO    | ✓ INDIA: 1858 tickers, 2,663 buy signals
+2026-04-02 09:11:19 | s05_patterns                   | INFO    | Storing 709,495 signal rows…
+2026-04-02 09:11:21 | s05_patterns                   | INFO    | ✓ Signals table: 709,495 rows
+2026-04-02 09:11:21 | dashboard_api                  | INFO    | [india] Pipeline step 'patterns' OK  (2.7s)
+2026-04-02 09:11:21 | s06_regime                     | INFO    |   Computing market breadth for INDIA…
+2026-04-02 09:11:21 | s06_regime                     | INFO    | INDIA: 4435 days, 66.8% bull (7.9% recovery), 33.2% bear, 14.6% weak-market days, avg breadth 49.8%
+2026-04-02 09:11:21 | s06_regime                     | INFO    | ✓ Regime table: 4,435 rows
+2026-04-02 09:11:21 | dashboard_api                  | INFO    | [india] Pipeline step 'regime' OK  (0.0s)
+2026-04-02 09:11:21 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-02 09:11:21 | s07_signals                    | INFO    | Signal engine: INDIA
+2026-04-02 09:11:21 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-02 09:11:21 | s07_signals                    | INFO    | Loaded 709,495 rows, 1858 tickers
+2026-04-02 09:11:22 | s07_signals                    | INFO    |   Watchlist: 49,496 leader candidates across 494 correction days
+2026-04-02 09:11:22 | s07_signals                    | INFO    | Applying signal filters…
+2026-04-02 09:11:22 | s07_signals                    | INFO    |   After regime filter: 569,982 / 709,495
+2026-04-02 09:11:22 | s07_signals                    | INFO    |   After breadth ≥ 30%: 511,111 (removed 58,871)
+2026-04-02 09:11:22 | s07_signals                    | INFO    |   After Trend Template: 49,114
+2026-04-02 09:11:22 | s07_signals                    | INFO    |   After RS ≥ 0.85: 16,541
+2026-04-02 09:11:22 | s07_signals                    | INFO    |   After excluding ['Utilities', 'Consumer Staples']: 16,541 (removed 0)
+2026-04-02 09:11:22 | s07_signals                    | INFO    |   After breakout: 1,160
+2026-04-02 09:11:22 | s07_signals                    | INFO    |   After pattern filter: 619
+2026-04-02 09:11:22 | s07_signals                    | INFO    |   Fundamentals filter: DISABLED (market-specific override)
+2026-04-02 09:11:22 | s07_signals                    | INFO    |   Injected 1,071 watchlist leaders as priority candidates
+2026-04-02 09:11:22 | s07_signals                    | INFO    |   Composite score: avg=0.633
+2026-04-02 09:11:22 | s07_signals                    | INFO    | ✓ INDIA: 1,690 momentum candidate signals across 271 days  tiers={'watchlist_leader': 1071, 'vcp': 618, 'ipo_base': 1}
+2026-04-02 09:11:22 | s07_signals                    | INFO    | Storing 1,690 candidate rows…
+2026-04-02 09:11:22 | s07_signals                    | INFO    | ✓ Candidates table: 1,690 rows
+2026-04-02 09:11:23 | s07_signals                    | INFO    | ✓ Watchlist table: 49,496 leader candidates during corrections
+2026-04-02 09:11:23 | dashboard_api                  | INFO    | [india] Pipeline step 'signals' OK  (1.9s)
+2026-04-02 09:11:23 | dashboard_api                  | INFO    | Pipeline done
+2026-04-02 09:11:23 | watchlist                      | INFO    | Watchlist: 49 candidates (down_days >= 2)
+2026-04-02 09:11:23 | dashboard_api                  | INFO    | Watchlist: 49 tickers
+2026-04-02 09:11:57 | kite_intraday                  | INFO    | [49/49] 100% — 35,377 candles total (15minute: 23,274, 30minute: 12,103)
+2026-04-02 09:11:57 | kite_intraday                  | INFO    | Kite 15minute: 23274 candles
+2026-04-02 09:11:57 | kite_intraday                  | INFO    | Kite 30minute: 12103 candles
+2026-04-02 09:11:57 | dashboard_api                  | INFO    | Intraday fetch done: {'15minute': 23274, '30minute': 12103}
+2026-04-02 09:11:57 | watchlist                      | INFO    | Watchlist: 49 candidates (down_days >= 2)
+2026-04-02 09:46:56 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-02 09:46:56 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-02 09:46:56 | watchlist                      | INFO    | Watchlist: 49 candidates (down_days >= 2)
+2026-04-02 09:46:57 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 09:46:57 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 09:47:15 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 09:47:15 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 09:47:15 | db                             | INFO    | Schema initialised
+2026-04-02 09:47:15 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 09:47:15 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 09:47:16 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 09:47:16 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 09:47:17 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 09:47:17 | kite_live                      | INFO    | Late start detected (09:47) — backfilling first-hour data…
+2026-04-02 09:47:31 | kite_live                      | INFO    | Backfill complete: 33/33 stocks filled, first_hour_done=False
+2026-04-02 09:47:31 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 09:47:31 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 09:47:31 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 09:47:31 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 09:47:31 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 09:47:32 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 09:47:34 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 09:47:34 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 09:47:34 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 10:15:00 | kite_live                      | INFO    | SIGNAL: SUNPHARMA @ 1659.20 (VWAP=1648.44, RVOL=2.3x, down=3d, depth=-5.3%)
+2026-04-02 10:15:00 | kite_orders                    | INFO    | ORDER SUNPHARMA | Qty=4 | Limit=1667.50 | SL=1626.00 | Invest=6670 | Risk=166 (0.4%)
+2026-04-02 10:15:00 | kite_orders                    | ERROR   | BUY FAILED for SUNPHARMA: IP (122.161.51.41) is not allowed to place orders for this app. Update allowed IPs on the Kite developer console (https://developers.kite.trade).
+2026-04-02 10:15:01 | kite_live                      | INFO    | SIGNAL: DRREDDY @ 1184.50 (VWAP=1181.51, RVOL=1.7x, down=3d, depth=-8.7%)
+2026-04-02 10:15:01 | kite_orders                    | INFO    | ORDER DRREDDY | Qty=6 | Limit=1190.45 | SL=1160.80 | Invest=7143 | Risk=178 (0.5%)
+2026-04-02 10:15:01 | kite_orders                    | ERROR   | BUY FAILED for DRREDDY: IP (122.161.51.41) is not allowed to place orders for this app. Update allowed IPs on the Kite developer console (https://developers.kite.trade).
+2026-04-02 10:31:57 | kite_live                      | INFO    | SIGNAL: CIPLA @ 1177.20 (VWAP=1176.35, RVOL=1.9x, down=3d, depth=-11.5%)
+2026-04-02 10:31:57 | kite_orders                    | WARNING | Kite margins failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — using config fallback
+2026-04-02 10:31:57 | kite_orders                    | ERROR   | SKIP CIPLA — no capital available
+2026-04-02 10:41:08 | kite_live                      | INFO    | SIGNAL: ZYDUSLIFE @ 844.30 (VWAP=843.33, RVOL=2.2x, down=3d, depth=-6.5%)
+2026-04-02 10:41:08 | kite_orders                    | INFO    | ORDER ZYDUSLIFE | Qty=9 | Limit=848.55 | SL=827.40 | Invest=7637 | Risk=190 (0.5%)
+2026-04-02 10:41:08 | kite_orders                    | ERROR   | BUY FAILED for ZYDUSLIFE: IP (122.161.51.41) is not allowed to place orders for this app. Update allowed IPs on the Kite developer console (https://developers.kite.trade).
+2026-04-02 10:48:09 | kite_live                      | INFO    | SIGNAL: DIVISLAB @ 5726.00 (VWAP=5724.53, RVOL=3.2x, down=4d, depth=-7.8%)
+2026-04-02 10:48:09 | kite_orders                    | WARNING | Kite margins failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — using config fallback
+2026-04-02 10:48:09 | kite_orders                    | ERROR   | SKIP DIVISLAB — no capital available
+2026-04-02 10:48:26 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 10:54:10 | kite_live                      | INFO    | SIGNAL: JSL @ 697.90 (VWAP=697.21, RVOL=2.1x, down=3d, depth=-10.0%)
+2026-04-02 10:54:10 | kite_orders                    | INFO    | ORDER JSL | Qty=10 | Limit=701.40 | SL=683.90 | Invest=7014 | Risk=175 (0.5%)
+2026-04-02 10:54:11 | kite_orders                    | ERROR   | BUY FAILED for JSL: IP (122.161.51.41) is not allowed to place orders for this app. Update allowed IPs on the Kite developer console (https://developers.kite.trade).
+2026-04-02 10:57:13 | kite_live                      | INFO    | SIGNAL: HYUNDAI @ 1691.90 (VWAP=1691.30, RVOL=1.7x, down=3d, depth=-20.1%)
+2026-04-02 10:57:13 | kite_orders                    | INFO    | ORDER HYUNDAI | Qty=4 | Limit=1700.40 | SL=1658.05 | Invest=6802 | Risk=169 (0.4%)
+2026-04-02 10:57:14 | kite_orders                    | INFO    | BUY LIMIT placed: HYUNDAI -> order_id=260402170669330 @ 1700.40
+2026-04-02 10:57:32 | kite_orders                    | INFO    | BUY FILLED: HYUNDAI | Qty=4 | AvgPrice=1692.70
+2026-04-02 10:57:32 | kite_orders                    | INFO    | SL placed: HYUNDAI -> order_id=260402170670919 trigger=1658.80 limit=1642.20 (attempt 1)
+2026-04-02 11:18:15 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 11:18:15 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 11:18:15 | db                             | INFO    | Schema initialised
+2026-04-02 11:18:15 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 11:18:16 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:18:16 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 11:18:16 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 11:18:17 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 11:18:17 | kite_live                      | INFO    | Restored 7 already-fired signals from DB (prices locked)
+2026-04-02 11:18:17 | kite_live                      | INFO    | Late start detected (11:18) — backfilling first-hour data…
+2026-04-02 11:18:31 | kite_live                      | INFO    | Backfill complete: 33/33 stocks filled, first_hour_done=True
+2026-04-02 11:18:31 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 11:18:31 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 11:18:31 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-02 11:18:31 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 11:18:31 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 11:18:31 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 11:18:31 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 11:18:31 | kite_live                      | INFO    | SIGNAL: BLUESTARCO @ 1488.20 (VWAP=1470.41, RVOL=3.8x, down=3d, depth=-20.3%)
+2026-04-02 11:18:31 | kite_orders                    | WARNING | SKIP BLUESTARCO — max positions (5) reached
+2026-04-02 11:18:31 | kite_live                      | INFO    | SIGNAL: TORNTPHARM @ 3961.00 (VWAP=3931.58, RVOL=2.1x, down=3d, depth=-7.5%)
+2026-04-02 11:18:31 | kite_orders                    | WARNING | SKIP TORNTPHARM — max positions (5) reached
+2026-04-02 11:18:49 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:18:49 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 11:18:49 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 11:20:40 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-02 11:20:40 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-02 11:20:41 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:20:41 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 11:20:41 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 11:22:02 | kite_live                      | INFO    | SIGNAL: SUPREMEIND @ 3463.00 (VWAP=3462.11, RVOL=3.8x, down=3d, depth=-9.5%)
+2026-04-02 11:22:02 | kite_orders                    | WARNING | SKIP SUPREMEIND — max positions (5) reached
+2026-04-02 11:25:38 | kite_live                      | INFO    | SIGNAL: VOLTAS @ 1198.00 (VWAP=1197.85, RVOL=1.9x, down=3d, depth=-16.6%)
+2026-04-02 11:25:38 | kite_orders                    | WARNING | SKIP VOLTAS — max positions (5) reached
+2026-04-02 11:28:47 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 11:28:47 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 11:28:47 | db                             | INFO    | Schema initialised
+2026-04-02 11:28:47 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 11:28:48 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:28:48 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 11:28:48 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 11:28:49 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 11:28:49 | kite_live                      | INFO    | Restored 11 already-fired signals from DB (prices locked)
+2026-04-02 11:28:49 | kite_live                      | INFO    | Late start detected (11:28) — backfilling first-hour data…
+2026-04-02 11:29:03 | kite_live                      | INFO    | Backfill complete: 33/33 stocks filled, first_hour_done=True
+2026-04-02 11:29:03 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 11:29:03 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 11:29:03 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-02 11:29:03 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 11:29:03 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 11:29:03 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 11:29:03 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 11:29:14 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:29:14 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 11:29:14 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 11:38:11 | kite_live                      | INFO    | SIGNAL: ASTRAL @ 1486.10 (VWAP=1486.10, RVOL=2.6x, down=3d, depth=-10.1%)
+2026-04-02 11:38:11 | kite_orders                    | WARNING | SKIP ASTRAL — max positions (5) reached
+2026-04-02 11:39:25 | kite_orders                    | WARNING | SKIP ASTRAL — max positions (5) reached
+2026-04-02 11:39:32 | kite_orders                    | WARNING | SKIP ASTRAL — max positions (5) reached
+2026-04-02 11:39:41 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-02 11:39:41 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-02 11:39:42 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:39:42 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 11:39:42 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 11:39:51 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 11:39:51 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 11:39:51 | db                             | INFO    | Schema initialised
+2026-04-02 11:39:51 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 11:39:51 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:39:51 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 11:39:51 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 11:39:52 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 11:39:52 | kite_live                      | INFO    | Restored 12 already-fired signals from DB (prices locked)
+2026-04-02 11:39:52 | kite_live                      | INFO    | Late start detected (11:39) — backfilling first-hour data…
+2026-04-02 11:40:06 | kite_live                      | INFO    | Backfill complete: 33/33 stocks filled, first_hour_done=True
+2026-04-02 11:40:06 | kite_live                      | INFO    | Cached 33 first-hour entries to DB
+2026-04-02 11:40:06 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 11:40:06 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 11:40:06 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-02 11:40:06 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 11:40:06 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 11:40:06 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 11:40:07 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 11:40:13 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:40:13 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 11:40:13 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 11:41:13 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-02 11:41:13 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-02 11:43:27 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 11:43:27 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 11:43:27 | db                             | INFO    | Schema initialised
+2026-04-02 11:43:27 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 11:43:27 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:43:28 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 11:43:28 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 11:43:29 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 11:43:29 | kite_live                      | INFO    | Restored 12 already-fired signals from DB (prices locked)
+2026-04-02 11:43:29 | kite_live                      | INFO    | Late start detected (11:43) — backfilling first-hour data…
+2026-04-02 11:43:29 | kite_live                      | INFO    | Loaded 33 cached first-hour entries from DB — skipping Kite backfill
+2026-04-02 11:43:29 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 11:43:29 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 11:43:29 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-02 11:43:29 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 11:43:29 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 11:43:29 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 11:43:29 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 11:43:36 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:43:36 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 11:43:36 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 11:43:46 | kite_orders                    | WARNING | SKIP ASTRAL — max positions (5) reached
+2026-04-02 11:43:48 | kite_orders                    | WARNING | SKIP ASTRAL — max positions (5) reached
+2026-04-02 11:44:12 | kite_orders                    | WARNING | SKIP ASTRAL — max positions (5) reached
+2026-04-02 11:47:54 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-02 11:47:54 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-02 11:48:33 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:48:33 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 11:48:33 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 11:48:37 | kite_orders                    | WARNING | SKIP ASTRAL — max positions (5) reached
+2026-04-02 11:48:44 | kite_orders                    | WARNING | SKIP ASTRAL — max positions (5) reached
+2026-04-02 11:48:46 | kite_orders                    | WARNING | SKIP ASTRAL — max positions (5) reached
+2026-04-02 11:52:08 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 11:52:08 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 11:52:08 | db                             | INFO    | Schema initialised
+2026-04-02 11:52:08 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 11:52:08 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:52:09 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 11:52:09 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 11:52:10 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 11:52:10 | kite_live                      | INFO    | Restored 12 already-fired signals from DB (prices locked)
+2026-04-02 11:52:10 | kite_live                      | INFO    | Late start detected (11:52) — backfilling first-hour data…
+2026-04-02 11:52:10 | kite_live                      | INFO    | Loaded 33 cached first-hour entries from DB — skipping Kite backfill
+2026-04-02 11:52:10 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 11:52:10 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 11:52:10 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-02 11:52:10 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 11:52:10 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 11:52:10 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 11:52:10 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 11:52:13 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 11:52:13 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 11:52:13 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 12:04:05 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 12:04:05 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 12:04:05 | db                             | INFO    | Schema initialised
+2026-04-02 12:04:06 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 12:04:06 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 12:04:06 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 12:04:06 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 12:04:07 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 12:04:07 | kite_live                      | INFO    | Restored 12 already-fired signals from DB (prices locked)
+2026-04-02 12:04:07 | kite_live                      | INFO    | Late start detected (12:04) — backfilling first-hour data…
+2026-04-02 12:04:07 | kite_live                      | INFO    | Loaded 33 cached first-hour entries from DB — skipping Kite backfill
+2026-04-02 12:04:07 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 12:04:07 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 12:04:07 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-02 12:04:07 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 12:04:07 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 12:04:07 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 12:04:07 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 12:04:19 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 12:04:19 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 12:04:19 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 12:06:27 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 12:06:27 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 12:06:27 | db                             | INFO    | Schema initialised
+2026-04-02 12:06:27 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 12:06:27 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 12:06:27 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 12:06:27 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 12:06:28 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 12:06:28 | kite_live                      | INFO    | Restored 12 already-fired signals from DB (prices locked)
+2026-04-02 12:06:28 | kite_live                      | INFO    | Late start detected (12:06) — backfilling first-hour data…
+2026-04-02 12:06:28 | kite_live                      | INFO    | Loaded 33 cached first-hour entries from DB — skipping Kite backfill
+2026-04-02 12:06:28 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 12:06:28 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 12:06:28 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-02 12:06:28 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 12:06:28 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 12:06:28 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 12:06:28 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 12:06:34 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 12:06:34 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 12:06:34 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 12:14:40 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 12:14:40 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 12:14:40 | db                             | INFO    | Schema initialised
+2026-04-02 12:14:40 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 12:14:40 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 12:14:41 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 12:14:41 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 12:14:42 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 12:14:42 | kite_live                      | INFO    | Restored 12 already-fired signals from DB (prices locked)
+2026-04-02 12:14:42 | kite_live                      | INFO    | Late start detected (12:14) — backfilling first-hour data…
+2026-04-02 12:14:42 | kite_live                      | INFO    | Loaded 33 cached first-hour entries from DB — skipping Kite backfill
+2026-04-02 12:14:42 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 12:14:42 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 12:14:42 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-02 12:14:42 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 12:14:42 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 12:14:42 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 12:14:42 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 12:15:05 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 12:15:05 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 12:15:05 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 12:15:43 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-02 12:15:43 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-02 12:15:43 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 12:15:43 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 12:15:43 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 12:15:58 | dashboard_api                  | INFO    | POST /api/scan  market=india  force=True
+2026-04-02 12:15:58 | dashboard_api                  | INFO    | ══ Full scan started: market=india  force=True ══
+2026-04-02 12:15:58 | db                             | INFO    | Schema initialised
+2026-04-02 12:15:58 | sync_prices                    | INFO    | INDIA: 1992 active, 1991 up-to-date, 1 to sync, 0 no token
+2026-04-02 12:15:58 | sync_prices                    | INFO    |   [0/1] synced=0 failed=0 rows=0 (0s)
+2026-04-02 12:15:59 | s02_prices                     | INFO    | Downloading benchmark ^CRSLDX
+2026-04-02 12:16:00 | s02_prices                     | INFO    |   Benchmark ^CRSLDX: 4485 rows upserted (4485 total)
+2026-04-02 12:16:00 | sync_prices                    | INFO    | ✓ INDIA: 1 synced, 0 failed, 1 new rows (Kite, 2s)
+2026-04-02 12:16:03 | sync_prices                    | INFO    | Patched 1991/1991 tickers with closing auction prices
+2026-04-02 12:16:03 | dashboard_api                  | INFO    | [india] Sync complete in 5.0s
+2026-04-02 12:16:03 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-02 12:16:03 | s03_features                   | INFO    | Feature engineering: INDIA
+2026-04-02 12:16:03 | s03_features                   | INFO    | ══════════════════════════════════════════════════
+2026-04-02 12:16:03 | s03_features                   | INFO    | Loaded 1,150,051 rows for 1992 tickers
+2026-04-02 12:16:03 | s03_features                   | INFO    | Computing indicators…
+2026-04-02 12:16:34 | s03_features                   | WARNING | Price coherence: 1 tickers have scale-corrupted Yahoo data (>3.0x jump):
+2026-04-02 12:16:34 | s03_features                   | WARNING |   AQYLON: latest=48.17 vs median50=150.80 (ratio=0.3x) — REMOVED
+2026-04-02 12:16:35 | s03_features                   | INFO    | Price coherence filter: 1,150,051 → 1,149,556 rows (1 tickers removed)
+2026-04-02 12:16:35 | s03_features                   | INFO    | Quality filter: 1,149,556 → 725,926 rows (423,630 removed) [min_price=$10.0, min_vol=100,000, min_$vol=$2,000,000, max_price_india=₹3,000]
+2026-04-02 12:16:35 | s03_features                   | INFO    | IPO seasoning: removed 16,431 rows (< 60 days)
+2026-04-02 12:16:35 | s03_features                   | INFO    | ✓ INDIA: 1858 tickers, 709,495 rows after filters
+2026-04-02 12:16:35 | s03_features                   | INFO    | Storing 709,495 feature rows…
+2026-04-02 12:16:36 | s03_features                   | INFO    | ✓ Features table: 709,495 rows, 1858 tickers
+2026-04-02 12:16:37 | dashboard_api                  | INFO    | [india] Pipeline step 'features' OK  (33.7s)
+2026-04-02 12:16:37 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-02 12:16:37 | s04_rs_rank                    | INFO    | Relative strength ranking: INDIA
+2026-04-02 12:16:37 | s04_rs_rank                    | INFO    | ══════════════════════════════════════════════════
+2026-04-02 12:16:37 | s04_rs_rank                    | INFO    | Computing cross-sectional RS ranks…
+2026-04-02 12:16:38 | s04_rs_rank                    | INFO    |   RS vs benchmark computed
+2026-04-02 12:16:38 | s04_rs_rank                    | INFO    |   Sector momentum computed
+2026-04-02 12:16:38 | s04_rs_rank                    | INFO    | ✓ INDIA: 1858 tickers ranked
+2026-04-02 12:16:38 | s04_rs_rank                    | INFO    | Storing 709,495 ranked rows…
+2026-04-02 12:16:39 | s04_rs_rank                    | INFO    | ✓ Ranked table: 709,495 rows
+2026-04-02 12:16:39 | dashboard_api                  | INFO    | [india] Pipeline step 'rs_rank' OK  (2.6s)
+2026-04-02 12:16:39 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-02 12:16:39 | s05_patterns                   | INFO    | Pattern detection: INDIA
+2026-04-02 12:16:39 | s05_patterns                   | INFO    | ══════════════════════════════════════════════════
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |   Detecting Trend Template…
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |     Trend Template: 9.1% of rows pass
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |   Detecting Multi-Contraction VCP…
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |     VCP: 67.7% of rows pass
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |   Detecting Darvas Box…
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |     Darvas: 0.1% of rows pass
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |   Detecting Power Play…
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |     Power Play: 0.0% of rows pass
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |   Detecting IPO Base…
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |     IPO Base: 1.7% of rows match
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |   Detecting Breakouts…
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |     Breakout: 2.5% of rows pass
+2026-04-02 12:16:40 | s05_patterns                   | INFO    |     Buy signals: VCP=2,657  Darvas=172  Power=0  IPO=14  Total=2,663
+2026-04-02 12:16:40 | s05_patterns                   | INFO    | ✓ INDIA: 1858 tickers, 2,663 buy signals
+2026-04-02 12:16:40 | s05_patterns                   | INFO    | Storing 709,495 signal rows…
+2026-04-02 12:16:42 | s05_patterns                   | INFO    | ✓ Signals table: 709,495 rows
+2026-04-02 12:16:42 | dashboard_api                  | INFO    | [india] Pipeline step 'patterns' OK  (2.8s)
+2026-04-02 12:16:42 | s06_regime                     | INFO    |   Computing market breadth for INDIA…
+2026-04-02 12:16:42 | s06_regime                     | INFO    | INDIA: 4436 days, 66.8% bull (7.9% recovery), 33.2% bear, 14.6% weak-market days, avg breadth 49.8%
+2026-04-02 12:16:42 | s06_regime                     | INFO    | ✓ Regime table: 4,436 rows
+2026-04-02 12:16:42 | dashboard_api                  | INFO    | [india] Pipeline step 'regime' OK  (0.0s)
+2026-04-02 12:16:42 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-02 12:16:42 | s07_signals                    | INFO    | Signal engine: INDIA
+2026-04-02 12:16:42 | s07_signals                    | INFO    | ══════════════════════════════════════════════════
+2026-04-02 12:16:43 | s07_signals                    | INFO    | Loaded 709,495 rows, 1858 tickers
+2026-04-02 12:16:44 | s07_signals                    | INFO    |   Watchlist: 49,496 leader candidates across 494 correction days
+2026-04-02 12:16:44 | s07_signals                    | INFO    | Applying signal filters…
+2026-04-02 12:16:44 | s07_signals                    | INFO    |   After regime filter: 569,982 / 709,495
+2026-04-02 12:16:44 | s07_signals                    | INFO    |   After breadth ≥ 30%: 511,111 (removed 58,871)
+2026-04-02 12:16:44 | s07_signals                    | INFO    |   After Trend Template: 49,114
+2026-04-02 12:16:44 | s07_signals                    | INFO    |   After RS ≥ 0.85: 16,541
+2026-04-02 12:16:44 | s07_signals                    | INFO    |   After excluding ['Utilities', 'Consumer Staples']: 16,541 (removed 0)
+2026-04-02 12:16:44 | s07_signals                    | INFO    |   After breakout: 1,160
+2026-04-02 12:16:44 | s07_signals                    | INFO    |   After pattern filter: 619
+2026-04-02 12:16:44 | s07_signals                    | INFO    |   Fundamentals filter: DISABLED (market-specific override)
+2026-04-02 12:16:44 | s07_signals                    | INFO    |   Injected 1,071 watchlist leaders as priority candidates
+2026-04-02 12:16:44 | s07_signals                    | INFO    |   Composite score: avg=0.633
+2026-04-02 12:16:44 | s07_signals                    | INFO    | ✓ INDIA: 1,690 momentum candidate signals across 271 days  tiers={'watchlist_leader': 1071, 'vcp': 618, 'ipo_base': 1}
+2026-04-02 12:16:44 | s07_signals                    | INFO    | Storing 1,690 candidate rows…
+2026-04-02 12:16:44 | s07_signals                    | INFO    | ✓ Candidates table: 1,690 rows
+2026-04-02 12:16:44 | s07_signals                    | INFO    | ✓ Watchlist table: 49,496 leader candidates during corrections
+2026-04-02 12:16:44 | dashboard_api                  | INFO    | [india] Pipeline step 'signals' OK  (2.4s)
+2026-04-02 12:16:44 | dashboard_api                  | INFO    | [india] Pipeline complete in 41.6s
+2026-04-02 12:16:44 | dashboard_api                  | INFO    | [india] Signals collected in 0.0s — 4 candidates
+2026-04-02 12:16:44 | dashboard_api                  | INFO    | ══ Full scan finished: market=india  46.6s  signals=4  errors=0 ══
+2026-04-02 12:16:44 | dashboard_api                  | INFO    | POST /api/scan complete — signals=4  stop_alerts=0  errors=0
+2026-04-02 12:48:47 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 12:48:47 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 12:48:47 | db                             | INFO    | Schema initialised
+2026-04-02 12:48:47 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 12:48:48 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 12:48:48 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 12:48:48 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 12:48:49 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 12:48:49 | kite_live                      | INFO    | Restored 12 already-fired signals from DB (prices locked)
+2026-04-02 12:48:49 | kite_live                      | INFO    | Late start detected (12:48) — backfilling first-hour data…
+2026-04-02 12:48:49 | kite_live                      | INFO    | Loaded 33 cached first-hour entries from DB — skipping Kite backfill
+2026-04-02 12:48:49 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 12:48:49 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 12:48:49 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-02 12:48:49 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 12:48:49 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 12:48:49 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 12:48:50 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 12:48:57 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 12:48:57 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 12:48:57 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 12:51:21 | kite_orders                    | WARNING | Failed to ensure orders table: IO Error: Could not set lock on file "/Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb": Conflicting lock is held in /opt/homebrew/Cellar/python@3.12/3.12.8/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python (PID 86726) by user shark. See also https://duckdb.org/docs/stable/connect/concurrency
+2026-04-02 12:51:21 | kite_orders                    | WARNING | Failed to load orders from DB: IO Error: Could not set lock on file "/Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb": Conflicting lock is held in /opt/homebrew/Cellar/python@3.12/3.12.8/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python (PID 86726) by user shark. See also https://duckdb.org/docs/stable/connect/concurrency
+2026-04-02 12:51:45 | kite_orders                    | WARNING | Failed to ensure orders table: IO Error: Could not set lock on file "/Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb": Conflicting lock is held in /opt/homebrew/Cellar/python@3.12/3.12.8/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python (PID 86726) by user shark. See also https://duckdb.org/docs/stable/connect/concurrency
+2026-04-02 12:51:45 | kite_orders                    | WARNING | Failed to load orders from DB: IO Error: Could not set lock on file "/Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb": Conflicting lock is held in /opt/homebrew/Cellar/python@3.12/3.12.8/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python (PID 86726) by user shark. See also https://duckdb.org/docs/stable/connect/concurrency
+2026-04-02 12:59:24 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 12:59:24 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 12:59:24 | db                             | INFO    | Schema initialised
+2026-04-02 12:59:25 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 12:59:25 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 12:59:25 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 12:59:25 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 12:59:26 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 12:59:26 | kite_live                      | INFO    | Restored 12 already-fired signals from DB (prices locked)
+2026-04-02 12:59:26 | kite_live                      | INFO    | Late start detected (12:59) — backfilling first-hour data…
+2026-04-02 12:59:26 | kite_live                      | INFO    | Loaded 33 cached first-hour entries from DB — skipping Kite backfill
+2026-04-02 12:59:26 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 12:59:26 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 12:59:26 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-02 12:59:26 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 12:59:26 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 12:59:26 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 12:59:26 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 12:59:26 | kite_orders                    | ERROR   | Trail modify failed for HYUNDAI (SL 260402170670919): Tick size for this script is 0.10. Kindly enter trigger price in the multiple of tick size for this script
+2026-04-02 12:59:50 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 12:59:50 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 12:59:50 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 12:59:57 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1658.80 -> 1668.80 (LTP=1702.90)
+2026-04-02 13:01:59 | kite_orders                    | WARNING | Failed to ensure orders table: IO Error: Could not set lock on file "/Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb": Conflicting lock is held in /opt/homebrew/Cellar/python@3.12/3.12.8/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python (PID 96209) by user shark. See also https://duckdb.org/docs/stable/connect/concurrency
+2026-04-02 13:01:59 | kite_orders                    | WARNING | Failed to load orders from DB: IO Error: Could not set lock on file "/Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb": Conflicting lock is held in /opt/homebrew/Cellar/python@3.12/3.12.8/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python (PID 96209) by user shark. See also https://duckdb.org/docs/stable/connect/concurrency
+2026-04-02 13:02:50 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 13:02:50 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 13:02:50 | db                             | INFO    | Schema initialised
+2026-04-02 13:02:50 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 13:02:50 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 13:02:51 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 13:02:51 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 13:02:52 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 13:02:52 | kite_live                      | INFO    | Restored 12 already-fired signals from DB (prices locked)
+2026-04-02 13:02:52 | kite_live                      | INFO    | Late start detected (13:02) — backfilling first-hour data…
+2026-04-02 13:02:52 | kite_live                      | INFO    | Loaded 33 cached first-hour entries from DB — skipping Kite backfill
+2026-04-02 13:02:52 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 13:02:52 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 13:02:52 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-02 13:02:52 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 13:02:52 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 13:02:52 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 13:02:52 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 13:02:52 | kite_orders                    | INFO    | Loaded tick sizes for 9422 instruments
+2026-04-02 13:03:12 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 13:03:12 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 13:03:12 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 13:20:49 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 13:20:49 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 13:20:49 | db                             | INFO    | Schema initialised
+2026-04-02 13:20:49 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 13:20:49 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 13:20:50 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 13:20:50 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 13:20:51 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 13:20:51 | kite_live                      | INFO    | Restored 12 already-fired signals from DB (prices locked)
+2026-04-02 13:20:51 | kite_live                      | INFO    | Late start detected (13:20) — backfilling first-hour data…
+2026-04-02 13:20:51 | kite_live                      | INFO    | Loaded 33 cached first-hour entries from DB — skipping Kite backfill
+2026-04-02 13:20:51 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 13:20:51 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 13:20:51 | kite_orders                    | INFO    | Loaded 5 orders from today
+2026-04-02 13:20:51 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 13:20:51 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 13:20:51 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 13:20:51 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 13:20:51 | kite_orders                    | INFO    | Loaded tick sizes for 9422 instruments
+2026-04-02 13:20:55 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 13:20:55 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 13:20:55 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 13:21:54 | kite_live                      | INFO    | SIGNAL: ICICIGI @ 1655.50 (VWAP=1655.36, RVOL=2.0x, down=3d, depth=-10.6%)
+2026-04-02 13:21:54 | kite_orders                    | INFO    | ORDER ICICIGI | Qty=3 | Limit=1663.80 | SL=1622.30 | Invest=4991 | Risk=124 (0.4%)
+2026-04-02 13:21:54 | kite_orders                    | INFO    | BUY LIMIT placed: ICICIGI -> order_id=260402171242801 @ 1663.80
+2026-04-02 13:22:22 | kite_orders                    | INFO    | BUY FILLED: ICICIGI | Qty=3 | AvgPrice=1655.50
+2026-04-02 13:22:22 | kite_orders                    | INFO    | SL placed: ICICIGI -> order_id=260402171246099 trigger=1622.20 limit=1605.90 (attempt 1)
+2026-04-02 13:22:22 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1668.80 -> 1669.00 (LTP=1703.10)
+2026-04-02 13:22:52 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1669.00 -> 1669.50 (LTP=1703.60)
+2026-04-02 13:22:52 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1622.20 -> 1622.30 (LTP=1655.50)
+2026-04-02 13:24:23 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1669.50 -> 1670.40 (LTP=1704.50)
+2026-04-02 13:24:53 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1670.40 -> 1670.80 (LTP=1705.00)
+2026-04-02 13:25:09 | kite_live                      | INFO    | SIGNAL: ASHOKLEY @ 145.85 (VWAP=145.82, RVOL=1.7x, down=3d, depth=-28.7%)
+2026-04-02 13:25:09 | kite_orders                    | INFO    | ORDER ASHOKLEY | Qty=36 | Limit=146.58 | SL=142.93 | Invest=5277 | Risk=131 (0.5%)
+2026-04-02 13:25:09 | kite_orders                    | INFO    | BUY LIMIT placed: ASHOKLEY -> order_id=260402171261932 @ 146.58
+2026-04-02 13:25:23 | kite_orders                    | INFO    | BUY FILLED: ASHOKLEY | Qty=36 | AvgPrice=145.85
+2026-04-02 13:25:23 | kite_orders                    | INFO    | SL placed: ASHOKLEY -> order_id=260402171263753 trigger=142.93 limit=141.50 (attempt 1)
+2026-04-02 13:25:23 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1670.80 -> 1672.80 (LTP=1707.00)
+2026-04-02 13:29:25 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1672.80 -> 1673.00 (LTP=1707.20)
+2026-04-02 13:29:25 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 142.93 -> 143.14 (LTP=146.07)
+2026-04-02 13:29:55 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 143.14 -> 143.43 (LTP=146.36)
+2026-04-02 13:30:25 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1622.30 -> 1622.60 (LTP=1655.80)
+2026-04-02 13:30:26 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 143.43 -> 143.57 (LTP=146.51)
+2026-04-02 13:30:56 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1622.60 -> 1623.70 (LTP=1656.90)
+2026-04-02 13:31:26 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 143.57 -> 143.92 (LTP=146.86)
+2026-04-02 13:37:28 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1623.70 -> 1625.20 (LTP=1658.40)
+2026-04-02 13:37:59 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1625.20 -> 1625.30 (LTP=1658.50)
+2026-04-02 13:38:29 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1673.00 -> 1673.30 (LTP=1707.50)
+2026-04-02 13:38:29 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1625.30 -> 1626.00 (LTP=1659.20)
+2026-04-02 13:38:59 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1626.00 -> 1626.90 (LTP=1660.20)
+2026-04-02 13:44:01 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1626.90 -> 1627.00 (LTP=1660.30)
+2026-04-02 13:44:32 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1627.00 -> 1627.20 (LTP=1660.50)
+2026-04-02 13:45:02 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1627.20 -> 1627.90 (LTP=1661.20)
+2026-04-02 13:46:03 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1627.90 -> 1629.00 (LTP=1662.30)
+2026-04-02 13:48:33 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1629.00 -> 1630.10 (LTP=1663.40)
+2026-04-02 13:49:34 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1630.10 -> 1630.60 (LTP=1663.90)
+2026-04-02 13:50:34 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 143.92 -> 143.95 (LTP=146.89)
+2026-04-02 13:51:05 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 143.95 -> 144.01 (LTP=146.95)
+2026-04-02 13:53:05 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 144.01 -> 144.10 (LTP=147.05)
+2026-04-02 13:53:36 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 144.10 -> 144.13 (LTP=147.08)
+2026-04-02 13:54:06 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 144.13 -> 144.28 (LTP=147.23)
+2026-04-02 14:01:08 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1630.60 -> 1630.70 (LTP=1664.00)
+2026-04-02 14:01:39 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1630.70 -> 1630.90 (LTP=1664.20)
+2026-04-02 14:03:39 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1673.30 -> 1673.80 (LTP=1708.00)
+2026-04-02 14:03:39 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1630.90 -> 1631.20 (LTP=1664.50)
+2026-04-02 14:04:10 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1673.80 -> 1674.00 (LTP=1708.20)
+2026-04-02 14:04:40 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1631.20 -> 1632.00 (LTP=1665.40)
+2026-04-02 14:05:10 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1674.00 -> 1675.20 (LTP=1709.40)
+2026-04-02 14:07:11 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1632.00 -> 1632.20 (LTP=1665.60)
+2026-04-02 14:07:41 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1632.20 -> 1632.60 (LTP=1666.00)
+2026-04-02 14:11:13 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 144.28 -> 144.51 (LTP=147.46)
+2026-04-02 14:11:43 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1632.60 -> 1633.10 (LTP=1666.50)
+2026-04-02 14:12:43 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1633.10 -> 1633.50 (LTP=1666.90)
+2026-04-02 14:13:14 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 144.51 -> 144.61 (LTP=147.57)
+2026-04-02 14:13:44 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1633.50 -> 1634.00 (LTP=1667.40)
+2026-04-02 14:13:44 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 144.61 -> 144.88 (LTP=147.84)
+2026-04-02 14:14:45 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1634.00 -> 1635.10 (LTP=1668.50)
+2026-04-02 14:15:15 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1635.10 -> 1635.60 (LTP=1669.00)
+2026-04-02 14:15:45 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1635.60 -> 1636.50 (LTP=1670.00)
+2026-04-02 14:16:15 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:16:15 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 144.88 -> 144.94 (LTP=147.90)
+2026-04-02 14:16:46 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:17:16 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:17:46 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:18:17 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:18:47 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:19:17 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:19:47 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:19:47 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 144.94 -> 145.03 (LTP=148.00)
+2026-04-02 14:20:18 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:20:48 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:20:48 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 145.03 -> 145.14 (LTP=148.11)
+2026-04-02 14:21:18 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:21:48 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:22:19 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:22:49 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:22:49 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 145.14 -> 145.16 (LTP=148.13)
+2026-04-02 14:25:20 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:25:20 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 145.16 -> 145.33 (LTP=148.30)
+2026-04-02 14:25:50 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1675.20 -> 1675.30 (LTP=1709.50)
+2026-04-02 14:26:20 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:26:50 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:27:21 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:27:51 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:28:21 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:28:51 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:29:21 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:29:52 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:30:22 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:30:52 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:31:22 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:31:52 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-02 14:31:52 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-02 14:31:53 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:31:53 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 14:31:53 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 14:31:53 | dashboard_api                  | INFO    | WS connected (2 clients)
+2026-04-02 14:32:23 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:32:53 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:33:23 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:33:53 | kite_orders                    | ERROR   | Trail modify failed for ICICIGI (SL 260402171246099): Maximum allowed order modifications exceeded.
+2026-04-02 14:34:00 | dashboard_api                  | INFO    | WS disconnected (1 clients)
+2026-04-02 14:34:00 | dashboard_api                  | INFO    | WS disconnected (0 clients)
+2026-04-02 14:34:00 | db                             | INFO    | DuckDB singleton connection closed
+2026-04-02 14:34:00 | dashboard_api                  | INFO    | Dashboard API shut down.
+2026-04-02 14:34:08 | dashboard_api                  | INFO    | Dashboard API starting…
+2026-04-02 14:34:08 | db                             | INFO    | DuckDB singleton connection opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/market.duckdb
+2026-04-02 14:34:08 | db                             | INFO    | Schema initialised
+2026-04-02 14:34:08 | sync_prices                    | INFO    | [INDIA] No delisted stocks to purge
+2026-04-02 14:34:08 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 14:34:09 | kite_intraday                  | INFO    | Loaded 9558 NSE instrument tokens
+2026-04-02 14:34:09 | intraday_db                    | INFO    | Intraday DB opened → /Users/shark/alphaWork/projects/faralpha-quant-trader/db/intraday.duckdb
+2026-04-02 14:34:10 | watchlist                      | INFO    | Watchlist with tokens: 33 stocks ready for live monitoring
+2026-04-02 14:34:10 | kite_live                      | INFO    | Restored 14 already-fired signals from DB (prices locked)
+2026-04-02 14:34:10 | kite_live                      | INFO    | Late start detected (14:34) — backfilling first-hour data…
+2026-04-02 14:34:10 | kite_live                      | INFO    | Loaded 33 cached first-hour entries from DB — skipping Kite backfill
+2026-04-02 14:34:10 | kite_live                      | INFO    | Kite Ticker started in background thread
+2026-04-02 14:34:10 | dashboard_api                  | INFO    | Auto-start: live ticker started with 33 stocks
+2026-04-02 14:34:10 | kite_orders                    | INFO    | Loaded 7 orders from today
+2026-04-02 14:34:10 | kite_orders                    | INFO    | Order poller started (every 30s)
+2026-04-02 14:34:10 | kite_orders                    | INFO    | AUTO-TRADE ENABLED
+2026-04-02 14:34:10 | dashboard_api                  | INFO    | Auto-start: auto-trade enabled
+2026-04-02 14:34:10 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 14:34:11 | kite_orders                    | INFO    | Loaded tick sizes for 9422 instruments
+2026-04-02 14:34:11 | kite_orders                    | WARNING | TRAIL ICICIGI: max modifications hit — replacing SL order
+2026-04-02 14:34:11 | kite_orders                    | INFO    | SL placed: ICICIGI -> order_id=260402171693455 trigger=1643.00 limit=1626.50 (attempt 1)
+2026-04-02 14:34:11 | kite_orders                    | INFO    | TRAIL ICICIGI: replaced SL -> 1643.10 (LTP=1676.70)
+2026-04-02 14:35:12 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1643.00 -> 1644.30 (LTP=1677.90)
+2026-04-02 14:37:19 | kite_orders                    | ERROR   | Failed to fetch Kite orders: HTTPSConnectionPool(host='api.kite.trade', port=443): Read timed out. (read timeout=7)
+2026-04-02 14:37:53 | kite_live                      | ERROR   | Kite Ticker error: 1006 connection was closed uncleanly (peer dropped the TCP connection without previous WebSocket closing handshake)
+2026-04-02 14:37:53 | kite_live                      | WARNING | Kite Ticker closed: 1006 connection was closed uncleanly (peer dropped the TCP connection without previous WebSocket closing handshake)
+2026-04-02 14:37:56 | kite_live                      | INFO    | Kite Ticker connected, subscribing to 33 tokens
+2026-04-02 14:51:26 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1644.30 -> 1646.00 (LTP=1679.60)
+2026-04-02 14:51:57 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1646.00 -> 1646.20 (LTP=1679.80)
+2026-04-02 14:52:57 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1646.20 -> 1646.80 (LTP=1680.50)
+2026-04-02 14:55:28 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1646.80 -> 1648.10 (LTP=1681.80)
+2026-04-02 14:56:28 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1648.10 -> 1648.20 (LTP=1681.90)
+2026-04-02 14:57:28 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1648.20 -> 1648.70 (LTP=1682.40)
+2026-04-02 14:57:59 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1648.70 -> 1649.20 (LTP=1682.90)
+2026-04-02 14:59:28 | kite_orders                    | ERROR   | Failed to fetch Kite orders: HTTPSConnectionPool(host='api.kite.trade', port=443): Read timed out. (read timeout=7)
+2026-04-02 14:59:58 | kite_orders                    | ERROR   | Failed to fetch Kite orders: HTTPSConnectionPool(host='api.kite.trade', port=443): Max retries exceeded with url: /orders (Caused by NameResolutionError("HTTPSConnection(host='api.kite.trade', port=443): Failed to resolve 'api.kite.trade' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-04-02 15:07:07 | kite_orders                    | INFO    | TRAIL UP: HYUNDAI | stop 1675.30 -> 1680.30 (LTP=1714.60)
+2026-04-02 15:07:07 | kite_orders                    | INFO    | TRAIL UP: ICICIGI | stop 1649.20 -> 1657.00 (LTP=1690.90)
+2026-04-02 15:07:07 | kite_orders                    | INFO    | TRAIL UP: ASHOKLEY | stop 145.33 -> 145.56 (LTP=148.54)
+2026-04-02 15:22:37 | kite_orders                    | ERROR   | Failed to fetch Kite orders: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-02 15:38:38 | kite_orders                    | ERROR   | Failed to fetch Kite orders: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-02 16:10:09 | kite_orders                    | ERROR   | Failed to fetch Kite orders: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-02 16:41:42 | kite_orders                    | ERROR   | Failed to fetch Kite orders: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-02 16:42:12 | kite_orders                    | WARNING | SL EXPIRED: HYUNDAI — will re-place tomorrow morning
+2026-04-02 16:42:12 | kite_orders                    | WARNING | SL EXPIRED: ICICIGI — will re-place tomorrow morning
+2026-04-02 16:42:12 | kite_orders                    | WARNING | SL EXPIRED: ASHOKLEY — will re-place tomorrow morning
+2026-04-02 16:57:43 | kite_orders                    | ERROR   | Failed to fetch Kite orders: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-02 17:16:00 | kite_orders                    | ERROR   | Failed to fetch Kite orders: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-02 17:47:32 | kite_orders                    | ERROR   | Failed to fetch Kite orders: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-02 18:16:55 | kite_orders                    | ERROR   | Failed to fetch Kite orders: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-02 18:48:26 | kite_orders                    | ERROR   | Failed to fetch Kite orders: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-02 19:02:18 | kite_orders                    | ERROR   | Failed to fetch Kite orders: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-02 19:33:50 | kite_orders                    | ERROR   | Failed to fetch Kite orders: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-02 20:03:11 | kite_orders                    | ERROR   | Failed to fetch Kite orders: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-02 20:19:33 | watchlist                      | INFO    | Watchlist: 33 candidates (down_days >= 3)
+2026-04-02 20:19:33 | dashboard_api                  | INFO    | WS connected (1 clients)
+2026-04-02 20:19:33 | dashboard_api                  | INFO    | WS connected (2 clients)
