@@ -1,0 +1,29 @@
+.env
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+ui/dist/
+
+# Logs
+logs/
+
+# Database files (do NOT commit)
+db/
+db/*.duckdb
+db/*.wal
+
+# Credentials / secrets
+creds
+
