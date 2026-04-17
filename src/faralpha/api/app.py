@@ -35,6 +35,7 @@ from faralpha.api.routes.scheduler_routes import router as scheduler_router
 from faralpha.api.routes.intraday import router as intraday_router
 from faralpha.api.routes.orders import router as orders_router
 from faralpha.api.routes.kite_auth import router as kite_auth_router
+from faralpha.api.routes.logs_routes import router as logs_router
 
 log = get_logger("dashboard_api")
 
@@ -184,6 +185,7 @@ app.include_router(scheduler_router)
 app.include_router(intraday_router)
 app.include_router(orders_router)
 app.include_router(kite_auth_router)
+app.include_router(logs_router)
 
 
 # ══════════════════════════════════════════════
