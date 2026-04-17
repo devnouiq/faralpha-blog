@@ -100,12 +100,15 @@ export default function App() {
     refresh();
   }, [refresh]);
 
-  // Poll status every 30s
+  // Poll status every 30s (also clears stale `busy` if WebSocket missed `scan_complete`)
   useEffect(() => {
     const id = setInterval(async () => {
       try {
         const st = await api.fetchStatus();
         setStatus(st);
+        if (!st.busy) {
+          setBusy(false);
+        }
       } catch {}
     }, 30_000);
     return () => clearInterval(id);
@@ -123,6 +126,7 @@ export default function App() {
       }
       if (evt.type === "scan_complete") {
         setScanProgress(null);
+        setBusy(false);
       }
       if (evt.type === "intraday_sync_complete") {
         setScanProgress(null);
@@ -267,14 +271,26 @@ export default function App() {
     setBusy(true);
     setError(null);
     setScanProgress({ step: "sync", message: "Starting scan…" });
+    let awaitScanViaWebSocket = false;
     try {
-      await api.triggerScan(mkt, true);
+      const res = await api.triggerScan(mkt, true);
       await refresh();
+      if (res?.status === "started") {
+        awaitScanViaWebSocket = true;
+        setScanProgress({
+          step: "sync",
+          message:
+            (res as { message?: string }).message ||
+            "Full scan running — this can take many minutes.",
+        });
+      }
     } catch (e: any) {
       setError(e.message);
     } finally {
-      setBusy(false);
-      setScanProgress(null);
+      if (!awaitScanViaWebSocket) {
+        setBusy(false);
+        setScanProgress(null);
+      }
     }
   };
 
