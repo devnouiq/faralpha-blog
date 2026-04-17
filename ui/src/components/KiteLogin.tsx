@@ -28,13 +28,23 @@ export default function KiteLogin({ onLoginChange }: Props) {
 
   useEffect(() => { checkStatus() }, [checkStatus])
 
-  // Check URL for request_token (Zerodha redirects back with it)
+  // Check URL: SPA ?request_token=… (Kite → site root) or ?kite_login=ok (Kite → /api/zerodha/callback → here)
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
+    if (params.get('kite_login') === 'ok') {
+      window.history.replaceState({}, '', window.location.pathname)
+      void checkStatus()
+      return
+    }
+    if (params.get('kite_login') === 'error') {
+      const msg = params.get('msg')
+      setError(msg ? decodeURIComponent(msg) : 'Login failed')
+      window.history.replaceState({}, '', window.location.pathname)
+      return
+    }
     const token = params.get('request_token')
     const status = params.get('status')
     if (token && status === 'success') {
-      // Clean URL
       window.history.replaceState({}, '', window.location.pathname)
       handleTokenExchange(token)
     }
